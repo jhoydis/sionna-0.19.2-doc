@@ -799,7 +799,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="interleaving">
+  <div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>You are reading an old version (0.19.2) of the documentation. For the latest version, see <a class="reference external" href="https://nvlabs.github.io/sionna/">https://nvlabs.github.io/sionna/</a>.</p>
+</div>
+<section id="interleaving">
 <h1>Interleaving<a class="headerlink" href="#interleaving" title="Link to this heading"></a></h1>
 <p>The interleaver module allows to permute tensors with either pseudo-random permutations or by row/column swapping.</p>
 <p>To simplify distributed graph execution (e.g., by running interleaver and deinterleaver in a different sub-graph/device), the interleavers are implemented stateless. Thus, the internal seed cannot be updated on runtime and does not change after the initialization. However, if required, an explicit random seed can be passed as additional input to the interleaver/deinterleaver pair when calling the layer.</p>

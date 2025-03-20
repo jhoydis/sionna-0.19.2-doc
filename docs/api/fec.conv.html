@@ -799,7 +799,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="convolutional-codes">
+  <div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>You are reading an old version (0.19.2) of the documentation. For the latest version, see <a class="reference external" href="https://nvlabs.github.io/sionna/">https://nvlabs.github.io/sionna/</a>.</p>
+</div>
+<section id="convolutional-codes">
 <h1>Convolutional Codes<a class="headerlink" href="#convolutional-codes" title="Link to this heading"></a></h1>
 <p>This module supports encoding of convolutional codes and provides layers for Viterbi <a class="reference internal" href="#viterbi" id="id1"><span>[Viterbi]</span></a> and BCJR <a class="reference internal" href="#bcjr" id="id2"><span>[BCJR]</span></a> decoding.</p>
 <p>While the <a class="reference internal" href="#sionna.fec.conv.ViterbiDecoder" title="sionna.fec.conv.decoding.ViterbiDecoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViterbiDecoder</span></code></a> decoding algorithm produces maximum likelihood <em>sequence</em> estimates, the <a class="reference internal" href="#sionna.fec.conv.BCJRDecoder" title="sionna.fec.conv.decoding.BCJRDecoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">BCJRDecoder</span></code></a> produces the maximum a posterior (MAP) bit-estimates.</p>
