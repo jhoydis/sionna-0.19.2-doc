@@ -1,0 +1,3028 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index &mdash; Sionna 0.19.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/css/sionna.css?v=b21afc95" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=587b3f23"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="_static/copybutton.js?v=f281be69"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="#" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Sionna
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#installation-using-pip">Installation using pip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#docker-based-installation">Docker-based Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#installation-from-source">Installation from source</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="examples/Hello_World.html">“Hello, world!”</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples/Discover_Sionna.html">Discover Sionna</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples/Discover_Sionna.html#Load-Required-Packages">Load Required Packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/Discover_Sionna.html#Sionna-Data-flow-and-Design-Paradigms">Sionna Data-flow and Design Paradigms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/Discover_Sionna.html#A-note-on-random-number-generation">A note on random number generation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/Discover_Sionna.html#Let's-Get-Started---The-First-Layers-(Eager-Mode)">Let’s Get Started - The First Layers (<em>Eager Mode</em>)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/Discover_Sionna.html#Batches-and-Multi-dimensional-Tensors">Batches and Multi-dimensional Tensors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/Discover_Sionna.html#First-Link-level-Simulation">First Link-level Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/Discover_Sionna.html#Setting-up-the-End-to-end-Model">Setting up the End-to-end Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/Discover_Sionna.html#Run-some-Throughput-Tests-(Graph-Mode)">Run some Throughput Tests (Graph Mode)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/Discover_Sionna.html#Bit-Error-Rate-(BER)-Monte-Carlo-Simulations">Bit-Error Rate (BER) Monte-Carlo Simulations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/Discover_Sionna.html#Conclusion">Conclusion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials.html#for-beginners">For Beginners</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="examples/Sionna_tutorial_part1.html">Part 1: Getting Started with Sionna</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part1.html#Imports-&amp;-Basics">Imports &amp; Basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part1.html#A-note-on-random-number-generation">A note on random number generation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part1.html#Sionna-Data-flow-and-Design-Paradigms">Sionna Data-flow and Design Paradigms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part1.html#Hello,-Sionna!">Hello, Sionna!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part1.html#Communication-Systems-as-Keras-Models">Communication Systems as Keras Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part1.html#Forward-Error-Correction-(FEC)">Forward Error Correction (FEC)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part1.html#Eager-vs-Graph-Mode">Eager vs Graph Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part1.html#Exercise">Exercise</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Sionna_tutorial_part2.html">Part 2: Differentiable Communication Systems</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part2.html#Imports">Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part2.html#Gradient-Computation-Through-End-to-end-Systems">Gradient Computation Through End-to-end Systems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part2.html#Creating-Custom-Layers">Creating Custom Layers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part2.html#Setting-up-Training-Loops">Setting up Training Loops</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Sionna_tutorial_part3.html">Part 3: Advanced Link-level Simulations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part3.html#Imports">Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part3.html#OFDM-Resource-Grid-and-Stream-Management">OFDM Resource Grid and Stream Management</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part3.html#Antenna-Arrays">Antenna Arrays</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part3.html#Channel-Model">Channel Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part3.html#Uplink-Transmission-in-the-Frequency-Domain">Uplink Transmission in the Frequency Domain</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Sionna_tutorial_part4.html">Part 4: Toward Learned Receivers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part4.html#Imports">Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part4.html#Simulation-Parameters">Simulation Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part4.html#Implemention-of-an-Advanced-Neural-Receiver">Implemention of an Advanced Neural Receiver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part4.html#Training-the-Neural-Receiver">Training the Neural Receiver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part4.html#Benchmarking-the-Neural-Receiver">Benchmarking the Neural Receiver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part4.html#Conclusion">Conclusion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_tutorial_part4.html#References">References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Simple_MIMO_Simulation.html">Basic MIMO Simulations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Simple_MIMO_Simulation.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Simple_MIMO_Simulation.html#Simple-uncoded-transmission">Simple uncoded transmission</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Simple_MIMO_Simulation.html#Extension-to-channel-coding">Extension to channel coding</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Pulse_shaping_basics.html">Pulse-shaping Basics</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Pulse_shaping_basics.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Pulse_shaping_basics.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Pulse_shaping_basics.html#Pulse-shaping-of-a-sequence-of-QAM-symbols">Pulse-shaping of a sequence of QAM symbols</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Pulse_shaping_basics.html#Recovering-the-QAM-symbols-through-matched-filtering-and-downsampling">Recovering the QAM symbols through matched filtering and downsampling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Pulse_shaping_basics.html#Investigating-the-ACLR">Investigating the ACLR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Pulse_shaping_basics.html#Windowing">Windowing</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Optical_Lumped_Amplification_Channel.html">Optical Channel with Lumped Amplification</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Optical_Lumped_Amplification_Channel.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Optical_Lumped_Amplification_Channel.html#Setup">Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Optical_Lumped_Amplification_Channel.html#Impulse-Generation">Impulse Generation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Optical_Lumped_Amplification_Channel.html#Attenuation">Attenuation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Optical_Lumped_Amplification_Channel.html#Amplified-Spontaneous-Emission-Noise">Amplified Spontaneous Emission Noise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Optical_Lumped_Amplification_Channel.html#Chromatic-Dispersion">Chromatic Dispersion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Optical_Lumped_Amplification_Channel.html#Kerr-Nonlinearity">Kerr Nonlinearity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Optical_Lumped_Amplification_Channel.html#Split-Step-Fourier-Method">Split-Step Fourier Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Optical_Lumped_Amplification_Channel.html#References">References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials.html#for-experts">For Experts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="examples/5G_Channel_Coding_Polar_vs_LDPC_Codes.html">5G Channel Coding and Rate-Matching: Polar vs. LDPC Codes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/5G_Channel_Coding_Polar_vs_LDPC_Codes.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/5G_Channel_Coding_Polar_vs_LDPC_Codes.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/5G_Channel_Coding_Polar_vs_LDPC_Codes.html#BER-Performance-of-5G-Coding-Schemes">BER Performance of 5G Coding Schemes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/5G_Channel_Coding_Polar_vs_LDPC_Codes.html#A-Deeper-Look-into-the-Polar-Code-Module">A Deeper Look into the Polar Code Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/5G_Channel_Coding_Polar_vs_LDPC_Codes.html#Rate-Matching-and-Rate-Recovery">Rate-Matching and Rate-Recovery</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/5G_Channel_Coding_Polar_vs_LDPC_Codes.html#Throughput-and-Decoding-Complexity">Throughput and Decoding Complexity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/5G_Channel_Coding_Polar_vs_LDPC_Codes.html#References">References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/5G_NR_PUSCH.html">5G NR PUSCH Tutorial</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/5G_NR_PUSCH.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/5G_NR_PUSCH.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/5G_NR_PUSCH.html#A-Hello-World-Example">A Hello World Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/5G_NR_PUSCH.html#Carrier-Configuration">Carrier Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/5G_NR_PUSCH.html#Understanding-the-DMRS-Configuration">Understanding the DMRS Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/5G_NR_PUSCH.html#Transport-Blocks-and-MCS">Transport Blocks and MCS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/5G_NR_PUSCH.html#Looking-into-the-PUSCHTransmitter">Looking into the PUSCHTransmitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/5G_NR_PUSCH.html#Components-of-the-PUSCHReceiver">Components of the PUSCHReceiver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/5G_NR_PUSCH.html#End-to-end-PUSCH-Simulations">End-to-end PUSCH Simulations</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Bit_Interleaved_Coded_Modulation.html">Bit-Interleaved Coded Modulation (BICM)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Bit_Interleaved_Coded_Modulation.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Bit_Interleaved_Coded_Modulation.html#System-Block-Diagram">System Block Diagram</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Bit_Interleaved_Coded_Modulation.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Bit_Interleaved_Coded_Modulation.html#A-Simple-BICM-System">A Simple BICM System</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Bit_Interleaved_Coded_Modulation.html#All-zero-Codeword-Simulations">All-zero Codeword Simulations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Bit_Interleaved_Coded_Modulation.html#EXIT-Charts">EXIT Charts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Bit_Interleaved_Coded_Modulation.html#Mismatched-Demapping-and-the-Advantages-of-Min-sum-Decoding">Mismatched Demapping and the Advantages of Min-sum Decoding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Bit_Interleaved_Coded_Modulation.html#References">References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/MIMO_OFDM_Transmissions_over_CDL.html">MIMO OFDM Transmissions over the CDL Channel Model</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/MIMO_OFDM_Transmissions_over_CDL.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/MIMO_OFDM_Transmissions_over_CDL.html#System-Setup">System Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/MIMO_OFDM_Transmissions_over_CDL.html#Simulations">Simulations</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Neural_Receiver.html">Neural Receiver for OFDM SIMO Systems</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Neural_Receiver.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Neural_Receiver.html#Simulation-Parameters">Simulation Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Neural_Receiver.html#Neural-Receiver">Neural Receiver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Neural_Receiver.html#End-to-end-System">End-to-end System</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Neural_Receiver.html#End-to-end-System-as-a-Keras-Model">End-to-end System as a Keras Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Neural_Receiver.html#Evaluation-of-the-Baselines">Evaluation of the Baselines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Neural_Receiver.html#Training-the-Neural-Receiver">Training the Neural Receiver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Neural_Receiver.html#Evaluation-of-the-Neural-Receiver">Evaluation of the Neural Receiver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Neural_Receiver.html#Pre-computed-Results">Pre-computed Results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Neural_Receiver.html#References">References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Realistic_Multiuser_MIMO_Simulations.html">Realistic Multiuser MIMO OFDM Simulations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Realistic_Multiuser_MIMO_Simulations.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Realistic_Multiuser_MIMO_Simulations.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Realistic_Multiuser_MIMO_Simulations.html#System-Setup">System Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Realistic_Multiuser_MIMO_Simulations.html#Uplink-Transmissions-in-the-Frequency-Domain">Uplink Transmissions in the Frequency Domain</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/OFDM_MIMO_Detection.html">OFDM MIMO Channel Estimation and Detection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/OFDM_MIMO_Detection.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/OFDM_MIMO_Detection.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/OFDM_MIMO_Detection.html#Simulation-parameters">Simulation parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/OFDM_MIMO_Detection.html#Estimation-of-the-channel-time,-frequency,-and-spatial-covariance-matrices">Estimation of the channel time, frequency, and spatial covariance matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/OFDM_MIMO_Detection.html#Loading-the-channel-covariance-matrices">Loading the channel covariance matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/OFDM_MIMO_Detection.html#Comparison-of-OFDM-estimators">Comparison of OFDM estimators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/OFDM_MIMO_Detection.html#Comparison-of-MIMO-detectors">Comparison of MIMO detectors</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Introduction_to_Iterative_Detection_and_Decoding.html">Introduction to Iterative Detection and Decoding</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Introduction_to_Iterative_Detection_and_Decoding.html#Iterative-Detection-and-Decoding">Iterative Detection and Decoding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Introduction_to_Iterative_Detection_and_Decoding.html#Table-of-contents">Table of contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Introduction_to_Iterative_Detection_and_Decoding.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Introduction_to_Iterative_Detection_and_Decoding.html#Simulation-Parameters">Simulation Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Introduction_to_Iterative_Detection_and_Decoding.html#Setting-up-the-Keras-Models">Setting-up the Keras Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Introduction_to_Iterative_Detection_and_Decoding.html#Non-IDD-versus-IDD-Benchmarks">Non-IDD versus IDD Benchmarks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Introduction_to_Iterative_Detection_and_Decoding.html#Discussion-Optimizing-IDD-with-Machine-Learning">Discussion-Optimizing IDD with Machine Learning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Introduction_to_Iterative_Detection_and_Decoding.html#Comments">Comments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Introduction_to_Iterative_Detection_and_Decoding.html#List-of-References">List of References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Autoencoder.html">End-to-end Learning with Autoencoders</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Autoencoder.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Autoencoder.html#Simulation-Parameters">Simulation Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Autoencoder.html#Neural-Demapper">Neural Demapper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Autoencoder.html#Trainable-End-to-end-System:-Conventional-Training">Trainable End-to-end System: Conventional Training</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Autoencoder.html#Trainable-End-to-end-System:-RL-based-Training">Trainable End-to-end System: RL-based Training</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Autoencoder.html#Evaluation">Evaluation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Autoencoder.html#Visualizing-the-Learned-Constellations">Visualizing the Learned Constellations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Autoencoder.html#References">References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Weighted_BP_Algorithm.html">Weighted Belief Propagation Decoding</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Weighted_BP_Algorithm.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Weighted_BP_Algorithm.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Weighted_BP_Algorithm.html#Weighted-BP-for-BCH-Codes">Weighted BP for BCH Codes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Weighted_BP_Algorithm.html#Further-Experiments">Further Experiments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Weighted_BP_Algorithm.html#References">References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/CIR_Dataset.html">Channel Models from Datasets</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/CIR_Dataset.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/CIR_Dataset.html#Simulation-Parameters">Simulation Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/CIR_Dataset.html#Creating-a-Simple-Dataset">Creating a Simple Dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/CIR_Dataset.html#Generators">Generators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/CIR_Dataset.html#Use-the-Channel-Model-for-OFDM-Transmissions">Use the Channel Model for OFDM Transmissions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/DeepMIMO.html">Using the DeepMIMO Dataset with Sionna</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/DeepMIMO.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/DeepMIMO.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/DeepMIMO.html#Configuration-of-DeepMIMO">Configuration of DeepMIMO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/DeepMIMO.html#Using-DeepMIMO-with-Sionna">Using DeepMIMO with Sionna</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/DeepMIMO.html#Link-level-Simulations-using-Sionna-and-DeepMIMO">Link-level Simulations using Sionna and DeepMIMO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/DeepMIMO.html#DeepMIMO-License-and-Citation">DeepMIMO License and Citation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials.html#ray-tracing">Ray Tracing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Introduction.html">Introduction to Sionna RT</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Introduction.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Introduction.html#Background-Information">Background Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Introduction.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Introduction.html#Loading-Scenes">Loading Scenes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Introduction.html#Ray-Tracing-for-Radio-Propagation">Ray Tracing for Radio Propagation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Introduction.html#From-Paths-to-Channel-Impulse-Responses">From Paths to Channel Impulse Responses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Introduction.html#BER-Evaluation">BER Evaluation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Introduction.html#Runtime-vs-Depth">Runtime vs Depth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Introduction.html#Coverage-Map">Coverage Map</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Introduction.html#Site-specifc-Link-Level-Simulations">Site-specifc Link-Level Simulations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Introduction.html#Conclusion-and-Outlook">Conclusion and Outlook</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Diffraction.html">Tutorial on Diffraction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Diffraction.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Diffraction.html#Background-Information">Background Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Diffraction.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Diffraction.html#Experiments-with-a-Simple-Wedge">Experiments with a Simple Wedge</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Diffraction.html#Coverage-Maps-with-Diffraction">Coverage Maps with Diffraction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Diffraction.html#References">References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Scattering.html">Tutorial on Scattering</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Scattering.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Scattering.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Scattering.html#Scattering-Basics">Scattering Basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Scattering.html#Scattering-Patterns">Scattering Patterns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Scattering.html#Validation-Against-the-%22Far%22-Wall-Approximation">Validation Against the “Far”-Wall Approximation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Scattering.html#Coverage-Maps-With-Scattering">Coverage Maps With Scattering</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Scattering.html#Impact-on-Channel-Impulse-Response">Impact on Channel Impulse Response</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Scattering.html#Summary">Summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Scattering.html#References">References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Mobility.html">Mobility in Sionna RT</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Mobility.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Mobility.html#Background-Information">Background Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Mobility.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Mobility.html#Controlling-Position-and-Orientation-of-Scene-Objects">Controlling Position and Orientation of Scene Objects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Mobility.html#Time-Evolution-of-Channels-Via-Doppler-Shift">Time Evolution of Channels Via Doppler Shift</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Mobility.html#Comparison-of-Doppler--vs-Position-based-Time-Evolution">Comparison of Doppler- vs Position-based Time Evolution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Mobility.html#Summary">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Sionna_Ray_Tracing_RIS.html">Tutorial on Reconfigurable Intelligent Surfaces (RIS)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_RIS.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_RIS.html#Background-Information">Background Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_RIS.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_RIS.html#Reproducing-Results-from-the-Literature">Reproducing Results from the Literature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_RIS.html#RIS-with-Multiple-Reradiation-Modes">RIS with Multiple Reradiation Modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_RIS.html#Coverage-Enhancement-with-RIS">Coverage Enhancement with RIS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_RIS.html#Gradient-Based-RIS-Optimization">Gradient-Based RIS Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_RIS.html#Summary">Summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_RIS.html#References">References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Coverage_Map.html">Tutorial on Coverage Maps</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Coverage_Map.html#Table-of-Contents">Table of Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Coverage_Map.html#GPU-Configuration-and-Imports">GPU Configuration and Imports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Coverage_Map.html#Understanding-coverage-maps">Understanding coverage maps</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Coverage_Map.html#Coverage-map-for-a-realistic-scene">Coverage map for a realistic scene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples/Sionna_Ray_Tracing_Coverage_Map.html#Conclusions">Conclusions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="made_with_sionna.html">“Made with Sionna”</a></li>
+<li class="toctree-l1"><a class="reference internal" href="em_primer.html">Primer on Electromagnetics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="em_primer.html#coordinate-system-rotations-and-vector-fields">Coordinate system, rotations, and vector fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="em_primer.html#planar-time-harmonic-waves">Planar Time-Harmonic Waves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="em_primer.html#far-field-of-a-transmitting-antenna">Far Field of a Transmitting Antenna</a></li>
+<li class="toctree-l2"><a class="reference internal" href="em_primer.html#modelling-of-a-receiving-antenna">Modelling of a Receiving Antenna</a></li>
+<li class="toctree-l2"><a class="reference internal" href="em_primer.html#general-propagation-path">General Propagation Path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="em_primer.html#frequency-impulse-response">Frequency &amp; Impulse Response</a></li>
+<li class="toctree-l2"><a class="reference internal" href="em_primer.html#reflection-and-refraction">Reflection and Refraction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="em_primer.html#diffraction">Diffraction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="em_primer.html#scattering">Scattering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="em_primer.html#reconfigurable-intelligent-surfaces-ris">Reconfigurable Intelligent Surfaces (RIS)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/sionna.html">API Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/fec.html">Forward Error Correction (FEC)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/fec.linear.html">Linear Codes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.linear.html#encoder">Encoder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.linear.html#decoder">Decoder</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/fec.ldpc.html">Low-Density Parity-Check (LDPC)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.ldpc.html#ldpc-encoder">LDPC Encoder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.ldpc.html#ldpc-decoder">LDPC Decoder</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/fec.polar.html">Polar Codes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.polar.html#polar-encoding">Polar Encoding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.polar.html#polar-decoding">Polar Decoding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.polar.html#polar-utility-functions">Polar Utility Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/fec.conv.html">Convolutional Codes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.conv.html#convolutional-encoding">Convolutional Encoding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.conv.html#viterbi-decoding">Viterbi Decoding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.conv.html#bcjr-decoding">BCJR Decoding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.conv.html#convolutional-code-utility-functions">Convolutional Code Utility Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/fec.turbo.html">Turbo Codes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.turbo.html#turbo-encoding">Turbo Encoding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.turbo.html#turbo-decoding">Turbo Decoding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.turbo.html#turbo-utility-functions">Turbo Utility Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/fec.crc.html">Cyclic Redundancy Check (CRC)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.crc.html#crcencoder">CRCEncoder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.crc.html#crcdecoder">CRCDecoder</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/fec.interleaving.html">Interleaving</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.interleaving.html#interleaver">Interleaver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.interleaving.html#deinterleaver">Deinterleaver</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/fec.scrambling.html">Scrambling</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.scrambling.html#scrambler">Scrambler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.scrambling.html#tb5gscrambler">TB5GScrambler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.scrambling.html#descrambler">Descrambler</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/fec.utils.html">Utility Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.utils.html#binary-linear-codes">(Binary) Linear Codes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.utils.html#exit-analysis">EXIT Analysis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/fec.utils.html#miscellaneous">Miscellaneous</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api/mapping.html">Mapping</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/mapping.html#constellations">Constellations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/mapping.html#constellation">Constellation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mapping.html#qam">qam</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mapping.html#pam">pam</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mapping.html#pam-gray">pam_gray</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/mapping.html#mapper">Mapper</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/mapping.html#sionna.mapping.Mapper"><code class="docutils literal notranslate"><span class="pre">Mapper</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/mapping.html#demapping">Demapping</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/mapping.html#demapper">Demapper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mapping.html#demapperwithprior">DemapperWithPrior</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mapping.html#symboldemapper">SymbolDemapper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mapping.html#symboldemapperwithprior">SymbolDemapperWithPrior</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/mapping.html#utility-functions">Utility Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/mapping.html#symbollogits2llrs">SymbolLogits2LLRs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mapping.html#llrs2symbollogits">LLRs2SymbolLogits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mapping.html#symbollogits2llrswithprior">SymbolLogits2LLRsWithPrior</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mapping.html#symbollogits2moments">SymbolLogits2Moments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mapping.html#symbolinds2bits">SymbolInds2Bits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mapping.html#pam2qam">PAM2QAM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mapping.html#qam2pam">QAM2PAM</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api/channel.html">Channel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/channel.wireless.html">Wireless</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/channel.wireless.html#awgn">AWGN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/channel.wireless.html#flat-fading-channel">Flat-fading channel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/channel.wireless.html#channel-model-interface">Channel model interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/channel.wireless.html#time-domain-channel">Time domain channel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/channel.wireless.html#channel-with-ofdm-waveform">Channel with OFDM waveform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/channel.wireless.html#rayleigh-block-fading">Rayleigh block fading</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/channel.wireless.html#gpp-38-901-channel-models">3GPP 38.901 channel models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/channel.wireless.html#external-datasets">External datasets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/channel.wireless.html#utility-functions">Utility functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/channel.optical.html">Optical</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/channel.optical.html#split-step-fourier-method">Split-step Fourier method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/channel.optical.html#erbium-doped-fiber-amplifier">Erbium-doped fiber amplifier</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/channel.optical.html#utility-functions">Utility functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/channel.discrete.html">Discrete</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/channel.discrete.html#binarymemorylesschannel">BinaryMemorylessChannel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/channel.discrete.html#binarysymmetricchannel">BinarySymmetricChannel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/channel.discrete.html#binaryerasurechannel">BinaryErasureChannel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/channel.discrete.html#binaryzchannel">BinaryZChannel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api/ofdm.html">Orthogonal Frequency-Division Multiplexing (OFDM)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/ofdm.html#resource-grid">Resource Grid</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#resourcegrid">ResourceGrid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#resourcegridmapper">ResourceGridMapper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#resourcegriddemapper">ResourceGridDemapper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#removenulledsubcarriers">RemoveNulledSubcarriers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/ofdm.html#modulation-demodulation">Modulation &amp; Demodulation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#ofdmmodulator">OFDMModulator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#ofdmdemodulator">OFDMDemodulator</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/ofdm.html#pilot-pattern">Pilot Pattern</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#pilotpattern">PilotPattern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#emptypilotpattern">EmptyPilotPattern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#kroneckerpilotpattern">KroneckerPilotPattern</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/ofdm.html#channel-estimation">Channel Estimation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#basechannelestimator">BaseChannelEstimator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#basechannelinterpolator">BaseChannelInterpolator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#lschannelestimator">LSChannelEstimator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#linearinterpolator">LinearInterpolator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#lmmseinterpolator">LMMSEInterpolator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#nearestneighborinterpolator">NearestNeighborInterpolator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#tdl-time-cov-mat">tdl_time_cov_mat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#tdl-freq-cov-mat">tdl_freq_cov_mat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/ofdm.html#precoding">Precoding</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#zfprecoder">ZFPrecoder</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/ofdm.html#equalization">Equalization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#ofdmequalizer">OFDMEqualizer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#lmmseequalizer">LMMSEEqualizer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#mfequalizer">MFEqualizer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#zfequalizer">ZFEqualizer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/ofdm.html#detection">Detection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#ofdmdetector">OFDMDetector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#ofdmdetectorwithprior">OFDMDetectorWithPrior</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#epdetector">EPDetector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#kbestdetector">KBestDetector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#lineardetector">LinearDetector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#maximumlikelihooddetector">MaximumLikelihoodDetector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#maximumlikelihooddetectorwithprior">MaximumLikelihoodDetectorWithPrior</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/ofdm.html#mmsepicdetector">MMSEPICDetector</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api/mimo.html">Multiple-Input Multiple-Output (MIMO)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/mimo.html#stream-management">Stream Management</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#sionna.mimo.StreamManagement"><code class="docutils literal notranslate"><span class="pre">StreamManagement</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/mimo.html#precoding">Precoding</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#zero-forcing-precoder">zero_forcing_precoder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#grid-of-beams-dft-ula">grid_of_beams_dft_ula</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#grid-of-beams-dft">grid_of_beams_dft</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#flatten-precoding-mat">flatten_precoding_mat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#normalize-precoding-power">normalize_precoding_power</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/mimo.html#equalization">Equalization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#lmmse-equalizer">lmmse_equalizer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#mf-equalizer">mf_equalizer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#zf-equalizer">zf_equalizer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/mimo.html#detection">Detection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#epdetector">EPDetector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#kbestdetector">KBestDetector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#lineardetector">LinearDetector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#maximumlikelihooddetector">MaximumLikelihoodDetector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#maximumlikelihooddetectorwithprior">MaximumLikelihoodDetectorWithPrior</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#mmse-pic">MMSE-PIC</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/mimo.html#utility-functions">Utility Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#list2llr">List2LLR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#list2llrsimple">List2LLRSimple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#complex2real-vector">complex2real_vector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#real2complex-vector">real2complex_vector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#complex2real-matrix">complex2real_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#real2complex-matrix">real2complex_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#complex2real-covariance">complex2real_covariance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#real2complex-covariance">real2complex_covariance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#complex2real-channel">complex2real_channel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#real2complex-channel">real2complex_channel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/mimo.html#whiten-channel">whiten_channel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api/nr.html">5G NR</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/nr.html#carrier">Carrier</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/nr.html#carrierconfig">CarrierConfig</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/nr.html#layer-mapping">Layer Mapping</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/nr.html#layermapper">LayerMapper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/nr.html#layerdemapper">LayerDemapper</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/nr.html#pusch">PUSCH</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/nr.html#puschconfig">PUSCHConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/nr.html#puschdmrsconfig">PUSCHDMRSConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/nr.html#puschlschannelestimator">PUSCHLSChannelEstimator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/nr.html#puschpilotpattern">PUSCHPilotPattern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/nr.html#puschprecoder">PUSCHPrecoder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/nr.html#puschreceiver">PUSCHReceiver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/nr.html#puschtransmitter">PUSCHTransmitter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/nr.html#transport-block">Transport Block</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/nr.html#tbconfig">TBConfig</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/nr.html#tbencoder">TBEncoder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/nr.html#tbdecoder">TBDecoder</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/nr.html#utils">Utils</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/nr.html#calculate-tb-size">calculate_tb_size</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/nr.html#generate-prng-seq">generate_prng_seq</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/nr.html#select-mcs">select_mcs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api/rt.html">Ray Tracing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/rt.html#scene">Scene</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#id1">Scene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#compute-paths">compute_paths</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#trace-paths">trace_paths</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#compute-fields">compute_fields</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#coverage-map">coverage_map</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#preview">preview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#render">render</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#render-to-file">render_to_file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#load-scene">load_scene</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/rt.html#example-scenes">Example Scenes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#floor-wall">floor_wall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#simple-street-canyon">simple_street_canyon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#simple-street-canyon-with-cars">simple_street_canyon_with_cars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#etoile">etoile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#munich">munich</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#simple-wedge">simple_wedge</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#simple-reflector">simple_reflector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#double-reflector">double_reflector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#triple-reflector">triple_reflector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#box">Box</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/rt.html#paths">Paths</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#id13">Paths</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/rt.html#coverage-maps">Coverage Maps</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#coveragemap">CoverageMap</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/rt.html#cameras">Cameras</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#camera">Camera</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/rt.html#scene-objects">Scene Objects</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#sceneobject">SceneObject</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/rt.html#radio-materials">Radio Materials</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#radiomaterial">RadioMaterial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#scatteringpattern">ScatteringPattern</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/rt.html#radio-devices">Radio Devices</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#transmitter">Transmitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#receiver">Receiver</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/rt.html#antenna-arrays">Antenna Arrays</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#antennaarray">AntennaArray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#planararray">PlanarArray</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/rt.html#antennas">Antennas</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#antenna">Antenna</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#compute-gain">compute_gain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#visualize">visualize</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#dipole-pattern">dipole_pattern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#hw-dipole-pattern">hw_dipole_pattern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#iso-pattern">iso_pattern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#tr38901-pattern">tr38901_pattern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#polarization-model-1">polarization_model_1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#polarization-model-2">polarization_model_2</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/rt.html#reconfigurable-intelligent-surfaces-ris">Reconfigurable Intelligent Surfaces (RIS)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#ris">RIS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#phaseprofile">PhaseProfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#discretephaseprofile">DiscretePhaseProfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#amplitudeprofile">AmplitudeProfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#discreteamplitudeprofile">DiscreteAmplitudeProfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#profileinterpolator">ProfileInterpolator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#lagrangeprofileinterpolator">LagrangeProfileInterpolator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#cellgrid">CellGrid</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/rt.html#utility-functions">Utility Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#cross">cross</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#dot">dot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#outer">outer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#normalize">normalize</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#phi-hat">phi_hat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#rotate">rotate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#rotation-matrix">rotation_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#rot-mat-from-unit-vecs">rot_mat_from_unit_vecs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#r-hat">r_hat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#sample-points-on-hemisphere">sample_points_on_hemisphere</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#theta-hat">theta_hat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#theta-phi-from-unit-vec">theta_phi_from_unit_vec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#watt-to-dbm">watt_to_dbm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/rt.html#dbm-to-watt">dbm_to_watt</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api/signal.html">Signal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/signal.html#filters">Filters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#sincfilter">SincFilter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#raisedcosinefilter">RaisedCosineFilter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#rootraisedcosinefilter">RootRaisedCosineFilter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#customfilter">CustomFilter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#id1">Filter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/signal.html#window-functions">Window functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#hannwindow">HannWindow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#hammingwindow">HammingWindow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#blackmanwindow">BlackmanWindow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#customwindow">CustomWindow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#id2">Window</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/signal.html#utility-functions">Utility Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#convolve">convolve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#fft">fft</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#ifft">ifft</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#upsampling">Upsampling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#downsampling">Downsampling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#empirical-psd">empirical_psd</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/signal.html#empirical-aclr">empirical_aclr</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api/utils.html">Utility Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/utils.html#metrics">Metrics</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#biterrorrate">BitErrorRate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#bitwisemutualinformation">BitwiseMutualInformation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#compute-ber">compute_ber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#compute-bler">compute_bler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#compute-ser">compute_ser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#count-errors">count_errors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#count-block-errors">count_block_errors</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/utils.html#tensors">Tensors</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#expand-to-rank">expand_to_rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#flatten-dims">flatten_dims</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#flatten-last-dims">flatten_last_dims</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#insert-dims">insert_dims</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#split-dims">split_dims</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#matrix-sqrt">matrix_sqrt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#matrix-sqrt-inv">matrix_sqrt_inv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#matrix-inv">matrix_inv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#matrix-pinv">matrix_pinv</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api/utils.html#miscellaneous">Miscellaneous</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#binarysource">BinarySource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#symbolsource">SymbolSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#qamsource">QAMSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#pamsource">PAMSource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#plotber">PlotBER</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#sim-ber">sim_ber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#ebnodb2no">ebnodb2no</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#hard-decisions">hard_decisions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#plot-ber">plot_ber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#complex-normal">complex_normal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#log2">log2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/utils.html#log10">log10</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api/config.html">Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api/config.html#sionna.config.Config"><code class="docutils literal notranslate"><span class="pre">Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api/config.html#sionna.config.Config.np_rng"><code class="docutils literal notranslate"><span class="pre">Config.np_rng</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/config.html#sionna.config.Config.py_rng"><code class="docutils literal notranslate"><span class="pre">Config.py_rng</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/config.html#sionna.config.Config.seed"><code class="docutils literal notranslate"><span class="pre">Config.seed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/config.html#sionna.config.Config.tf_rng"><code class="docutils literal notranslate"><span class="pre">Config.tf_rng</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api/config.html#sionna.config.Config.xla_compat"><code class="docutils literal notranslate"><span class="pre">Config.xla_compat</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sionna</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Index</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+
+<h1 id="index">Index</h1>
+
+<div class="genindex-jumpbox">
+ <a href="#A"><strong>A</strong></a>
+ | <a href="#B"><strong>B</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#D"><strong>D</strong></a>
+ | <a href="#E"><strong>E</strong></a>
+ | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
+ | <a href="#H"><strong>H</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#J"><strong>J</strong></a>
+ | <a href="#K"><strong>K</strong></a>
+ | <a href="#L"><strong>L</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#N"><strong>N</strong></a>
+ | <a href="#O"><strong>O</strong></a>
+ | <a href="#P"><strong>P</strong></a>
+ | <a href="#Q"><strong>Q</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
+ | <a href="#U"><strong>U</strong></a>
+ | <a href="#V"><strong>V</strong></a>
+ | <a href="#W"><strong>W</strong></a>
+ | <a href="#X"><strong>X</strong></a>
+ | <a href="#Z"><strong>Z</strong></a>
+ 
+</div>
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/rt.html#sionna.rt.Paths.a">a (sionna.rt.Paths property)</a>
+</li>
+      <li><a href="api/signal.html#sionna.signal.CustomFilter.aclr">aclr (sionna.signal.CustomFilter property)</a>
+
+      <ul>
+        <li><a href="api/signal.html#sionna.signal.Filter.aclr">(sionna.signal.Filter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RaisedCosineFilter.aclr">(sionna.signal.RaisedCosineFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RootRaisedCosineFilter.aclr">(sionna.signal.RootRaisedCosineFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.SincFilter.aclr">(sionna.signal.SincFilter property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.Scene.add">add() (sionna.rt.Scene method)</a>
+
+      <ul>
+        <li><a href="api/utils.html#sionna.utils.plotting.PlotBER.add">(sionna.utils.plotting.PlotBER method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHDMRSConfig.additional_position">additional_position (sionna.nr.PUSCHDMRSConfig property)</a>
+</li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.alist2mat">alist2mat() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHDMRSConfig.allowed_dmrs_ports">allowed_dmrs_ports (sionna.nr.PUSCHDMRSConfig property)</a>
+</li>
+      <li><a href="api/fec.linear.html#sionna.fec.linear.AllZeroEncoder">AllZeroEncoder (class in sionna.fec.linear)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.BackscatteringPattern.alpha_i">alpha_i (sionna.rt.BackscatteringPattern property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.BackscatteringPattern.alpha_r">alpha_r (sionna.rt.BackscatteringPattern property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.DirectivePattern.alpha_r">(sionna.rt.DirectivePattern property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.RIS.amplitude_profile">amplitude_profile (sionna.rt.RIS property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.AmplitudeProfile">AmplitudeProfile (class in sionna.rt)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.ant_ind_pol1">ant_ind_pol1 (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.ant_ind_pol2">ant_ind_pol2 (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.ant_pol1">ant_pol1 (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.ant_pol2">ant_pol2 (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.ant_pos">ant_pos (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.ant_pos_pol1">ant_pos_pol1 (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.ant_pos_pol2">ant_pos_pol2 (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.Antenna">Antenna (class in sionna.channel.tr38901)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.Antenna">(class in sionna.rt)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.AntennaArray.antenna">antenna (sionna.rt.AntennaArray property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.PlanarArray.antenna">(sionna.rt.PlanarArray property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.AntennaArray">AntennaArray (class in sionna.channel.tr38901)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.AntennaArray">(class in sionna.rt)</a>
+</li>
+      </ul></li>
+      <li><a href="api/channel.wireless.html#sionna.channel.FlatFadingChannel.apply">apply (sionna.channel.FlatFadingChannel property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Paths.apply_doppler">apply_doppler() (sionna.rt.Paths method)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.ApplyFlatFadingChannel">ApplyFlatFadingChannel (class in sionna.channel)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.ApplyOFDMChannel">ApplyOFDMChannel (class in sionna.channel)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.ApplyTimeChannel">ApplyTimeChannel (class in sionna.channel)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.AntennaArray.array_size">array_size (sionna.rt.AntennaArray property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.PlanarArray.array_size">(sionna.rt.PlanarArray property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/channel.wireless.html#sionna.channel.AWGN">AWGN (class in sionna.channel)</a>
+</li>
+      <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.RandomInterleaver.axis">axis (sionna.fec.interleaving.RandomInterleaver property)</a>
+
+      <ul>
+        <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.RowColumnInterleaver.axis">(sionna.fec.interleaving.RowColumnInterleaver property)</a>
+</li>
+        <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.Turbo3GPPInterleaver.axis">(sionna.fec.interleaving.Turbo3GPPInterleaver property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="B">B</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/rt.html#sionna.rt.BackscatteringPattern">BackscatteringPattern (class in sionna.rt)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.bandwidth">bandwidth (sionna.ofdm.ResourceGrid property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.Scene.bandwidth">(sionna.rt.Scene property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/ofdm.html#sionna.ofdm.BaseChannelEstimator">BaseChannelEstimator (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.BaseChannelInterpolator">BaseChannelInterpolator (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.CIRDataset.batch_size">batch_size (sionna.channel.CIRDataset property)</a>
+</li>
+      <li><a href="api/fec.conv.html#sionna.fec.conv.BCJRDecoder">BCJRDecoder (class in sionna.fec.conv)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.plotting.PlotBER.ber">ber (sionna.utils.plotting.PlotBER property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHDMRSConfig.beta">beta (sionna.nr.PUSCHDMRSConfig property)</a>
+
+      <ul>
+        <li><a href="api/signal.html#sionna.signal.RaisedCosineFilter.beta">(sionna.signal.RaisedCosineFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RootRaisedCosineFilter.beta">(sionna.signal.RootRaisedCosineFilter property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.bin2int">bin2int() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.bin2int_tf">bin2int_tf() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/channel.discrete.html#sionna.channel.BinaryErasureChannel">BinaryErasureChannel (class in sionna.channel)</a>
+</li>
+      <li><a href="api/channel.discrete.html#sionna.channel.BinaryMemorylessChannel">BinaryMemorylessChannel (class in sionna.channel)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.BinarySource">BinarySource (class in sionna.utils)</a>
+</li>
+      <li><a href="api/channel.discrete.html#sionna.channel.BinarySymmetricChannel">BinarySymmetricChannel (class in sionna.channel)</a>
+</li>
+      <li><a href="api/channel.discrete.html#sionna.channel.BinaryZChannel">BinaryZChannel (class in sionna.channel)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.BitErrorRate">BitErrorRate (class in sionna.utils)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.BitwiseMutualInformation">BitwiseMutualInformation (class in sionna.utils)</a>
+</li>
+      <li><a href="api/signal.html#sionna.signal.BlackmanWindow">BlackmanWindow (class in sionna.signal)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.scene.box">box (in module sionna.rt.scene)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.build_type_grid">build_type_grid() (sionna.ofdm.ResourceGrid method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.c_init">c_init() (sionna.nr.PUSCHConfig method)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.utils.calculate_tb_size">calculate_tb_size() (in module sionna.nr.utils)</a>
+</li>
+      <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.RandomInterleaver.call_inverse">call_inverse() (sionna.fec.interleaving.RandomInterleaver method)</a>
+
+      <ul>
+        <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.RowColumnInterleaver.call_inverse">(sionna.fec.interleaving.RowColumnInterleaver method)</a>
+</li>
+        <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.Turbo3GPPInterleaver.call_inverse">(sionna.fec.interleaving.Turbo3GPPInterleaver method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.Camera">Camera (class in sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.cameras">cameras (sionna.rt.Scene property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.carrier">carrier (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig">CarrierConfig (class in sionna.nr)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.TBEncoder.cb_crc_encoder">cb_crc_encoder (sionna.nr.TBEncoder property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.CoverageMap.cdf">cdf() (sionna.rt.CoverageMap method)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.CDL">CDL (class in sionna.channel.tr38901)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHDMRSConfig.cdm_groups">cdm_groups (sionna.nr.PUSCHDMRSConfig property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.CoverageMap.cell_centers">cell_centers (sionna.rt.CoverageMap property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.DiscreteAmplitudeProfile.cell_grid">cell_grid (sionna.rt.DiscreteAmplitudeProfile property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.DiscretePhaseProfile.cell_grid">(sionna.rt.DiscretePhaseProfile property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.RIS.cell_grid">(sionna.rt.RIS property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.CellGrid.cell_positions">cell_positions (sionna.rt.CellGrid property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.RIS.cell_positions">(sionna.rt.RIS property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.CoverageMap.cell_size">cell_size (sionna.rt.CoverageMap property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.CoverageMap.cell_to_tx">cell_to_tx() (sionna.rt.CoverageMap method)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.RIS.cell_world_positions">cell_world_positions (sionna.rt.RIS property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.CellGrid.cell_y_positions">cell_y_positions (sionna.rt.CellGrid property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.CellGrid.cell_z_positions">cell_z_positions (sionna.rt.CellGrid property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.CellGrid">CellGrid (class in sionna.rt)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.Constellation.center">center (sionna.mapping.Constellation property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.CoverageMap.center">(sionna.rt.CoverageMap property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.Scene.center">(sionna.rt.Scene property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.encoding.Polar5GEncoder.channel_interleaver">channel_interleaver() (sionna.fec.polar.encoding.Polar5GEncoder method)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.TBConfig.channel_type">channel_type (sionna.nr.TBConfig property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.ChannelModel">ChannelModel (class in sionna.channel)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.TBConfig.check_config">check_config() (sionna.nr.TBConfig method)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Paths.cir">cir() (sionna.rt.Paths method)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.cir_to_ofdm_channel">cir_to_ofdm_channel() (in module sionna.channel)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.cir_to_time_channel">cir_to_time_channel() (in module sionna.channel)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.CIRDataset">CIRDataset (class in sionna.channel)</a>
+</li>
+      <li><a href="api/fec.conv.html#sionna.fec.conv.BCJRDecoder.coderate">coderate (sionna.fec.conv.BCJRDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.conv.html#sionna.fec.conv.ConvEncoder.coderate">(sionna.fec.conv.ConvEncoder property)</a>
+</li>
+        <li><a href="api/fec.conv.html#sionna.fec.conv.ViterbiDecoder.coderate">(sionna.fec.conv.ViterbiDecoder property)</a>
+</li>
+        <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.encoding.LDPC5GEncoder.coderate">(sionna.fec.ldpc.encoding.LDPC5GEncoder property)</a>
+</li>
+        <li><a href="api/fec.linear.html#sionna.fec.linear.AllZeroEncoder.coderate">(sionna.fec.linear.AllZeroEncoder property)</a>
+</li>
+        <li><a href="api/fec.linear.html#sionna.fec.linear.LinearEncoder.coderate">(sionna.fec.linear.LinearEncoder property)</a>
+</li>
+        <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboDecoder.coderate">(sionna.fec.turbo.TurboDecoder property)</a>
+</li>
+        <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboEncoder.coderate">(sionna.fec.turbo.TurboEncoder property)</a>
+</li>
+        <li><a href="api/nr.html#sionna.nr.TBEncoder.coderate">(sionna.nr.TBEncoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/signal.html#sionna.signal.BlackmanWindow.coefficients">coefficients (sionna.signal.BlackmanWindow property)</a>
+
+      <ul>
+        <li><a href="api/signal.html#sionna.signal.CustomFilter.coefficients">(sionna.signal.CustomFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.CustomWindow.coefficients">(sionna.signal.CustomWindow property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.Filter.coefficients">(sionna.signal.Filter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.HammingWindow.coefficients">(sionna.signal.HammingWindow property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.HannWindow.coefficients">(sionna.signal.HannWindow property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RaisedCosineFilter.coefficients">(sionna.signal.RaisedCosineFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RootRaisedCosineFilter.coefficients">(sionna.signal.RootRaisedCosineFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.SincFilter.coefficients">(sionna.signal.SincFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.Window.coefficients">(sionna.signal.Window property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/rt.html#sionna.rt.Receiver.color">color (sionna.rt.Receiver property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.RIS.color">(sionna.rt.RIS property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.Transmitter.color">(sionna.rt.Transmitter property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/mimo.html#sionna.mimo.complex2real_channel">complex2real_channel() (in module sionna.mimo)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.complex2real_covariance">complex2real_covariance() (in module sionna.mimo)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.complex2real_matrix">complex2real_matrix() (in module sionna.mimo)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.complex2real_vector">complex2real_vector() (in module sionna.mimo)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.complex_normal">complex_normal() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.RadioMaterial.complex_relative_permittivity">complex_relative_permittivity (sionna.rt.RadioMaterial property)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.compute_ber">compute_ber() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.compute_bler">compute_bler() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.compute_fields">compute_fields() (in module sionna.rt.Scene)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.antenna.compute_gain">compute_gain() (in module sionna.rt.antenna)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.compute_paths">compute_paths() (in module sionna.rt.Scene)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.compute_ser">compute_ser() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.RadioMaterial.conductivity">conductivity (sionna.rt.RadioMaterial property)</a>
+</li>
+      <li><a href="api/config.html#sionna.config.Config">Config (class in sionna.config)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHDMRSConfig.config_type">config_type (sionna.nr.PUSCHDMRSConfig property)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.Constellation">Constellation (class in sionna.mapping)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.Mapper.constellation">constellation (sionna.mapping.Mapper property)</a>
+</li>
+      <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboDecoder.constraint_length">constraint_length (sionna.fec.turbo.TurboDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboEncoder.constraint_length">(sionna.fec.turbo.TurboEncoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.conv.html#sionna.fec.conv.ConvEncoder">ConvEncoder (class in sionna.fec.conv)</a>
+</li>
+      <li><a href="api/signal.html#sionna.signal.convolve">convolve() (in module sionna.signal)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.count_block_errors">count_block_errors() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.count_errors">count_errors() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.coverage_map">coverage_map() (in module sionna.rt.Scene)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.CoverageMap">CoverageMap (class in sionna.rt)</a>
+</li>
+      <li><a href="api/fec.crc.html#sionna.fec.crc.CRCDecoder.crc_degree">crc_degree (sionna.fec.crc.CRCDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.crc.html#sionna.fec.crc.CRCEncoder.crc_degree">(sionna.fec.crc.CRCEncoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.crc.html#sionna.fec.crc.CRCEncoder.crc_length">crc_length (sionna.fec.crc.CRCEncoder property)</a>
+</li>
+      <li><a href="api/fec.crc.html#sionna.fec.crc.CRCEncoder.crc_pol">crc_pol (sionna.fec.crc.CRCEncoder property)</a>
+</li>
+      <li><a href="api/fec.crc.html#sionna.fec.crc.CRCDecoder">CRCDecoder (class in sionna.fec.crc)</a>
+</li>
+      <li><a href="api/fec.crc.html#sionna.fec.crc.CRCEncoder">CRCEncoder (class in sionna.fec.crc)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.Constellation.create_or_check_constellation">create_or_check_constellation() (sionna.mapping.Constellation method)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.cross">cross() (in module sionna.rt)</a>
+</li>
+      <li><a href="api/signal.html#sionna.signal.CustomFilter">CustomFilter (class in sionna.signal)</a>
+</li>
+      <li><a href="api/signal.html#sionna.signal.CustomWindow">CustomWindow (class in sionna.signal)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.TBEncoder.cw_lengths">cw_lengths (sionna.nr.TBEncoder property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.cyclic_prefix">cyclic_prefix (sionna.nr.CarrierConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.cyclic_prefix_length">cyclic_prefix_length (sionna.nr.CarrierConfig property)</a>
+
+      <ul>
+        <li><a href="api/ofdm.html#sionna.ofdm.OFDMModulator.cyclic_prefix_length">(sionna.ofdm.OFDMModulator property)</a>
+</li>
+        <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.cyclic_prefix_length">(sionna.ofdm.ResourceGrid property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/rt.html#sionna.rt.dbm_to_watt">dbm_to_watt() (in module sionna.rt)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.dc_ind">dc_ind (sionna.ofdm.ResourceGrid property)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.dc_null">dc_null (sionna.ofdm.ResourceGrid property)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.Polar5GDecoder.dec_type">dec_type (sionna.fec.polar.decoding.Polar5GDecoder property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.deg_2_rad">deg_2_rad() (in module sionna.channel)</a>
+</li>
+      <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.Deinterleaver">Deinterleaver (class in sionna.fec.interleaving)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.CDL.delay_spread">delay_spread (sionna.channel.tr38901.CDL property)</a>
+
+      <ul>
+        <li><a href="api/channel.wireless.html#sionna.channel.tr38901.TDL.delay_spread">(sionna.channel.tr38901.TDL property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.CDL.delays">delays (sionna.channel.tr38901.CDL property)</a>
+
+      <ul>
+        <li><a href="api/channel.wireless.html#sionna.channel.tr38901.TDL.delays">(sionna.channel.tr38901.TDL property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHDMRSConfig.deltas">deltas (sionna.nr.PUSCHDMRSConfig property)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.Demapper">Demapper (class in sionna.mapping)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.DemapperWithPrior">DemapperWithPrior (class in sionna.mapping)</a>
+</li>
+      <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboDecoder.depuncture">depuncture() (sionna.fec.turbo.TurboDecoder method)</a>
+</li>
+      <li><a href="api/fec.scrambling.html#sionna.fec.scrambling.Descrambler">Descrambler (class in sionna.fec.scrambling)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.StreamManagement.detection_desired_ind">detection_desired_ind (sionna.mimo.StreamManagement property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/mimo.html#sionna.mimo.StreamManagement.detection_undesired_ind">detection_undesired_ind (sionna.mimo.StreamManagement property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.antenna.dipole_pattern">dipole_pattern() (in module sionna.rt.antenna)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.DirectivePattern">DirectivePattern (class in sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.DiscreteAmplitudeProfile">DiscreteAmplitudeProfile (class in sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.DiscretePhaseProfile">DiscretePhaseProfile (class in sionna.rt)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.dmrs">dmrs (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.dmrs_grid">dmrs_grid (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.dmrs_mask">dmrs_mask (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHDMRSConfig.dmrs_port_set">dmrs_port_set (sionna.nr.PUSCHDMRSConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.dmrs_symbol_indices">dmrs_symbol_indices (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Paths.doppler">doppler (sionna.rt.Paths property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.dot">dot() (in module sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.scene.double_reflector">double_reflector (in module sionna.rt.scene)</a>
+</li>
+      <li><a href="api/signal.html#sionna.signal.Downsampling">Downsampling (class in sionna.signal)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.drop_uts_in_sector">drop_uts_in_sector() (in module sionna.channel)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.dtype">dtype (sionna.rt.Scene property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="E">E</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/utils.html#sionna.utils.ebnodb2no">ebnodb2no() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/channel.optical.html#sionna.channel.EDFA">EDFA (class in sionna.channel)</a>
+</li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.decoding.LDPCBPDecoder.edge_weights">edge_weights (sionna.fec.ldpc.decoding.LDPCBPDecoder property)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.effective_subcarrier_ind">effective_subcarrier_ind (sionna.ofdm.ResourceGrid property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.element_horizontal_spacing">element_horizontal_spacing (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.element_vertical_spacing">element_vertical_spacing (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+      <li><a href="api/signal.html#sionna.signal.empirical_aclr">empirical_aclr() (in module sionna.signal)</a>
+</li>
+      <li><a href="api/signal.html#sionna.signal.empirical_psd">empirical_psd() (in module sionna.signal)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.EmptyPilotPattern">EmptyPilotPattern (class in sionna.ofdm)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.encoding.Polar5GEncoder.enc_crc">enc_crc (sionna.fec.polar.encoding.Polar5GEncoder property)</a>
+</li>
+      <li><a href="api/fec.crc.html#sionna.fec.crc.CRCDecoder.encoder">encoder (sionna.fec.crc.CRCDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.decoding.LDPC5GDecoder.encoder">(sionna.fec.ldpc.decoding.LDPC5GDecoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/mimo.html#sionna.mimo.EPDetector">EPDetector (class in sionna.mimo)</a>
+
+      <ul>
+        <li><a href="api/ofdm.html#sionna.ofdm.EPDetector">(class in sionna.ofdm)</a>
+</li>
+      </ul></li>
+      <li><a href="api/ofdm.html#sionna.ofdm.BaseChannelEstimator.estimate_at_pilot_locations">estimate_at_pilot_locations() (sionna.ofdm.BaseChannelEstimator method)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.scene.etoile">etoile (in module sionna.rt.scene)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.exp_corr_mat">exp_corr_mat() (in module sionna.channel)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.expand_to_rank">expand_to_rank() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Paths.export">export() (sionna.rt.Paths method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/signal.html#sionna.signal.fft">fft() (in module sionna.signal)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.fft_size">fft_size (sionna.ofdm.ResourceGrid property)</a>
+</li>
+      <li><a href="api/signal.html#sionna.signal.Filter">Filter (class in sionna.signal)</a>
+</li>
+      <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.RandomInterleaver.find_s_min">find_s_min() (sionna.fec.interleaving.RandomInterleaver method)</a>
+
+      <ul>
+        <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.Turbo3GPPInterleaver.find_s_min">(sionna.fec.interleaving.Turbo3GPPInterleaver method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/channel.wireless.html#sionna.channel.FlatFadingChannel">FlatFadingChannel (class in sionna.channel)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.flatten_dims">flatten_dims() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.flatten_last_dims">flatten_last_dims() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.flatten_precoding_mat">flatten_precoding_mat() (in module sionna.mimo)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.scene.floor_wall">floor_wall (in module sionna.rt.scene)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.RIS.focusing_lens">focusing_lens() (sionna.rt.RIS method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.frame_duration">frame_duration (sionna.nr.CarrierConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.frame_number">frame_number (sionna.nr.CarrierConfig property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.frequency">frequency (sionna.rt.Scene property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.frequency_hopping">frequency_hopping (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.RadioMaterial.frequency_update_callback">frequency_update_callback (sionna.rt.RadioMaterial property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Paths.from_dict">from_dict() (sionna.rt.Paths method)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.Polar5GDecoder.frozen_pos">frozen_pos (sionna.fec.polar.decoding.Polar5GDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarBPDecoder.frozen_pos">(sionna.fec.polar.decoding.PolarBPDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarSCDecoder.frozen_pos">(sionna.fec.polar.decoding.PolarSCDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarSCLDecoder.frozen_pos">(sionna.fec.polar.decoding.PolarSCLDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.encoding.PolarEncoder.frozen_pos">(sionna.fec.polar.encoding.PolarEncoder property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.GaussianPriorSource">GaussianPriorSource (class in sionna.fec.utils)</a>
+</li>
+      <li><a href="api/fec.conv.html#sionna.fec.conv.BCJRDecoder.gen_poly">gen_poly (sionna.fec.conv.BCJRDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.conv.html#sionna.fec.conv.ConvEncoder.gen_poly">(sionna.fec.conv.ConvEncoder property)</a>
+</li>
+        <li><a href="api/fec.conv.html#sionna.fec.conv.ViterbiDecoder.gen_poly">(sionna.fec.conv.ViterbiDecoder property)</a>
+</li>
+        <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboDecoder.gen_poly">(sionna.fec.turbo.TurboDecoder property)</a>
+</li>
+        <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboEncoder.gen_poly">(sionna.fec.turbo.TurboEncoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/channel.wireless.html#sionna.channel.gen_single_sector_topology">gen_single_sector_topology() (in module sionna.channel)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.gen_single_sector_topology_interferers">gen_single_sector_topology_interferers() (in module sionna.channel)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.FlatFadingChannel.generate">generate (sionna.channel.FlatFadingChannel property)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.utils.generate_5g_ranking">generate_5g_ranking() (in module sionna.fec.polar.utils)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.utils.generate_dense_polar">generate_dense_polar() (in module sionna.fec.polar.utils)</a>
+</li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.encoding.LDPC5GEncoder.generate_out_int">generate_out_int() (sionna.fec.ldpc.encoding.LDPC5GEncoder method)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.utils.generate_polar_transform_mat">generate_polar_transform_mat() (in module sionna.fec.polar.utils)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/nr.html#sionna.nr.utils.generate_prng_seq">generate_prng_seq() (in module sionna.nr.utils)</a>
+</li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.generate_reg_ldpc">generate_reg_ldpc() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.utils.generate_rm_code">generate_rm_code() (in module sionna.fec.polar.utils)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.GenerateFlatFadingChannel">GenerateFlatFadingChannel (class in sionna.channel)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.GenerateOFDMChannel">GenerateOFDMChannel (class in sionna.channel)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.GenerateTimeChannel">GenerateTimeChannel (class in sionna.channel)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.get">get() (sionna.rt.Scene method)</a>
+</li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.get_exit_analytic">get_exit_analytic() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboTermination.get_num_term_syms">get_num_term_syms() (sionna.fec.turbo.TurboTermination method)</a>
+</li>
+      <li><a href="api/fec.linear.html#sionna.fec.linear.LinearEncoder.gm">gm (sionna.fec.linear.LinearEncoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.linear.html#sionna.fec.linear.OSDecoder.gm">(sionna.fec.linear.OSDecoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.gm2pcm">gm2pcm() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.grid_of_beams_dft">grid_of_beams_dft() (in module sionna.mimo)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.grid_of_beams_dft_ula">grid_of_beams_dft_ula() (in module sionna.mimo)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="H">H</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/signal.html#sionna.signal.HammingWindow">HammingWindow (class in sionna.signal)</a>
+</li>
+      <li><a href="api/signal.html#sionna.signal.HannWindow">HannWindow (class in sionna.signal)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.hard_decisions">hard_decisions() (in module sionna.utils)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarBPDecoder.hard_out">hard_out (sionna.fec.polar.decoding.PolarBPDecoder property)</a>
+</li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.decoding.LDPCBPDecoder.has_weights">has_weights (sionna.fec.ldpc.decoding.LDPCBPDecoder property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.antenna.hw_dipole_pattern">hw_dipole_pattern() (in module sionna.rt.antenna)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.decoding.LDPCBPDecoder.ie_c">ie_c (sionna.fec.ldpc.decoding.LDPCBPDecoder property)</a>
+</li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.decoding.LDPCBPDecoder.ie_v">ie_v (sionna.fec.ldpc.decoding.LDPCBPDecoder property)</a>
+</li>
+      <li><a href="api/signal.html#sionna.signal.ifft">ifft() (in module sionna.signal)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.Polar5GDecoder.info_pos">info_pos (sionna.fec.polar.decoding.Polar5GDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarBPDecoder.info_pos">(sionna.fec.polar.decoding.PolarBPDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarSCDecoder.info_pos">(sionna.fec.polar.decoding.PolarSCDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarSCLDecoder.info_pos">(sionna.fec.polar.decoding.PolarSCLDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.encoding.PolarEncoder.info_pos">(sionna.fec.polar.encoding.PolarEncoder property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.encoding.Polar5GEncoder.input_interleaver">input_interleaver() (sionna.fec.polar.encoding.Polar5GEncoder method)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.insert_dims">insert_dims() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.int2bin">int2bin() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.int2bin_tf">int2bin_tf() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.int_mod_2">int_mod_2() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.Deinterleaver.interleaver">interleaver (sionna.fec.interleaving.Deinterleaver property)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.plotting.PlotBER.is_bler">is_bler (sionna.utils.plotting.PlotBER property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.RadioMaterial.is_used">is_used (sionna.rt.RadioMaterial property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.antenna.iso_pattern">iso_pattern() (in module sionna.rt.antenna)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="J">J</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.j_fun">j_fun() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.j_fun_inv">j_fun_inv() (in module sionna.fec.utils)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.j_fun_inv_tf">j_fun_inv_tf() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.j_fun_tf">j_fun_tf() (in module sionna.fec.utils)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="K">K</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/fec.conv.html#sionna.fec.conv.BCJRDecoder.k">k (sionna.fec.conv.BCJRDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.conv.html#sionna.fec.conv.ConvEncoder.k">(sionna.fec.conv.ConvEncoder property)</a>
+</li>
+        <li><a href="api/fec.conv.html#sionna.fec.conv.ViterbiDecoder.k">(sionna.fec.conv.ViterbiDecoder property)</a>
+</li>
+        <li><a href="api/fec.crc.html#sionna.fec.crc.CRCEncoder.k">(sionna.fec.crc.CRCEncoder property)</a>
+</li>
+        <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.encoding.LDPC5GEncoder.k">(sionna.fec.ldpc.encoding.LDPC5GEncoder property)</a>
+</li>
+        <li><a href="api/fec.linear.html#sionna.fec.linear.AllZeroEncoder.k">(sionna.fec.linear.AllZeroEncoder property)</a>
+</li>
+        <li><a href="api/fec.linear.html#sionna.fec.linear.LinearEncoder.k">(sionna.fec.linear.LinearEncoder property)</a>
+</li>
+        <li><a href="api/fec.linear.html#sionna.fec.linear.OSDecoder.k">(sionna.fec.linear.OSDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarBPDecoder.k">(sionna.fec.polar.decoding.PolarBPDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarSCDecoder.k">(sionna.fec.polar.decoding.PolarSCDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarSCLDecoder.k">(sionna.fec.polar.decoding.PolarSCLDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.encoding.Polar5GEncoder.k">(sionna.fec.polar.encoding.Polar5GEncoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.encoding.PolarEncoder.k">(sionna.fec.polar.encoding.PolarEncoder property)</a>
+</li>
+        <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboDecoder.k">(sionna.fec.turbo.TurboDecoder property)</a>
+</li>
+        <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboEncoder.k">(sionna.fec.turbo.TurboEncoder property)</a>
+</li>
+        <li><a href="api/nr.html#sionna.nr.TBDecoder.k">(sionna.nr.TBDecoder property)</a>
+</li>
+        <li><a href="api/nr.html#sionna.nr.TBEncoder.k">(sionna.nr.TBEncoder property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarSCLDecoder.k_crc">k_crc (sionna.fec.polar.decoding.PolarSCLDecoder property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.CDL.k_factor">k_factor (sionna.channel.tr38901.CDL property)</a>
+
+      <ul>
+        <li><a href="api/channel.wireless.html#sionna.channel.tr38901.TDL.k_factor">(sionna.channel.tr38901.TDL property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.encoding.LDPC5GEncoder.k_ldpc">k_ldpc (sionna.fec.ldpc.encoding.LDPC5GEncoder property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.TBEncoder.k_padding">k_padding (sionna.nr.TBEncoder property)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.Polar5GDecoder.k_polar">k_polar (sionna.fec.polar.decoding.Polar5GDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.encoding.Polar5GEncoder.k_polar">(sionna.fec.polar.encoding.Polar5GEncoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.Polar5GDecoder.k_target">k_target (sionna.fec.polar.decoding.Polar5GDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.encoding.Polar5GEncoder.k_target">(sionna.fec.polar.encoding.Polar5GEncoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.kappa">kappa (sionna.nr.CarrierConfig property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.KBestDetector">KBestDetector (class in sionna.mimo)</a>
+
+      <ul>
+        <li><a href="api/ofdm.html#sionna.ofdm.KBestDetector">(class in sionna.ofdm)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.RandomInterleaver.keep_state">keep_state (sionna.fec.interleaving.RandomInterleaver property)</a>
+
+      <ul>
+        <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.RowColumnInterleaver.keep_state">(sionna.fec.interleaving.RowColumnInterleaver property)</a>
+</li>
+        <li><a href="api/fec.scrambling.html#sionna.fec.scrambling.Scrambler.keep_state">(sionna.fec.scrambling.Scrambler property)</a>
+</li>
+        <li><a href="api/fec.scrambling.html#sionna.fec.scrambling.TB5GScrambler.keep_state">(sionna.fec.scrambling.TB5GScrambler property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/channel.wireless.html#sionna.channel.KroneckerModel">KroneckerModel (class in sionna.channel)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.KroneckerPilotPattern">KroneckerPilotPattern (class in sionna.ofdm)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="L">L</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.l_bar">l_bar (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.LagrangeProfileInterpolator.lagrange_polynomials">lagrange_polynomials() (sionna.rt.LagrangeProfileInterpolator static method)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.LagrangeProfileInterpolator">LagrangeProfileInterpolator (class in sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.BackscatteringPattern.lambda_">lambda_ (sionna.rt.BackscatteringPattern property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.LambertianPattern">LambertianPattern (class in sionna.rt)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.LayerDemapper">LayerDemapper (class in sionna.nr)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.LayerMapper">LayerMapper (class in sionna.nr)</a>
+</li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.decoding.LDPC5GDecoder">LDPC5GDecoder (class in sionna.fec.ldpc.decoding)</a>
+</li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.encoding.LDPC5GEncoder">LDPC5GEncoder (class in sionna.fec.ldpc.encoding)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.TBEncoder.ldpc_encoder">ldpc_encoder (sionna.nr.TBEncoder property)</a>
+</li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.decoding.LDPCBPDecoder">LDPCBPDecoder (class in sionna.fec.ldpc.decoding)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.plotting.PlotBER.legend">legend (sionna.utils.plotting.PlotBER property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHDMRSConfig.length">length (sionna.nr.PUSCHDMRSConfig property)</a>
+
+      <ul>
+        <li><a href="api/signal.html#sionna.signal.BlackmanWindow.length">(sionna.signal.BlackmanWindow property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.CustomFilter.length">(sionna.signal.CustomFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.CustomWindow.length">(sionna.signal.CustomWindow property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.Filter.length">(sionna.signal.Filter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.HammingWindow.length">(sionna.signal.HammingWindow property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.HannWindow.length">(sionna.signal.HannWindow property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RaisedCosineFilter.length">(sionna.signal.RaisedCosineFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RootRaisedCosineFilter.length">(sionna.signal.RootRaisedCosineFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.SincFilter.length">(sionna.signal.SincFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.Window.length">(sionna.signal.Window property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/mimo.html#sionna.mimo.LinearDetector">LinearDetector (class in sionna.mimo)</a>
+
+      <ul>
+        <li><a href="api/ofdm.html#sionna.ofdm.LinearDetector">(class in sionna.ofdm)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.linear.html#sionna.fec.linear.LinearEncoder">LinearEncoder (class in sionna.fec.linear)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.LinearInterpolator">LinearInterpolator (class in sionna.ofdm)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/mimo.html#sionna.mimo.List2LLR">List2LLR (class in sionna.mimo)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.List2LLRSimple">List2LLRSimple (class in sionna.mimo)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarSCLDecoder.list_size">list_size (sionna.fec.polar.decoding.PolarSCLDecoder property)</a>
+</li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.llr2mi">llr2mi() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/channel.discrete.html#sionna.channel.BinaryMemorylessChannel.llr_max">llr_max (sionna.channel.BinaryMemorylessChannel property)</a>
+
+      <ul>
+        <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.decoding.LDPCBPDecoder.llr_max">(sionna.fec.ldpc.decoding.LDPCBPDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.Polar5GDecoder.llr_max">(sionna.fec.polar.decoding.Polar5GDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarBPDecoder.llr_max">(sionna.fec.polar.decoding.PolarBPDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarSCDecoder.llr_max">(sionna.fec.polar.decoding.PolarSCDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarSCLDecoder.llr_max">(sionna.fec.polar.decoding.PolarSCLDecoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/mapping.html#sionna.mapping.LLRs2SymbolLogits">LLRs2SymbolLogits (class in sionna.mapping)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.lmmse_equalizer">lmmse_equalizer() (in module sionna.mimo)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.LMMSEEqualizer">LMMSEEqualizer (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.LMMSEInterpolator">LMMSEInterpolator (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.load_alist">load_alist() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.load_parity_check_examples">load_parity_check_examples() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.load_scene">load_scene() (in module sionna.rt)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.log10">log10() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.log2">log2() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Camera.look_at">look_at() (sionna.rt.Camera method)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.Receiver.look_at">(sionna.rt.Receiver method)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.RIS.look_at">(sionna.rt.RIS method)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.SceneObject.look_at">(sionna.rt.SceneObject method)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.Transmitter.look_at">(sionna.rt.Transmitter method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.CDL.los">los (sionna.channel.tr38901.CDL property)</a>
+
+      <ul>
+        <li><a href="api/channel.wireless.html#sionna.channel.tr38901.TDL.los">(sionna.channel.tr38901.TDL property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/ofdm.html#sionna.ofdm.LSChannelEstimator">LSChannelEstimator (class in sionna.ofdm)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.make_systematic">make_systematic() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.Mapper">Mapper (class in sionna.mapping)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.mapping_type">mapping_type (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHPilotPattern.mask">mask (sionna.nr.PUSCHPilotPattern property)</a>
+
+      <ul>
+        <li><a href="api/ofdm.html#sionna.ofdm.PilotPattern.mask">(sionna.ofdm.PilotPattern property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.Paths.mask">(sionna.rt.Paths property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/utils.html#sionna.utils.matrix_inv">matrix_inv() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.matrix_pinv">matrix_pinv() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.matrix_sqrt">matrix_sqrt() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.matrix_sqrt_inv">matrix_sqrt_inv() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.MaximumLikelihoodDetector">MaximumLikelihoodDetector (class in sionna.mimo)</a>
+
+      <ul>
+        <li><a href="api/ofdm.html#sionna.ofdm.MaximumLikelihoodDetector">(class in sionna.ofdm)</a>
+</li>
+      </ul></li>
+      <li><a href="api/mimo.html#sionna.mimo.MaximumLikelihoodDetectorWithPrior">MaximumLikelihoodDetectorWithPrior (class in sionna.mimo)</a>
+
+      <ul>
+        <li><a href="api/ofdm.html#sionna.ofdm.MaximumLikelihoodDetectorWithPrior">(class in sionna.ofdm)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/nr.html#sionna.nr.TBConfig.mcs_index">mcs_index (sionna.nr.TBConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.TBConfig.mcs_table">mcs_table (sionna.nr.TBConfig property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.TDL.mean_power_los">mean_power_los (sionna.channel.tr38901.TDL property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.TDL.mean_powers">mean_powers (sionna.channel.tr38901.TDL property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.mf_equalizer">mf_equalizer() (in module sionna.mimo)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.MFEqualizer">MFEqualizer (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.MMSEPICDetector">MMSEPICDetector (class in sionna.mimo)</a>
+
+      <ul>
+        <li><a href="api/ofdm.html#sionna.ofdm.MMSEPICDetector">(class in sionna.ofdm)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.AmplitudeProfile.mode_powers">mode_powers (sionna.rt.AmplitudeProfile property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.DiscreteAmplitudeProfile.mode_powers">(sionna.rt.DiscreteAmplitudeProfile property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.mu">mu (sionna.nr.CarrierConfig property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.scene.munich">munich (in module sionna.rt.scene)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="N">N</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/fec.conv.html#sionna.fec.conv.BCJRDecoder.n">n (sionna.fec.conv.BCJRDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.conv.html#sionna.fec.conv.ConvEncoder.n">(sionna.fec.conv.ConvEncoder property)</a>
+</li>
+        <li><a href="api/fec.conv.html#sionna.fec.conv.ViterbiDecoder.n">(sionna.fec.conv.ViterbiDecoder property)</a>
+</li>
+        <li><a href="api/fec.crc.html#sionna.fec.crc.CRCEncoder.n">(sionna.fec.crc.CRCEncoder property)</a>
+</li>
+        <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.encoding.LDPC5GEncoder.n">(sionna.fec.ldpc.encoding.LDPC5GEncoder property)</a>
+</li>
+        <li><a href="api/fec.linear.html#sionna.fec.linear.AllZeroEncoder.n">(sionna.fec.linear.AllZeroEncoder property)</a>
+</li>
+        <li><a href="api/fec.linear.html#sionna.fec.linear.LinearEncoder.n">(sionna.fec.linear.LinearEncoder property)</a>
+</li>
+        <li><a href="api/fec.linear.html#sionna.fec.linear.OSDecoder.n">(sionna.fec.linear.OSDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarBPDecoder.n">(sionna.fec.polar.decoding.PolarBPDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarSCDecoder.n">(sionna.fec.polar.decoding.PolarSCDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarSCLDecoder.n">(sionna.fec.polar.decoding.PolarSCLDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.encoding.Polar5GEncoder.n">(sionna.fec.polar.encoding.Polar5GEncoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.encoding.PolarEncoder.n">(sionna.fec.polar.encoding.PolarEncoder property)</a>
+</li>
+        <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboDecoder.n">(sionna.fec.turbo.TurboDecoder property)</a>
+</li>
+        <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboEncoder.n">(sionna.fec.turbo.TurboEncoder property)</a>
+</li>
+        <li><a href="api/nr.html#sionna.nr.TBDecoder.n">(sionna.nr.TBDecoder property)</a>
+</li>
+        <li><a href="api/nr.html#sionna.nr.TBEncoder.n">(sionna.nr.TBEncoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.n_cell_id">n_cell_id (sionna.nr.CarrierConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHDMRSConfig.n_id">n_id (sionna.nr.PUSCHDMRSConfig property)</a>
+
+      <ul>
+        <li><a href="api/nr.html#sionna.nr.TBConfig.n_id">(sionna.nr.TBConfig property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.encoding.LDPC5GEncoder.n_ldpc">n_ldpc (sionna.fec.ldpc.encoding.LDPC5GEncoder property)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.Polar5GDecoder.n_polar">n_polar (sionna.fec.polar.decoding.Polar5GDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.encoding.Polar5GEncoder.n_polar">(sionna.fec.polar.encoding.Polar5GEncoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.n_rnti">n_rnti (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHDMRSConfig.n_scid">n_scid (sionna.nr.PUSCHDMRSConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.n_size_bwp">n_size_bwp (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.n_size_grid">n_size_grid (sionna.nr.CarrierConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.n_start_bwp">n_start_bwp (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.n_start_grid">n_start_grid (sionna.nr.CarrierConfig property)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.Polar5GDecoder.n_target">n_target (sionna.fec.polar.decoding.Polar5GDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.encoding.Polar5GEncoder.n_target">(sionna.fec.polar.encoding.Polar5GEncoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.RadioMaterial.name">name (sionna.rt.RadioMaterial property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.Receiver.name">(sionna.rt.Receiver property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.RIS.name">(sionna.rt.RIS property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.SceneObject.name">(sionna.rt.SceneObject property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.Transmitter.name">(sionna.rt.Transmitter property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/ofdm.html#sionna.ofdm.NearestNeighborInterpolator">NearestNeighborInterpolator (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.Constellation.normalize">normalize (sionna.mapping.Constellation property)</a>
+
+      <ul>
+        <li><a href="api/nr.html#sionna.nr.PUSCHPilotPattern.normalize">(sionna.nr.PUSCHPilotPattern property)</a>
+</li>
+        <li><a href="api/ofdm.html#sionna.ofdm.PilotPattern.normalize">(sionna.ofdm.PilotPattern property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.BlackmanWindow.normalize">(sionna.signal.BlackmanWindow property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.CustomFilter.normalize">(sionna.signal.CustomFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.CustomWindow.normalize">(sionna.signal.CustomWindow property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.Filter.normalize">(sionna.signal.Filter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.HammingWindow.normalize">(sionna.signal.HammingWindow property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.HannWindow.normalize">(sionna.signal.HannWindow property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RaisedCosineFilter.normalize">(sionna.signal.RaisedCosineFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RootRaisedCosineFilter.normalize">(sionna.signal.RootRaisedCosineFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.SincFilter.normalize">(sionna.signal.SincFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.Window.normalize">(sionna.signal.Window property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.normalize">normalize() (in module sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Paths.normalize_delays">normalize_delays (sionna.rt.Paths property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.normalize_precoding_power">normalize_precoding_power() (in module sionna.mimo)</a>
+</li>
+      <li><a href="api/config.html#sionna.config.Config.np_rng">np_rng (sionna.config.Config property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.num_ant">num_ant (sionna.channel.tr38901.PanelArray property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.AntennaArray.num_ant">(sionna.rt.AntennaArray property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.PlanarArray.num_ant">(sionna.rt.PlanarArray property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.num_antenna_ports">num_antenna_ports (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.encoding.LDPC5GEncoder.num_bits_per_symbol">num_bits_per_symbol (sionna.fec.ldpc.encoding.LDPC5GEncoder property)</a>
+
+      <ul>
+        <li><a href="api/mapping.html#sionna.mapping.Constellation.num_bits_per_symbol">(sionna.mapping.Constellation property)</a>
+</li>
+        <li><a href="api/nr.html#sionna.nr.TBConfig.num_bits_per_symbol">(sionna.nr.TBConfig property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.TBEncoder.num_cbs">num_cbs (sionna.nr.TBEncoder property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHDMRSConfig.num_cdm_groups_without_data">num_cdm_groups_without_data (sionna.nr.PUSCHDMRSConfig property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.CellGrid.num_cells">num_cells (sionna.rt.CellGrid property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.RIS.num_cells">(sionna.rt.RIS property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.CoverageMap.num_cells_x">num_cells_x (sionna.rt.CoverageMap property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/rt.html#sionna.rt.CoverageMap.num_cells_y">num_cells_y (sionna.rt.CoverageMap property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.CDL.num_clusters">num_clusters (sionna.channel.tr38901.CDL property)</a>
+
+      <ul>
+        <li><a href="api/channel.wireless.html#sionna.channel.tr38901.TDL.num_clusters">(sionna.channel.tr38901.TDL property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.decoding.LDPCBPDecoder.num_cns">num_cns (sionna.fec.ldpc.decoding.LDPCBPDecoder property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.num_coded_bits">num_coded_bits (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.LayerMapper.num_codewords">num_codewords (sionna.nr.LayerMapper property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.num_cols">num_cols (sionna.channel.tr38901.PanelArray property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.CellGrid.num_cols">(sionna.rt.CellGrid property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.RIS.num_cols">(sionna.rt.RIS property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.num_cols_per_panel">num_cols_per_panel (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHPilotPattern.num_data_symbols">num_data_symbols (sionna.nr.PUSCHPilotPattern property)</a>
+
+      <ul>
+        <li><a href="api/ofdm.html#sionna.ofdm.PilotPattern.num_data_symbols">(sionna.ofdm.PilotPattern property)</a>
+</li>
+        <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.num_data_symbols">(sionna.ofdm.ResourceGrid property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.decoding.LDPCBPDecoder.num_edges">num_edges (sionna.fec.ldpc.decoding.LDPCBPDecoder property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHPilotPattern.num_effective_subcarriers">num_effective_subcarriers (sionna.nr.PUSCHPilotPattern property)</a>
+
+      <ul>
+        <li><a href="api/ofdm.html#sionna.ofdm.PilotPattern.num_effective_subcarriers">(sionna.ofdm.PilotPattern property)</a>
+</li>
+        <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.num_effective_subcarriers">(sionna.ofdm.ResourceGrid property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.num_guard_carriers">num_guard_carriers (sionna.ofdm.ResourceGrid property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.StreamManagement.num_interfering_streams_per_rx">num_interfering_streams_per_rx (sionna.mimo.StreamManagement property)</a>
+</li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.decoding.LDPCBPDecoder.num_iter">num_iter (sionna.fec.ldpc.decoding.LDPCBPDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarBPDecoder.num_iter">(sionna.fec.polar.decoding.PolarBPDecoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.LayerMapper.num_layers">num_layers (sionna.nr.LayerMapper property)</a>
+
+      <ul>
+        <li><a href="api/nr.html#sionna.nr.PUSCHConfig.num_layers">(sionna.nr.PUSCHConfig property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.LayerMapper.num_layers0">num_layers0 (sionna.nr.LayerMapper property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.LayerMapper.num_layers1">num_layers1 (sionna.nr.LayerMapper property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.AmplitudeProfile.num_modes">num_modes (sionna.rt.AmplitudeProfile property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.DiscreteAmplitudeProfile.num_modes">(sionna.rt.DiscreteAmplitudeProfile property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.DiscretePhaseProfile.num_modes">(sionna.rt.DiscretePhaseProfile property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.PhaseProfile.num_modes">(sionna.rt.PhaseProfile property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.RIS.num_modes">(sionna.rt.RIS property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHPilotPattern.num_ofdm_symbols">num_ofdm_symbols (sionna.nr.PUSCHPilotPattern property)</a>
+
+      <ul>
+        <li><a href="api/ofdm.html#sionna.ofdm.PilotPattern.num_ofdm_symbols">(sionna.ofdm.PilotPattern property)</a>
+</li>
+        <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.num_ofdm_symbols">(sionna.ofdm.ResourceGrid property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.num_ov">num_ov (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.num_panels">num_panels (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.num_panels_ant">num_panels_ant (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHPilotPattern.num_pilot_symbols">num_pilot_symbols (sionna.nr.PUSCHPilotPattern property)</a>
+
+      <ul>
+        <li><a href="api/ofdm.html#sionna.ofdm.PilotPattern.num_pilot_symbols">(sionna.ofdm.PilotPattern property)</a>
+</li>
+        <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.num_pilot_symbols">(sionna.ofdm.ResourceGrid property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.num_res_per_prb">num_res_per_prb (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.num_resource_blocks">num_resource_blocks (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.num_resource_elements">num_resource_elements (sionna.ofdm.ResourceGrid property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.num_rows">num_rows (sionna.channel.tr38901.PanelArray property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.CellGrid.num_rows">(sionna.rt.CellGrid property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.RIS.num_rows">(sionna.rt.RIS property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.num_rows_per_panel">num_rows_per_panel (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.StreamManagement.num_rx">num_rx (sionna.mimo.StreamManagement property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.StreamManagement.num_rx_per_tx">num_rx_per_tx (sionna.mimo.StreamManagement property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.num_slots_per_frame">num_slots_per_frame (sionna.nr.CarrierConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.num_slots_per_subframe">num_slots_per_subframe (sionna.nr.CarrierConfig property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.StreamManagement.num_streams_per_rx">num_streams_per_rx (sionna.mimo.StreamManagement property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.StreamManagement.num_streams_per_tx">num_streams_per_tx (sionna.mimo.StreamManagement property)</a>
+
+      <ul>
+        <li><a href="api/nr.html#sionna.nr.PUSCHPilotPattern.num_streams_per_tx">(sionna.nr.PUSCHPilotPattern property)</a>
+</li>
+        <li><a href="api/ofdm.html#sionna.ofdm.PilotPattern.num_streams_per_tx">(sionna.ofdm.PilotPattern property)</a>
+</li>
+        <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.num_streams_per_tx">(sionna.ofdm.ResourceGrid property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.num_subcarriers">num_subcarriers (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.num_symbols_per_slot">num_symbols_per_slot (sionna.nr.CarrierConfig property)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.num_time_samples">num_time_samples (sionna.ofdm.ResourceGrid property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.StreamManagement.num_tx">num_tx (sionna.mimo.StreamManagement property)</a>
+
+      <ul>
+        <li><a href="api/nr.html#sionna.nr.PUSCHPilotPattern.num_tx">(sionna.nr.PUSCHPilotPattern property)</a>
+</li>
+        <li><a href="api/nr.html#sionna.nr.TBEncoder.num_tx">(sionna.nr.TBEncoder property)</a>
+</li>
+        <li><a href="api/ofdm.html#sionna.ofdm.PilotPattern.num_tx">(sionna.ofdm.PilotPattern property)</a>
+</li>
+        <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.num_tx">(sionna.ofdm.ResourceGrid property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.CoverageMap.num_tx">(sionna.rt.CoverageMap property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/mimo.html#sionna.mimo.StreamManagement.num_tx_per_rx">num_tx_per_rx (sionna.mimo.StreamManagement property)</a>
+</li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.decoding.LDPCBPDecoder.num_vns">num_vns (sionna.fec.ldpc.decoding.LDPCBPDecoder property)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.num_zero_symbols">num_zero_symbols (sionna.ofdm.ResourceGrid property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/rt.html#sionna.rt.Scene.objects">objects (sionna.rt.Scene property)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.ofdm_symbol_duration">ofdm_symbol_duration (sionna.ofdm.ResourceGrid property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.OFDMChannel">OFDMChannel (class in sionna.channel)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.OFDMDemodulator">OFDMDemodulator (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.OFDMDetector">OFDMDetector (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.OFDMDetectorWithPrior">OFDMDetectorWithPrior (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.OFDMEqualizer">OFDMEqualizer (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.OFDMModulator">OFDMModulator (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.one_ring_corr_mat">one_ring_corr_mat() (in module sionna.channel)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Camera.orientation">orientation (sionna.rt.Camera property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.CoverageMap.orientation">(sionna.rt.CoverageMap property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.Receiver.orientation">(sionna.rt.Receiver property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.RIS.orientation">(sionna.rt.RIS property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.SceneObject.orientation">(sionna.rt.SceneObject property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.Transmitter.orientation">(sionna.rt.Transmitter property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/fec.linear.html#sionna.fec.linear.OSDecoder">OSDecoder (class in sionna.fec.linear)</a>
+</li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.encoding.LDPC5GEncoder.out_int">out_int (sionna.fec.ldpc.encoding.LDPC5GEncoder property)</a>
+</li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.encoding.LDPC5GEncoder.out_int_inv">out_int_inv (sionna.fec.ldpc.encoding.LDPC5GEncoder property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.outer">outer() (in module sionna.rt)</a>
+</li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.decoding.LDPCBPDecoder.output_dtype">output_dtype (sionna.fec.ldpc.decoding.LDPCBPDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.Polar5GDecoder.output_dtype">(sionna.fec.polar.decoding.Polar5GDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarBPDecoder.output_dtype">(sionna.fec.polar.decoding.PolarBPDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarSCDecoder.output_dtype">(sionna.fec.polar.decoding.PolarSCDecoder property)</a>
+</li>
+        <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarSCLDecoder.output_dtype">(sionna.fec.polar.decoding.PolarSCLDecoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.TBEncoder.output_perm_inv">output_perm_inv (sionna.nr.TBEncoder property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="P">P</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/mapping.html#sionna.mapping.pam">pam() (in module sionna.mapping)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.PAM2QAM">PAM2QAM (class in sionna.mapping)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.pam_gray">pam_gray() (in module sionna.mapping)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.PAMSource">PAMSource (class in sionna.utils)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.panel_horizontal_spacing">panel_horizontal_spacing (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.panel_vertical_spacing">panel_vertical_spacing (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray">PanelArray (class in sionna.channel.tr38901)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.CoverageMap.path_gain">path_gain (sionna.rt.CoverageMap property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Paths">Paths (class in sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Antenna.patterns">patterns (sionna.rt.Antenna property)</a>
+</li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.decoding.LDPCBPDecoder.pcm">pcm (sionna.fec.ldpc.decoding.LDPCBPDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.encoding.LDPC5GEncoder.pcm">(sionna.fec.ldpc.encoding.LDPC5GEncoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.pcm2gm">pcm2gm() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.PerColumnModel">PerColumnModel (class in sionna.channel)</a>
+</li>
+      <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.RowColumnInterleaver.perm_seq">perm_seq (sionna.fec.interleaving.RowColumnInterleaver property)</a>
+</li>
+      <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.RowColumnInterleaver.perm_seq_inv">perm_seq_inv (sionna.fec.interleaving.RowColumnInterleaver property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.RIS.phase_gradient_reflector">phase_gradient_reflector() (sionna.rt.RIS method)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.RIS.phase_profile">phase_profile (sionna.rt.RIS property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.PhaseProfile">PhaseProfile (class in sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.phi_hat">phi_hat() (in module sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Paths.phi_r">phi_r (sionna.rt.Paths property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Paths.phi_t">phi_t (sionna.rt.Paths property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHTransmitter.pilot_pattern">pilot_pattern (sionna.nr.PUSCHTransmitter property)</a>
+
+      <ul>
+        <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.pilot_pattern">(sionna.ofdm.ResourceGrid property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/ofdm.html#sionna.ofdm.PilotPattern">PilotPattern (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHPilotPattern.pilots">pilots (sionna.nr.PUSCHPilotPattern property)</a>
+
+      <ul>
+        <li><a href="api/ofdm.html#sionna.ofdm.PilotPattern.pilots">(sionna.ofdm.PilotPattern property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.PlanarArray">PlanarArray (class in sionna.rt)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.plotting.plot_ber">plot_ber() (in module sionna.utils.plotting)</a>
+</li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.plot_exit_chart">plot_exit_chart() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.plot_trajectory">plot_trajectory() (in module sionna.fec.utils)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.plotting.PlotBER">PlotBER (class in sionna.utils.plotting)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.Constellation.points">points (sionna.mapping.Constellation property)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.Polar5GDecoder">Polar5GDecoder (class in sionna.fec.polar.decoding)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.encoding.Polar5GEncoder">Polar5GEncoder (class in sionna.fec.polar.encoding)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.Polar5GDecoder.polar_dec">polar_dec (sionna.fec.polar.decoding.Polar5GDecoder property)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarBPDecoder">PolarBPDecoder (class in sionna.fec.polar.decoding)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.encoding.PolarEncoder">PolarEncoder (class in sionna.fec.polar.encoding)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.polarization">polarization (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.antenna.polarization_model_1">polarization_model_1() (in module sionna.rt.antenna)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.antenna.polarization_model_2">polarization_model_2() (in module sionna.rt.antenna)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.polarization_type">polarization_type (sionna.channel.tr38901.PanelArray property)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarSCDecoder">PolarSCDecoder (class in sionna.fec.polar.decoding)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.decoding.PolarSCLDecoder">PolarSCLDecoder (class in sionna.fec.polar.decoding)</a>
+</li>
+      <li><a href="api/fec.conv.html#sionna.fec.conv.utils.polynomial_selector">polynomial_selector() (in module sionna.fec.conv.utils)</a>
+
+      <ul>
+        <li><a href="api/fec.turbo.html#sionna.fec.turbo.utils.polynomial_selector">(in module sionna.fec.turbo.utils)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.Camera.position">position (sionna.rt.Camera property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.Receiver.position">(sionna.rt.Receiver property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.RIS.position">(sionna.rt.RIS property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.SceneObject.position">(sionna.rt.SceneObject property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.Transmitter.position">(sionna.rt.Transmitter property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.AntennaArray.positions">positions (sionna.rt.AntennaArray property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.PlanarArray.positions">(sionna.rt.PlanarArray property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.Transmitter.power">power (sionna.rt.Transmitter property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Transmitter.power_dbm">power_dbm (sionna.rt.Transmitter property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.CDL.powers">powers (sionna.channel.tr38901.CDL property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.precoding">precoding (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.StreamManagement.precoding_ind">precoding_ind (sionna.mimo.StreamManagement property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.precoding_matrix">precoding_matrix (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.preview">preview() (in module sionna.rt.Scene)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.ProfileInterpolator">ProfileInterpolator (class in sionna.rt)</a>
+</li>
+      <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboEncoder.punct_pattern">punct_pattern (sionna.fec.turbo.TurboEncoder property)</a>
+</li>
+      <li><a href="api/fec.turbo.html#sionna.fec.turbo.utils.puncture_pattern">puncture_pattern() (in module sionna.fec.turbo.utils)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig">PUSCHConfig (class in sionna.nr)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHDMRSConfig">PUSCHDMRSConfig (class in sionna.nr)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHLSChannelEstimator">PUSCHLSChannelEstimator (class in sionna.nr)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHPilotPattern">PUSCHPilotPattern (class in sionna.nr)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHPrecoder">PUSCHPrecoder (class in sionna.nr)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHReceiver">PUSCHReceiver (class in sionna.nr)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHTransmitter">PUSCHTransmitter (class in sionna.nr)</a>
+</li>
+      <li><a href="api/config.html#sionna.config.Config.py_rng">py_rng (sionna.config.Config property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="Q">Q</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/mapping.html#sionna.mapping.qam">qam() (in module sionna.mapping)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/mapping.html#sionna.mapping.QAM2PAM">QAM2PAM (class in sionna.mapping)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.QAMSource">QAMSource (class in sionna.utils)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/rt.html#sionna.rt.r_hat">r_hat() (in module sionna.rt)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.KroneckerModel.r_rx">r_rx (sionna.channel.KroneckerModel property)</a>
+
+      <ul>
+        <li><a href="api/channel.wireless.html#sionna.channel.PerColumnModel.r_rx">(sionna.channel.PerColumnModel property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/channel.wireless.html#sionna.channel.KroneckerModel.r_tx">r_tx (sionna.channel.KroneckerModel property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.rad_2_deg">rad_2_deg() (in module sionna.channel)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.SceneObject.radio_material">radio_material (sionna.rt.SceneObject property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.radio_material_callable">radio_material_callable (sionna.rt.Scene property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.radio_materials">radio_materials (sionna.rt.Scene property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.RadioMaterial">RadioMaterial (class in sionna.rt)</a>
+</li>
+      <li><a href="api/signal.html#sionna.signal.RaisedCosineFilter">RaisedCosineFilter (class in sionna.signal)</a>
+</li>
+      <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.RandomInterleaver">RandomInterleaver (class in sionna.fec.interleaving)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.RayleighBlockFading">RayleighBlockFading (class in sionna.channel)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.real2complex_channel">real2complex_channel() (in module sionna.mimo)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.real2complex_covariance">real2complex_covariance() (in module sionna.mimo)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.real2complex_matrix">real2complex_matrix() (in module sionna.mimo)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.real2complex_vector">real2complex_vector() (in module sionna.mimo)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Receiver">Receiver (class in sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.receivers">receivers (sionna.rt.Scene property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.RadioMaterial.relative_permeability">relative_permeability (sionna.rt.RadioMaterial property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.RadioMaterial.relative_permittivity">relative_permittivity (sionna.rt.RadioMaterial property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.relocate_uts">relocate_uts() (in module sionna.channel)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.remove">remove() (sionna.rt.Scene method)</a>
+
+      <ul>
+        <li><a href="api/utils.html#sionna.utils.plotting.PlotBER.remove">(sionna.utils.plotting.PlotBER method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/ofdm.html#sionna.ofdm.RemoveNulledSubcarriers">RemoveNulledSubcarriers (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.render">render() (in module sionna.rt.Scene)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/rt.html#sionna.rt.Scene.render_to_file">render_to_file() (in module sionna.rt.Scene)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.plotting.PlotBER.reset">reset() (sionna.utils.plotting.PlotBER method)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHReceiver.resource_grid">resource_grid (sionna.nr.PUSCHReceiver property)</a>
+
+      <ul>
+        <li><a href="api/nr.html#sionna.nr.PUSCHTransmitter.resource_grid">(sionna.nr.PUSCHTransmitter property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid">ResourceGrid (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.ResourceGridDemapper">ResourceGridDemapper (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.ResourceGridMapper">ResourceGridMapper (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Paths.reverse_direction">reverse_direction (sionna.rt.Paths property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.RIS">RIS (class in sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.ris">ris (sionna.rt.Scene property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.CoverageMap.ris_pos">ris_pos (sionna.rt.CoverageMap property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.RMa">RMa (class in sionna.channel.tr38901)</a>
+</li>
+      <li><a href="api/signal.html#sionna.signal.RootRaisedCosineFilter">RootRaisedCosineFilter (class in sionna.signal)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.rot_mat_from_unit_vecs">rot_mat_from_unit_vecs() (in module sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.rotate">rotate() (in module sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.AntennaArray.rotated_positions">rotated_positions() (sionna.rt.AntennaArray method)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.PlanarArray.rotated_positions">(sionna.rt.PlanarArray method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.rotation_matrix">rotation_matrix() (in module sionna.rt)</a>
+</li>
+      <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.RowColumnInterleaver.row_depth">row_depth (sionna.fec.interleaving.RowColumnInterleaver property)</a>
+</li>
+      <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.RowColumnInterleaver">RowColumnInterleaver (class in sionna.fec.interleaving)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.CoverageMap.rss">rss (sionna.rt.CoverageMap property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.rx_array">rx_array (sionna.rt.Scene property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.CoverageMap.rx_pos">rx_pos (sionna.rt.CoverageMap property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.StreamManagement.rx_stream_ids">rx_stream_ids (sionna.mimo.StreamManagement property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.StreamManagement.rx_tx_association">rx_tx_association (sionna.mimo.StreamManagement property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/rt.html#sionna.rt.sample_points_on_hemisphere">sample_points_on_hemisphere() (in module sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.CoverageMap.sample_positions">sample_positions() (sionna.rt.CoverageMap method)</a>
+</li>
+      <li><a href="api/signal.html#sionna.signal.CustomFilter.sampling_times">sampling_times (sionna.signal.CustomFilter property)</a>
+
+      <ul>
+        <li><a href="api/signal.html#sionna.signal.Filter.sampling_times">(sionna.signal.Filter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RaisedCosineFilter.sampling_times">(sionna.signal.RaisedCosineFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RootRaisedCosineFilter.sampling_times">(sionna.signal.RootRaisedCosineFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.SincFilter.sampling_times">(sionna.signal.SincFilter property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.RadioMaterial.scattering_coefficient">scattering_coefficient (sionna.rt.RadioMaterial property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.RadioMaterial.scattering_pattern">scattering_pattern (sionna.rt.RadioMaterial property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.scattering_pattern_callable">scattering_pattern_callable (sionna.rt.Scene property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene">Scene (class in sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.SceneObject">SceneObject (class in sionna.rt)</a>
+</li>
+      <li><a href="api/fec.scrambling.html#sionna.fec.scrambling.Scrambler">Scrambler (class in sionna.fec.scrambling)</a>
+</li>
+      <li><a href="api/fec.scrambling.html#sionna.fec.scrambling.Descrambler.scrambler">scrambler (sionna.fec.scrambling.Descrambler property)</a>
+
+      <ul>
+        <li><a href="api/nr.html#sionna.nr.TBEncoder.scrambler">(sionna.nr.TBEncoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/config.html#sionna.config.Config.seed">seed (sionna.config.Config property)</a>
+
+      <ul>
+        <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.RandomInterleaver.seed">(sionna.fec.interleaving.RandomInterleaver property)</a>
+</li>
+        <li><a href="api/fec.scrambling.html#sionna.fec.scrambling.Scrambler.seed">(sionna.fec.scrambling.Scrambler property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.utils.select_mcs">select_mcs() (in module sionna.nr.utils)</a>
+</li>
+      <li><a href="api/fec.scrambling.html#sionna.fec.scrambling.Scrambler.sequence">sequence (sionna.fec.scrambling.Scrambler property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.set_3gpp_scenario_parameters">set_3gpp_scenario_parameters() (in module sionna.channel)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.RMa.set_topology">set_topology() (sionna.channel.tr38901.RMa method)</a>
+
+      <ul>
+        <li><a href="api/channel.wireless.html#sionna.channel.tr38901.UMa.set_topology">(sionna.channel.tr38901.UMa method)</a>
+</li>
+        <li><a href="api/channel.wireless.html#sionna.channel.tr38901.UMi.set_topology">(sionna.channel.tr38901.UMi method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.DiscreteAmplitudeProfile.shape">shape (sionna.rt.DiscreteAmplitudeProfile property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.DiscretePhaseProfile.shape">(sionna.rt.DiscretePhaseProfile property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.show">show() (sionna.channel.tr38901.PanelArray method)</a>
+
+      <ul>
+        <li><a href="api/mapping.html#sionna.mapping.Constellation.show">(sionna.mapping.Constellation method)</a>
+</li>
+        <li><a href="api/nr.html#sionna.nr.PUSCHConfig.show">(sionna.nr.PUSCHConfig method)</a>
+</li>
+        <li><a href="api/nr.html#sionna.nr.PUSCHPilotPattern.show">(sionna.nr.PUSCHPilotPattern method)</a>
+</li>
+        <li><a href="api/nr.html#sionna.nr.PUSCHTransmitter.show">(sionna.nr.PUSCHTransmitter method)</a>
+</li>
+        <li><a href="api/ofdm.html#sionna.ofdm.PilotPattern.show">(sionna.ofdm.PilotPattern method)</a>
+</li>
+        <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.show">(sionna.ofdm.ResourceGrid method)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.CoverageMap.show">(sionna.rt.CoverageMap method)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.DiscreteAmplitudeProfile.show">(sionna.rt.DiscreteAmplitudeProfile method)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.DiscretePhaseProfile.show">(sionna.rt.DiscretePhaseProfile method)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.PlanarArray.show">(sionna.rt.PlanarArray method)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.BlackmanWindow.show">(sionna.signal.BlackmanWindow method)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.CustomFilter.show">(sionna.signal.CustomFilter method)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.CustomWindow.show">(sionna.signal.CustomWindow method)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.Filter.show">(sionna.signal.Filter method)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.HammingWindow.show">(sionna.signal.HammingWindow method)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.HannWindow.show">(sionna.signal.HannWindow method)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RaisedCosineFilter.show">(sionna.signal.RaisedCosineFilter method)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RootRaisedCosineFilter.show">(sionna.signal.RootRaisedCosineFilter method)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.SincFilter.show">(sionna.signal.SincFilter method)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.Window.show">(sionna.signal.Window method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/rt.html#sionna.rt.CoverageMap.show_association">show_association() (sionna.rt.CoverageMap method)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.PanelArray.show_element_radiation_pattern">show_element_radiation_pattern() (sionna.channel.tr38901.PanelArray method)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.RMa.show_topology">show_topology() (sionna.channel.tr38901.RMa method)</a>
+
+      <ul>
+        <li><a href="api/channel.wireless.html#sionna.channel.tr38901.UMa.show_topology">(sionna.channel.tr38901.UMa method)</a>
+</li>
+        <li><a href="api/channel.wireless.html#sionna.channel.tr38901.UMi.show_topology">(sionna.channel.tr38901.UMi method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.decoding.LDPCBPDecoder.show_weights">show_weights() (sionna.fec.ldpc.decoding.LDPCBPDecoder method)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.sim_ber">sim_ber() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.scene.simple_reflector">simple_reflector (in module sionna.rt.scene)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.scene.simple_street_canyon">simple_street_canyon (in module sionna.rt.scene)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.scene.simple_street_canyon_with_cars">simple_street_canyon_with_cars (in module sionna.rt.scene)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.scene.simple_wedge">simple_wedge (in module sionna.rt.scene)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.plotting.PlotBER.simulate">simulate() (sionna.utils.plotting.PlotBER method)</a>
+</li>
+      <li><a href="api/signal.html#sionna.signal.SincFilter">SincFilter (class in sionna.signal)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.CoverageMap.sinr">sinr (sionna.rt.CoverageMap property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.CoverageMap.size">size (sionna.rt.CoverageMap property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.RIS.size">(sionna.rt.RIS property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.Scene.size">(sionna.rt.Scene property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.slot_number">slot_number (sionna.nr.CarrierConfig property)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.plotting.PlotBER.snr">snr (sionna.utils.plotting.PlotBER property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.DiscreteAmplitudeProfile.spacing">spacing (sionna.rt.DiscreteAmplitudeProfile property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.DiscretePhaseProfile.spacing">(sionna.rt.DiscretePhaseProfile property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.LagrangeProfileInterpolator.spacing">(sionna.rt.LagrangeProfileInterpolator property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.ProfileInterpolator.spacing">(sionna.rt.ProfileInterpolator property)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.RIS.spacing">(sionna.rt.RIS property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/channel.wireless.html#sionna.channel.FlatFadingChannel.spatial_corr">spatial_corr (sionna.channel.FlatFadingChannel property)</a>
+
+      <ul>
+        <li><a href="api/channel.wireless.html#sionna.channel.GenerateFlatFadingChannel.spatial_corr">(sionna.channel.GenerateFlatFadingChannel property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/channel.wireless.html#sionna.channel.SpatialCorrelation">SpatialCorrelation (class in sionna.channel)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.split_dim">split_dim() (in module sionna.utils)</a>
+</li>
+      <li><a href="api/channel.optical.html#sionna.channel.SSFM">SSFM (class in sionna.channel)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.StreamManagement.stream_association">stream_association (sionna.mimo.StreamManagement property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.StreamManagement.stream_ind">stream_ind (sionna.mimo.StreamManagement property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.StreamManagement">StreamManagement (class in sionna.mimo)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.sub_frame_duration">sub_frame_duration (sionna.nr.CarrierConfig property)</a>
+</li>
+      <li><a href="api/fec.polar.html#sionna.fec.polar.encoding.Polar5GEncoder.subblock_interleaving">subblock_interleaving() (sionna.fec.polar.encoding.Polar5GEncoder method)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.subcarrier_frequencies">subcarrier_frequencies() (in module sionna.channel)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.subcarrier_spacing">subcarrier_spacing (sionna.nr.CarrierConfig property)</a>
+
+      <ul>
+        <li><a href="api/ofdm.html#sionna.ofdm.ResourceGrid.subcarrier_spacing">(sionna.ofdm.ResourceGrid property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.symbol_allocation">symbol_allocation (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.SymbolDemapper">SymbolDemapper (class in sionna.mapping)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.SymbolDemapperWithPrior">SymbolDemapperWithPrior (class in sionna.mapping)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.SymbolInds2Bits">SymbolInds2Bits (class in sionna.mapping)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.SymbolLogits2LLRs">SymbolLogits2LLRs (class in sionna.mapping)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.SymbolLogits2LLRsWithPrior">SymbolLogits2LLRsWithPrior (class in sionna.mapping)</a>
+</li>
+      <li><a href="api/mapping.html#sionna.mapping.SymbolLogits2Moments">SymbolLogits2Moments (class in sionna.mapping)</a>
+</li>
+      <li><a href="api/utils.html#sionna.utils.SymbolSource">SymbolSource (class in sionna.utils)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.synthetic_array">synthetic_array (sionna.rt.Scene property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/fec.linear.html#sionna.fec.linear.OSDecoder.t">t (sionna.fec.linear.OSDecoder property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.t_c">t_c (sionna.nr.CarrierConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.CarrierConfig.t_s">t_s (sionna.nr.CarrierConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.TBConfig.target_coderate">target_coderate (sionna.nr.TBConfig property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Paths.tau">tau (sionna.rt.Paths property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.tb">tb (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/fec.scrambling.html#sionna.fec.scrambling.TB5GScrambler">TB5GScrambler (class in sionna.fec.scrambling)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.TBEncoder.tb_crc_encoder">tb_crc_encoder (sionna.nr.TBEncoder property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.TBConfig.tb_scaling">tb_scaling (sionna.nr.TBConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.tb_size">tb_size (sionna.nr.PUSCHConfig property)</a>
+
+      <ul>
+        <li><a href="api/nr.html#sionna.nr.TBDecoder.tb_size">(sionna.nr.TBDecoder property)</a>
+</li>
+        <li><a href="api/nr.html#sionna.nr.TBEncoder.tb_size">(sionna.nr.TBEncoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.TBConfig">TBConfig (class in sionna.nr)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.TBDecoder">TBDecoder (class in sionna.nr)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.TBEncoder">TBEncoder (class in sionna.nr)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.TDL">TDL (class in sionna.channel.tr38901)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.tdl_freq_cov_mat">tdl_freq_cov_mat() (in module sionna.ofdm)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.tdl_time_cov_mat">tdl_time_cov_mat() (in module sionna.ofdm)</a>
+</li>
+      <li><a href="api/channel.discrete.html#sionna.channel.BinaryMemorylessChannel.temperature">temperature (sionna.channel.BinaryMemorylessChannel property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.Scene.temperature">(sionna.rt.Scene property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboTermination.term_bits_turbo2conv">term_bits_turbo2conv() (sionna.fec.turbo.TurboTermination method)</a>
+</li>
+      <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboTermination.termbits_conv2turbo">termbits_conv2turbo() (sionna.fec.turbo.TurboTermination method)</a>
+</li>
+      <li><a href="api/fec.conv.html#sionna.fec.conv.BCJRDecoder.terminate">terminate (sionna.fec.conv.BCJRDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.conv.html#sionna.fec.conv.ConvEncoder.terminate">(sionna.fec.conv.ConvEncoder property)</a>
+</li>
+        <li><a href="api/fec.conv.html#sionna.fec.conv.ViterbiDecoder.terminate">(sionna.fec.conv.ViterbiDecoder property)</a>
+</li>
+        <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboEncoder.terminate">(sionna.fec.turbo.TurboEncoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/config.html#sionna.config.Config.tf_rng">tf_rng (sionna.config.Config property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.thermal_noise_power">thermal_noise_power (sionna.rt.Scene property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.theta_hat">theta_hat() (in module sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.theta_phi_from_unit_vec">theta_phi_from_unit_vec() (in module sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Paths.theta_r">theta_r (sionna.rt.Paths property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Paths.theta_t">theta_t (sionna.rt.Paths property)</a>
+</li>
+      <li><a href="api/channel.optical.html#sionna.channel.utils.time_frequency_vector">time_frequency_vector() (in module sionna.channel.utils)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.time_lag_discrete_time_channel">time_lag_discrete_time_channel() (in module sionna.channel)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.time_to_ofdm_channel">time_to_ofdm_channel() (in module sionna.channel)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.TimeChannel">TimeChannel (class in sionna.channel)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/utils.html#sionna.utils.plotting.PlotBER.title">title (sionna.utils.plotting.PlotBER property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Paths.to_dict">to_dict() (sionna.rt.Paths method)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.tpmi">tpmi (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.antenna.tr38901_pattern">tr38901_pattern() (in module sionna.rt.antenna)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.trace_paths">trace_paths() (in module sionna.rt.Scene)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHPilotPattern.trainable">trainable (sionna.nr.PUSCHPilotPattern property)</a>
+
+      <ul>
+        <li><a href="api/ofdm.html#sionna.ofdm.PilotPattern.trainable">(sionna.ofdm.PilotPattern property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.BlackmanWindow.trainable">(sionna.signal.BlackmanWindow property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.CustomFilter.trainable">(sionna.signal.CustomFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.CustomWindow.trainable">(sionna.signal.CustomWindow property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.Filter.trainable">(sionna.signal.Filter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.HammingWindow.trainable">(sionna.signal.HammingWindow property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.HannWindow.trainable">(sionna.signal.HannWindow property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RaisedCosineFilter.trainable">(sionna.signal.RaisedCosineFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RootRaisedCosineFilter.trainable">(sionna.signal.RootRaisedCosineFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.SincFilter.trainable">(sionna.signal.SincFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.Window.trainable">(sionna.signal.Window property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHConfig.transform_precoding">transform_precoding (sionna.nr.PUSCHConfig property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Transmitter">Transmitter (class in sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.transmitters">transmitters (sionna.rt.Scene property)</a>
+</li>
+      <li><a href="api/fec.conv.html#sionna.fec.conv.BCJRDecoder.trellis">trellis (sionna.fec.conv.BCJRDecoder property)</a>
+
+      <ul>
+        <li><a href="api/fec.conv.html#sionna.fec.conv.ConvEncoder.trellis">(sionna.fec.conv.ConvEncoder property)</a>
+</li>
+        <li><a href="api/fec.conv.html#sionna.fec.conv.ViterbiDecoder.trellis">(sionna.fec.conv.ViterbiDecoder property)</a>
+</li>
+        <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboDecoder.trellis">(sionna.fec.turbo.TurboDecoder property)</a>
+</li>
+        <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboEncoder.trellis">(sionna.fec.turbo.TurboEncoder property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.conv.html#sionna.fec.conv.utils.Trellis">Trellis() (in module sionna.fec.conv.utils)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.scene.triple_reflector">triple_reflector (in module sionna.rt.scene)</a>
+</li>
+      <li><a href="api/fec.interleaving.html#sionna.fec.interleaving.Turbo3GPPInterleaver">Turbo3GPPInterleaver (class in sionna.fec.interleaving)</a>
+</li>
+      <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboDecoder">TurboDecoder (class in sionna.fec.turbo)</a>
+</li>
+      <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboEncoder">TurboEncoder (class in sionna.fec.turbo)</a>
+</li>
+      <li><a href="api/fec.turbo.html#sionna.fec.turbo.TurboTermination">TurboTermination (class in sionna.fec.turbo)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.tx_array">tx_array (sionna.rt.Scene property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.CoverageMap.tx_pos">tx_pos (sionna.rt.CoverageMap property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.StreamManagement.tx_stream_ids">tx_stream_ids (sionna.mimo.StreamManagement property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHDMRSConfig.type_a_position">type_a_position (sionna.nr.PUSCHDMRSConfig property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Paths.types">types (sionna.rt.Paths property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="U">U</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.UMa">UMa (class in sionna.channel.tr38901)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.tr38901.UMi">UMi (class in sionna.channel.tr38901)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/signal.html#sionna.signal.Upsampling">Upsampling (class in sionna.signal)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.RadioMaterial.use_counter">use_counter (sionna.rt.RadioMaterial property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.RadioMaterial.using_objects">using_objects (sionna.rt.RadioMaterial property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="V">V</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/rt.html#sionna.rt.DiscreteAmplitudeProfile.values">values (sionna.rt.DiscreteAmplitudeProfile property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.DiscretePhaseProfile.values">(sionna.rt.DiscretePhaseProfile property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.RIS.velocity">velocity (sionna.rt.RIS property)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.SceneObject.velocity">(sionna.rt.SceneObject property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.utils.html#sionna.fec.utils.verify_gm_pcm">verify_gm_pcm() (in module sionna.fec.utils)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/rt.html#sionna.rt.antenna.visualize">visualize() (in module sionna.rt.antenna)</a>
+
+      <ul>
+        <li><a href="api/rt.html#sionna.rt.BackscatteringPattern.visualize">(sionna.rt.BackscatteringPattern method)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.DirectivePattern.visualize">(sionna.rt.DirectivePattern method)</a>
+</li>
+        <li><a href="api/rt.html#sionna.rt.LambertianPattern.visualize">(sionna.rt.LambertianPattern method)</a>
+</li>
+      </ul></li>
+      <li><a href="api/fec.conv.html#sionna.fec.conv.ViterbiDecoder">ViterbiDecoder (class in sionna.fec.conv)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/nr.html#sionna.nr.PUSCHDMRSConfig.w_f">w_f (sionna.nr.PUSCHDMRSConfig property)</a>
+</li>
+      <li><a href="api/nr.html#sionna.nr.PUSCHDMRSConfig.w_t">w_t (sionna.nr.PUSCHDMRSConfig property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.watt_to_dbm">watt_to_dbm() (in module sionna.rt)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.wavelength">wavelength (sionna.rt.Scene property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.Scene.wavenumber">wavenumber (sionna.rt.Scene property)</a>
+</li>
+      <li><a href="api/rt.html#sionna.rt.RadioMaterial.well_defined">well_defined (sionna.rt.RadioMaterial property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.whiten_channel">whiten_channel() (in module sionna.mimo)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/signal.html#sionna.signal.Window">Window (class in sionna.signal)</a>
+</li>
+      <li><a href="api/signal.html#sionna.signal.CustomFilter.window">window (sionna.signal.CustomFilter property)</a>
+
+      <ul>
+        <li><a href="api/signal.html#sionna.signal.Filter.window">(sionna.signal.Filter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RaisedCosineFilter.window">(sionna.signal.RaisedCosineFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.RootRaisedCosineFilter.window">(sionna.signal.RootRaisedCosineFilter property)</a>
+</li>
+        <li><a href="api/signal.html#sionna.signal.SincFilter.window">(sionna.signal.SincFilter property)</a>
+</li>
+      </ul></li>
+      <li><a href="api/rt.html#sionna.rt.RIS.world_normal">world_normal (sionna.rt.RIS property)</a>
+</li>
+      <li><a href="api/channel.wireless.html#sionna.channel.wrap_angle_0_360">wrap_angle_0_360() (in module sionna.channel)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="X">X</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/config.html#sionna.config.Config.xla_compat">xla_compat (sionna.config.Config property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/rt.html#sionna.rt.RadioMaterial.xpd_coefficient">xpd_coefficient (sionna.rt.RadioMaterial property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="Z">Z</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/fec.ldpc.html#sionna.fec.ldpc.encoding.LDPC5GEncoder.z">z (sionna.fec.ldpc.encoding.LDPC5GEncoder property)</a>
+</li>
+      <li><a href="api/mimo.html#sionna.mimo.zero_forcing_precoder">zero_forcing_precoder() (in module sionna.mimo)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api/mimo.html#sionna.mimo.zf_equalizer">zf_equalizer() (in module sionna.mimo)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.ZFEqualizer">ZFEqualizer (class in sionna.ofdm)</a>
+</li>
+      <li><a href="api/ofdm.html#sionna.ofdm.ZFPrecoder">ZFPrecoder (class in sionna.ofdm)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021-2024 NVIDIA CORPORATION.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+===========================
+Sionna 0.19.2 Documentation
+===========================
+This webpage hosts the documentation for Sionna 0.19.2.
+Please refer to the `new documentation <https://nvlabs.github.io/sionna/>`_ for
+information about the latest release.
+
+
+Where to find detailed information?
+###################################
+
+.. toctree::
+   :maxdepth: 2
+
+   quickstart
+   examples/Discover_Sionna.ipynb
+   tutorials
+   made_with_sionna
+   em_primer
+   api/sionna
+
+License and Citation
+####################
+Sionna is Apache-2.0 licensed, as found in the `LICENSE <https://github.com/nvlabs/sionna/blob/main/LICENSE>`_ file.
+
+If you use this software, please cite it as:
+
+.. code:: bibtex
+
+   @article{sionna,
+    title = {Sionna: An Open-Source Library for Next-Generation Physical Layer Research},
+    author = {Hoydis, Jakob and Cammerer, Sebastian and {Ait Aoudia}, Fayçal and Vem, Avinash and Binder, Nikolaus and Marcus, Guillermo and Keller, Alexander},
+    year = {2022},
+    month = {Mar.},
+    journal = {arXiv preprint},
+    online = {https://arxiv.org/abs/2203.11854}
+   }
