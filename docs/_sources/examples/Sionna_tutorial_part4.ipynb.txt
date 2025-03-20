@@ -32,7 +32,7 @@
    "id": "3c13c44e",
    "metadata": {},
    "source": [
-    "The [official documentation](https://nvlabs.github.io/sionna) provides key material on how to use Sionna and how its components are implemented."
+    "The [official documentation](https://jhoydis.github.io/sionna-0.19.2-doc) provides key material on how to use Sionna and how its components are implemented."
    ]
   },
   {
