@@ -43,7 +43,7 @@
     "except ImportError as e:\n",
     "    # Install Sionna if package is not already installed\n",
     "    import os\n",
-    "    os.system(\"pip install sionna\")\n",
+    "    os.system(\"pip install sionna==0.19\")\n",
     "    import sionna\n",
     "    \n",
     "# IPython \"magic function\" for inline plots\n",
@@ -56,7 +56,7 @@
    "id": "f7c64ad8",
    "metadata": {},
    "source": [
-    "Let us first create a [BinarySource](https://nvlabs.github.io/sionna/api/utils.html?highlight=binarysource#binarysource) to generate a random batch of bit vectors that we can map to constellation symbols:"
+    "Let us first create a [BinarySource](https://jhoydis.github.io/sionna-0.19.2-doc/api/utils.html?highlight=binarysource#binarysource) to generate a random batch of bit vectors that we can map to constellation symbols:"
    ]
   },
   {
@@ -103,7 +103,7 @@
    "id": "3b2026eb",
    "metadata": {},
    "source": [
-    "Next, let us create a [Constellation](https://nvlabs.github.io/sionna/api/mapping.html#sionna.mapping.Constellation) and visualize it:"
+    "Next, let us create a [Constellation](https://jhoydis.github.io/sionna-0.19.2-doc/api/mapping.html#sionna.mapping.Constellation) and visualize it:"
    ]
   },
   {
@@ -140,7 +140,7 @@
    "id": "d95dd632",
    "metadata": {},
    "source": [
-    "We now need a [Mapper](https://nvlabs.github.io/sionna/api/mapping.html#mapper) that maps each row of b to the constellation symbols according to the bit labeling shown above."
+    "We now need a [Mapper](https://jhoydis.github.io/sionna-0.19.2-doc/api/mapping.html#mapper) that maps each row of b to the constellation symbols according to the bit labeling shown above."
    ]
   },
   {
@@ -188,7 +188,7 @@
    "id": "bb549a7f",
    "metadata": {},
    "source": [
-    "Let us now make things a bit more interesting a send our symbols over and [AWGN channel](https://nvlabs.github.io/sionna/api/channel.html#sionna.channel.AWGN):"
+    "Let us now make things a bit more interesting a send our symbols over and [AWGN channel](https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#sionna.channel.AWGN):"
    ]
   },
   {

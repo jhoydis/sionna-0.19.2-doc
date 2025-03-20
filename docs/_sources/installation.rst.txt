@@ -26,7 +26,7 @@ e.g., using `conda <https://docs.conda.io>`_. On macOS, you need to install `ten
 
 .. code-block:: bash
 
-    pip install sionna
+    pip install sionna==0.19
 
 
 2.) Test the installation in Python

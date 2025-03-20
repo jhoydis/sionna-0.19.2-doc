@@ -50,7 +50,7 @@
     "some simple uplink transmissions in the frequency domain. We will then simulate CDFs of the channel condition number\n",
     "and look into frequency-selectivity of the different channel models to understand the reasons for the observed performance differences.\n",
     "\n",
-    "It is recommended that you familiarize yourself with the [API documentation](https://nvlabs.github.io/sionna/api/channel.html) of the `Channel` module\n",
+    "It is recommended that you familiarize yourself with the [API documentation](https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html) of the `Channel` module\n",
     "and, in particular, the 3GPP 38,901 models that require a substantial amount of configuration.  The last set of simulations in this notebook take some time, especially when you have no GPU available. For this reason, we provide the simulation\n",
     "results directly in the cells generating the figures. Simply uncomment the corresponding lines to show this results."
    ]
@@ -105,7 +105,7 @@
     "except ImportError as e:\n",
     "    # Install Sionna if package is not already installed\n",
     "    import os\n",
-    "    os.system(\"pip install sionna\")\n",
+    "    os.system(\"pip install sionna==0.19\")\n",
     "    import sionna\n",
     "\n",
     "# Configure the notebook to use only a single GPU and allocate only as much memory as needed\n",
@@ -1025,7 +1025,7 @@
    "id": "53a18c80-2bba-449a-b2c2-5e75ee2196f6",
    "metadata": {},
    "source": [
-    "Due to the worse channel conditioning, the RMa model achieves the worst performance with perfect CSI. However, as a result of the smaller frequency selectivity, imperfect channel estimation only leads to an almost constant 6dB performace loss. For the UMI and UMa models, the used channel estimator with nearest-neighbor interpolation is not accurate enough so that the BER curves saturate at high SNR. This could, for example, be circumvented with another interpolation method (e.g., [linear interpolation with time averaging](https://nvlabs.github.io/sionna/api/ofdm.html#linearinterpolator)) or a different pilot pattern."
+    "Due to the worse channel conditioning, the RMa model achieves the worst performance with perfect CSI. However, as a result of the smaller frequency selectivity, imperfect channel estimation only leads to an almost constant 6dB performace loss. For the UMI and UMa models, the used channel estimator with nearest-neighbor interpolation is not accurate enough so that the BER curves saturate at high SNR. This could, for example, be circumvented with another interpolation method (e.g., [linear interpolation with time averaging](https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#linearinterpolator)) or a different pilot pattern."
    ]
   }
  ],

@@ -78,7 +78,7 @@
     "except ImportError as e:\n",
     "    # Install Sionna if package is not already installed\n",
     "    import os\n",
-    "    os.system(\"pip install sionna\")\n",
+    "    os.system(\"pip install sionna==0.19\")\n",
     "    import sionna as sn\n",
     "\n",
     "# Configure the notebook to use only a single GPU and allocate only as much memory as needed\n",
@@ -666,7 +666,7 @@
     "**Task:** One can play with the SNR to visualize the impact on the received samples.\n",
     "\n",
     "**Advanced Task:** Compare the LLR distribution for \"app\" demapping with \"maxlog\" demapping.\n",
-    "The [Bit-Interleaved Coded Modulation](https://nvlabs.github.io/sionna/examples/Bit_Interleaved_Coded_Modulation.html) example notebook can be helpful for this task.\n"
+    "The [Bit-Interleaved Coded Modulation](https://jhoydis.github.io/sionna-0.19.2-doc/examples/Bit_Interleaved_Coded_Modulation.html) example notebook can be helpful for this task.\n"
    ]
   },
   {
@@ -864,7 +864,7 @@
     "## Forward Error Correction (FEC)\n",
     "\n",
     "We now add channel coding to our transceiver to make it more robust against transmission errors. For this, we will use [5G compliant low-density parity-check (LDPC) codes and Polar codes](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3214).\n",
-    "You can find more detailed information in the notebooks [Bit-Interleaved Coded Modulation (BICM)](https://nvlabs.github.io/sionna/examples/Bit_Interleaved_Coded_Modulation.html) and [5G Channel Coding and Rate-Matching: Polar vs. LDPC Codes](https://nvlabs.github.io/sionna/examples/5G_Channel_Coding_Polar_vs_LDPC_Codes.html)."
+    "You can find more detailed information in the notebooks [Bit-Interleaved Coded Modulation (BICM)](https://jhoydis.github.io/sionna-0.19.2-doc/examples/Bit_Interleaved_Coded_Modulation.html) and [5G Channel Coding and Rate-Matching: Polar vs. LDPC Codes](https://jhoydis.github.io/sionna-0.19.2-doc/examples/5G_Channel_Coding_Polar_vs_LDPC_Codes.html)."
    ]
   },
   {
@@ -1010,7 +1010,7 @@
     "\n",
     "In case you want to access low-level features of the Polar codes, please use `sionna.fec.polar.PolarEncoder` and the desired decoder (`sionna.fec.polar.PolarSCDecoder`, `sionna.fec.polar.PolarSCLDecoder` or `sionna.fec.polar.PolarBPDecoder`).\n",
     "\n",
-    "Further details can be found in the tutorial notebook on [5G Channel Coding and Rate-Matching: Polar vs. LDPC Codes](https://nvlabs.github.io/sionna/examples/5G_Channel_Coding_Polar_vs_LDPC_Codes.html).\n"
+    "Further details can be found in the tutorial notebook on [5G Channel Coding and Rate-Matching: Polar vs. LDPC Codes](https://jhoydis.github.io/sionna-0.19.2-doc/examples/5G_Channel_Coding_Polar_vs_LDPC_Codes.html).\n"
    ]
   },
   {

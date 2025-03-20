@@ -127,7 +127,7 @@
     "except ImportError as e:\n",
     "    # Install Sionna if package is not already installed\n",
     "    import os\n",
-    "    os.system(\"pip install sionna\")\n",
+    "    os.system(\"pip install sionna==0.19\")\n",
     "    import sionna\n",
     "\n",
     "# Configure the notebook to use only a single GPU and allocate only as much memory as needed\n",
@@ -184,7 +184,7 @@
    "source": [
     "The next cell defines the simulation parameters used throughout this notebook.\n",
     "\n",
-    "This includes the OFDM waveform parameters, [antennas geometries and patterns](https://nvlabs.github.io/sionna/api/channel.wireless.html#sionna.channel.tr38901.PanelArray), and the [3GPP UMi channel model](https://nvlabs.github.io/sionna/api/channel.wireless.html#sionna.channel.tr38901.UMi)."
+    "This includes the OFDM waveform parameters, [antennas geometries and patterns](https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.wireless.html#sionna.channel.tr38901.PanelArray), and the [3GPP UMi channel model](https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.wireless.html#sionna.channel.tr38901.UMi)."
    ]
   },
   {
@@ -266,7 +266,7 @@
    "id": "0c6fdb83-e5b9-4521-a15a-59bfe337f041",
    "metadata": {},
    "source": [
-    "The next cell defines a [resource grid](https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.ResourceGrid) and an [OFDM channel generator](https://nvlabs.github.io/sionna/api/channel.wireless.html#sionna.channel.GenerateOFDMChannel) for sampling the channel in the frequency domain."
+    "The next cell defines a [resource grid](https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.ResourceGrid) and an [OFDM channel generator](https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.wireless.html#sionna.channel.GenerateOFDMChannel) for sampling the channel in the frequency domain."
    ]
   },
   {
@@ -288,7 +288,7 @@
    "metadata": {},
    "source": [
     "Then, a function that samples the channel is defined.\n",
-    "It randomly samples a network topology for every batch and for every batch example using the [appropriate utility function](https://nvlabs.github.io/sionna/api/channel.wireless.html#sionna.channel.gen_single_sector_topology)."
+    "It randomly samples a network topology for every batch and for every batch example using the [appropriate utility function](https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.wireless.html#sionna.channel.gen_single_sector_topology)."
    ]
   },
   {
@@ -549,15 +549,15 @@
    "source": [
     "OFDM channel estimation consists of two steps:\n",
     "\n",
-    "1. Channel estimation at pilot-carrying resource elements using [least-squares (LS)](https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.LSChannelEstimator).\n",
+    "1. Channel estimation at pilot-carrying resource elements using [least-squares (LS)](https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.LSChannelEstimator).\n",
     "\n",
     "2. Interpolation for data-carrying resource elements, for which three methods are available in Sionna:\n",
     "\n",
-    "- [Nearest-neighbor](https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.NearestNeighborInterpolator), which uses the channel estimate of the nearest pilot\n",
-    "- [Linear](https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.LinearInterpolator), with optional averaging over the OFDM symbols (time dimension) for low mobility scenarios\n",
-    "- [LMMSE](https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.LMMSEInterpolator), which requires knowledge of the time and frequency covariance matrices\n",
+    "- [Nearest-neighbor](https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.NearestNeighborInterpolator), which uses the channel estimate of the nearest pilot\n",
+    "- [Linear](https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.LinearInterpolator), with optional averaging over the OFDM symbols (time dimension) for low mobility scenarios\n",
+    "- [LMMSE](https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.LMMSEInterpolator), which requires knowledge of the time and frequency covariance matrices\n",
     "\n",
-    "The LMMSE interpolator also features optional spatial smoothin, which requires the spatial covarance matrix. The [API documentation](https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.LMMSEInterpolator) explains in more detail how this interpolator operates."
+    "The LMMSE interpolator also features optional spatial smoothin, which requires the spatial covarance matrix. The [API documentation](https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.LMMSEInterpolator) explains in more detail how this interpolator operates."
    ]
   },
   {
@@ -856,10 +856,10 @@
     "\n",
     "The following MIMO detection algorithms, all available out-of-the-box in Sionna, are considered:\n",
     "\n",
-    "- [LMMSE equalization followed by APP demapping](https://nvlabs.github.io/sionna/api/mimo.html#sionna.mimo.LinearDetector)\n",
-    "- [K-Best detection](https://nvlabs.github.io/sionna/api/mimo.html#sionna.mimo.KBestDetector)\n",
-    "- [EP detection](https://nvlabs.github.io/sionna/api/mimo.html#sionna.mimo.EPDetector)\n",
-    "- [MMSE-PIC detection](https://nvlabs.github.io/sionna/api/mimo.html#sionna.mimo.MMSEPICDetector)\n",
+    "- [LMMSE equalization followed by APP demapping](https://jhoydis.github.io/sionna-0.19.2-doc/api/mimo.html#sionna.mimo.LinearDetector)\n",
+    "- [K-Best detection](https://jhoydis.github.io/sionna-0.19.2-doc/api/mimo.html#sionna.mimo.KBestDetector)\n",
+    "- [EP detection](https://jhoydis.github.io/sionna-0.19.2-doc/api/mimo.html#sionna.mimo.EPDetector)\n",
+    "- [MMSE-PIC detection](https://jhoydis.github.io/sionna-0.19.2-doc/api/mimo.html#sionna.mimo.MMSEPICDetector)\n",
     "\n",
     "Both perfect and imperfect channel state information is considered in the simulations.\n",
     "LS estimation combined with LMMSE interpolation is used, with time-frequency-space smoothing (in this order, i.e.,  `order='t-f-s'`)."
@@ -1499,7 +1499,7 @@
     "\n",
     "- EP is prone to numerical imprecision and could therefore achieve better BER/SER with double precision (`dtype=tf.complex128`). The number of iterations `l` as well as the update smoothing parameter `beta` impact performance.\n",
     "\n",
-    "- For K-Best, there is not a unique way to compute soft information and better performance could be achieved with improved methods for computing soft information from a list of candidates (see [list2llr](https://nvlabs.github.io/sionna/api/mimo.html#list2llr)). Increasing the list size `k` results in improved accuracy at the cost of higher complexity.\n",
+    "- For K-Best, there is not a unique way to compute soft information and better performance could be achieved with improved methods for computing soft information from a list of candidates (see [list2llr](https://jhoydis.github.io/sionna-0.19.2-doc/api/mimo.html#list2llr)). Increasing the list size `k` results in improved accuracy at the cost of higher complexity.\n",
     "\n",
     "- MMSE-PIC can be easily combined with a decoder to implement iterative detection and decoding, as it takes as input soft prior information on the bits/symbols."
    ]

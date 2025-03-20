@@ -55,7 +55,7 @@
     "except ImportError as e:\n",
     "    # Install Sionna if package is not already installed\n",
     "    import os\n",
-    "    os.system(\"pip install sionna\")\n",
+    "    os.system(\"pip install sionna==0.19\")\n",
     "    import sionna\n",
     "\n",
     "# Configure the notebook to use only a single GPU and allocate only as much memory as needed\n",
@@ -276,7 +276,7 @@
    "source": [
     "## Using DeepMIMO with Sionna\n",
     "\n",
-    "The DeepMIMO Python package provides [a Sionna-compliant channel impulse response generator](https://nvlabs.github.io/sionna/examples/CIR_Dataset.html#Generators) that adapts the structure of the DeepMIMO dataset to be consistent with Sionna.\n",
+    "The DeepMIMO Python package provides [a Sionna-compliant channel impulse response generator](https://jhoydis.github.io/sionna-0.19.2-doc/examples/CIR_Dataset.html#Generators) that adapts the structure of the DeepMIMO dataset to be consistent with Sionna.\n",
     "\n",
     "An adapter is instantiated for a given DeepMIMO dataset. In addition to the dataset, the adapter takes the indices of the basestations and users, to generate the channels between these basestations and users:\n",
     "\n",

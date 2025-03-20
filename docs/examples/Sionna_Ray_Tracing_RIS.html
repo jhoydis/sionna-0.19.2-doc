@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tutorial on Reconfigurable Intelligent Surfaces (RIS) &mdash; Sionna 0.19.2 documentation</title>
+  <title>Tutorial on Reconfigurable Intelligent Surfaces (RIS) &mdash; Sionna 0.19.2 0.19.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -42,7 +42,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            Sionna
+            Sionna 0.19.2
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -333,7 +333,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../made_with_sionna.html">“Made with Sionna”</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../em_primer.html">Primer on Electromagnetics</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#coordinate-system-rotations-and-vector-fields">Coordinate system, rotations, and vector fields</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#planar-time-harmonic-waves">Planar Time-Harmonic Waves</a></li>
@@ -782,7 +781,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Sionna</a>
+          <a href="../index.html">Sionna 0.19.2</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -804,12 +803,12 @@
 <div style="margin-bottom:15px;">
     <table>
         <td style="padding: 0px 0px;">
-            <a href=" https://colab.research.google.com/github/NVlabs/sionna/blob/main/examples/Sionna_Ray_Tracing_RIS.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Sionna_Ray_Tracing_RIS.ipynb" style="vertical-align:text-bottom">
                 <img alt="Colab logo" src="../_static/colab_logo.svg" style="width: 40px; min-width: 40px">
             </a>
         </td>
         <td style="padding: 4px 0px;">
-            <a href=" https://colab.research.google.com/github/nvlabs/sionna/blob/main/examples/Sionna_Ray_Tracing_RIS.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Sionna_Ray_Tracing_RIS.ipynb" style="vertical-align:text-bottom">
                 Run in Google Colab
             </a>
         </td>
@@ -818,7 +817,7 @@
         </td>
 
         <td class="wy-breadcrumbs-aside" style="padding: 0 30px;">
-            <a href="https://github.com/nvlabs/sionna/blob/main/examples/Sionna_Ray_Tracing_RIS.ipynb" style="vertical-align:text-bottom">
+            <a href="https://github.com/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Sionna_Ray_Tracing_RIS.ipynb" style="vertical-align:text-bottom">
                 <i class="fa fa-github" style="font-size:24px;"></i>
                 View on GitHub
             </a>
@@ -835,7 +834,7 @@
 
 </div><section id="Tutorial-on-Reconfigurable-Intelligent-Surfaces-(RIS)">
 <h1>Tutorial on Reconfigurable Intelligent Surfaces (RIS)<a class="headerlink" href="#Tutorial-on-Reconfigurable-Intelligent-Surfaces-(RIS)" title="Link to this heading"></a></h1>
-<p>This notebook deals with the use of <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#reconfigurable-intelligent-surfaces-ris">reconfigurable intelligent surfaces (RIS)</a> in Sionna RT. In particular, you will</p>
+<p>This notebook deals with the use of <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#reconfigurable-intelligent-surfaces-ris">reconfigurable intelligent surfaces (RIS)</a> in Sionna RT. In particular, you will</p>
 <ul class="simple">
 <li><p>Learn how to instantiate and configure RIS</p></li>
 <li><p>Reproduce some results from the literature</p></li>
@@ -858,10 +857,10 @@
 </section>
 <section id="Background-Information">
 <h2>Background Information<a class="headerlink" href="#Background-Information" title="Link to this heading"></a></h2>
-<p>For background information on reconfigurable intelligent surfaces (RIS), we refer to the relevant sections of the <a class="reference external" href="https://nvlabs.github.io/sionna/em_primer.html#reconfigurable-intelligent-surfaces-ris">EM Primer</a> and the <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#reconfigurable-intelligent-surfaces-ris">API Documentation</a>.</p>
+<p>For background information on reconfigurable intelligent surfaces (RIS), we refer to the relevant sections of the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/em_primer.html#reconfigurable-intelligent-surfaces-ris">EM Primer</a> and the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#reconfigurable-intelligent-surfaces-ris">API Documentation</a>.</p>
 <p>RIS are modeled in Sionna as radio devices, like transmitters and receivers, which can be placed at arbitrary positions in a scene.</p>
-<p>Every RIS has a <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#sionna.rt.PhaseProfile">phase profile</a> and an <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#sionna.rt.AmplitdueProfile">amplitude profile</a> which determine together the reradiated electro-magnetic field. These profiles are assumed to be discrete, i.e., a unique value can be configured for a regular grid of points (or unit cells) on the RIS with <span class="math notranslate nohighlight">\(\lambda/2\)</span> spacing. These values are then interpolated to obtain continuous phase
-and amplitude profiles over the RIS.</p>
+<p>Every RIS has a <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#sionna.rt.PhaseProfile">phase profile</a> and an <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#sionna.rt.AmplitdueProfile">amplitude profile</a> which determine together the reradiated electro-magnetic field. These profiles are assumed to be discrete, i.e., a unique value can be configured for a regular grid of points (or unit cells) on the RIS with <span class="math notranslate nohighlight">\(\lambda/2\)</span> spacing. These values are then interpolated to
+obtain continuous phase and amplitude profiles over the RIS.</p>
 <p>Most properties of RIS can be made trainable by assigning a <a class="reference external" href="https://www.tensorflow.org/api_docs/python/tf/Variable">tf.Variable</a> to them.</p>
 <p>The computation of propagation paths assumes the model from <a class="reference internal" href="#References"><span class="std std-ref">[1]</span></a> while coverage maps are based on <a class="reference internal" href="#References"><span class="std std-ref">[2]</span></a>.</p>
 <p>For complexity reasons, propagation paths are only computed for direct links between a transmitter, RIS, and receiver. No other interactions with the scene are possible. For coverage maps, this restriction does not apply.</p>
@@ -884,7 +883,7 @@ and amplitude profiles over the RIS.</p>
 <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="c1"># Install Sionna if package is not already installed</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna==0.19&quot;</span><span class="p">)</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">sionna</span>
 
 <span class="c1"># Configure the notebook to use only a single GPU and allocate only as much memory as needed</span>
@@ -1001,8 +1000,8 @@ Number of cells:  19600
 Velocity vector [m/s]:  [0. 0. 0.]
 </pre></div></div>
 </div>
-<p>Like any scene object in Sionna RT, RIS can have a velocity vector which is used to compute path-specific Doppler shifts. We will not make use of this property in this tutorial. You can learn more about mobility in Sionna in this <a class="reference external" href="https://nvlabs.github.io/sionna/examples/Sionna_Ray_Tracing_Mobility.html">notebook</a>.</p>
-<p>RIS have a <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#sionna.rt.PhaseProfile">phase profile</a> and an <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#sionna.rt.AmplitdueProfile">amplitude profile</a> which default to a configuration where the RIS acts like a normal mirror-like reflector.</p>
+<p>Like any scene object in Sionna RT, RIS can have a velocity vector which is used to compute path-specific Doppler shifts. We will not make use of this property in this tutorial. You can learn more about mobility in Sionna in this <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/examples/Sionna_Ray_Tracing_Mobility.html">notebook</a>.</p>
+<p>RIS have a <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#sionna.rt.PhaseProfile">phase profile</a> and an <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#sionna.rt.AmplitdueProfile">amplitude profile</a> which default to a configuration where the RIS acts like a normal mirror-like reflector.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
@@ -1056,7 +1055,7 @@ tf.Tensor(
 </div>
 <p>We can see that the RIS has a single reradiation mode, the amplitudes are equal to one and the phases equal to zero.</p>
 <p>An RIS is defined in the y-z plane, centered at the origin, and assumed to point toward the positive x-axis.</p>
-<p>A rapid way to configure the amplitude and phase profiles is via the helper functions <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#sionna.rt.RIS.focusing_lens">RIS.focusing_lens()</a> or <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#sionna.rt.RIS.phase_gradient_reflector">RIS.phase_gradient_reflector()</a>. However, any other configuration is possible by simply assigning the desired profile values. All of these options will be explored later on.</p>
+<p>A rapid way to configure the amplitude and phase profiles is via the helper functions <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#sionna.rt.RIS.focusing_lens">RIS.focusing_lens()</a> or <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#sionna.rt.RIS.phase_gradient_reflector">RIS.phase_gradient_reflector()</a>. However, any other configuration is possible by simply assigning the desired profile values. All of these options will be explored later on.</p>
 <p>Let us now inspect the phase profile differences between a focusing lens and a phase gradient reflector. Both assume that a wave arrives from a certain point or direction, i.e., a <code class="docutils literal notranslate"><span class="pre">source</span></code>, and some of its energy shall be reradiated toward another point or direction, i.e., a <code class="docutils literal notranslate"><span class="pre">target</span></code>. Multiple reradiation modes can be configured by providing pairs of sources and targets. This is also further explored below.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
@@ -1163,7 +1162,7 @@ tf.Tensor(
         <span class="c1"># We need to scale the path gain by the distance from the</span>
         <span class="c1"># transmitter to the RIS to simulate an incoming field stength of</span>
         <span class="c1"># 1 V/m and undo the effect of the isotropic antenna</span>
-        <span class="c1"># see https://nvlabs.github.io/sionna/em_primer.html#equation-h-final</span>
+        <span class="c1"># see https://jhoydis.github.io/sionna-0.19.2-doc/em_primer.html#equation-h-final</span>
         <span class="k">if</span> <span class="n">path_loss</span><span class="p">:</span>
             <span class="n">e</span> <span class="o">=</span> <span class="mi">20</span><span class="o">*</span><span class="n">tf</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">a</span><span class="p">))</span><span class="o">/</span><span class="n">tf</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mf">10.</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
@@ -1293,8 +1292,8 @@ tf.Tensor(
 <img alt="../_images/examples_Sionna_Ray_Tracing_RIS_27_0.png" src="../_images/examples_Sionna_Ray_Tracing_RIS_27_0.png" />
 </div>
 </div>
-<p>While the zones of coverage match closely the ones we have computed via <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#compute-paths">scene.compute_paths()</a> for individually placed receiver locations, we can see that large areas of the coverage map are empty. The reasons for this are (i) that anomalous diffraction around the RIS’ edges as described in Section II-C <a class="reference internal" href="#References"><span class="std std-ref">[2]</span></a> is not modelled and (ii) that the coverage map is located very close to the RIS, i.e., around 5m. The
-difference between both results becomes smaller in the far field.</p>
+<p>While the zones of coverage match closely the ones we have computed via <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#compute-paths">scene.compute_paths()</a> for individually placed receiver locations, we can see that large areas of the coverage map are empty. The reasons for this are (i) that anomalous diffraction around the RIS’ edges as described in Section II-C <a class="reference internal" href="#References"><span class="std std-ref">[2]</span></a> is not modelled and (ii) that the coverage map is located very close to the RIS, i.e., around 5m.
+The difference between both results becomes smaller in the far field.</p>
 <p>Also note that the line-of-sight field components are not taken into account here for a better visualization. The latter would be the dominating source of radiation otherwise.</p>
 </section>
 <section id="Coverage-Enhancement-with-RIS">
@@ -1735,7 +1734,7 @@ Path gain with focusing lens: -71.74dB
 <h2>Summary<a class="headerlink" href="#Summary" title="Link to this heading"></a></h2>
 <p>In this notebook, you have learned how to configure, use, and optimize reconfigurable intelligent surfaces (RIS) in Sionna RT. It is important to keep in mind that not all RIS configurations, such as the ones showed above, are realizable in practice.</p>
 <p>RIS modeling and optimization are fields of active research and the examples in this notebook are only meant to help you get started.</p>
-<p>We hope you enjoyed this tutorial and encourage you to get hands-on, conduct your own experiments, and deepen your understanding of ray tracing. There’s always more to learn, so do explore our other <a class="reference external" href="https://nvlabs.github.io/sionna/tutorials.html#ray-tracing">tutorials</a> as well.</p>
+<p>We hope you enjoyed this tutorial and encourage you to get hands-on, conduct your own experiments, and deepen your understanding of ray tracing. There’s always more to learn, so do explore our other <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/tutorials.html#ray-tracing">tutorials</a> as well.</p>
 </section>
 <section id="References">
 <h2>References<a class="headerlink" href="#References" title="Link to this heading"></a></h2>

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>“Hello, world!” &mdash; Sionna 0.19.2 documentation</title>
+  <title>“Hello, world!” &mdash; Sionna 0.19.2 0.19.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -42,7 +42,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            Sionna
+            Sionna 0.19.2
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -333,7 +333,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../made_with_sionna.html">“Made with Sionna”</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../em_primer.html">Primer on Electromagnetics</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#coordinate-system-rotations-and-vector-fields">Coordinate system, rotations, and vector fields</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#planar-time-harmonic-waves">Planar Time-Harmonic Waves</a></li>
@@ -782,7 +781,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Sionna</a>
+          <a href="../index.html">Sionna 0.19.2</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -804,12 +803,12 @@
 <div style="margin-bottom:15px;">
     <table>
         <td style="padding: 0px 0px;">
-            <a href=" https://colab.research.google.com/github/NVlabs/sionna/blob/main/examples/Hello_World.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Hello_World.ipynb" style="vertical-align:text-bottom">
                 <img alt="Colab logo" src="../_static/colab_logo.svg" style="width: 40px; min-width: 40px">
             </a>
         </td>
         <td style="padding: 4px 0px;">
-            <a href=" https://colab.research.google.com/github/nvlabs/sionna/blob/main/examples/Hello_World.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Hello_World.ipynb" style="vertical-align:text-bottom">
                 Run in Google Colab
             </a>
         </td>
@@ -818,7 +817,7 @@
         </td>
 
         <td class="wy-breadcrumbs-aside" style="padding: 0 30px;">
-            <a href="https://github.com/nvlabs/sionna/blob/main/examples/Hello_World.ipynb" style="vertical-align:text-bottom">
+            <a href="https://github.com/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Hello_World.ipynb" style="vertical-align:text-bottom">
                 <i class="fa fa-github" style="font-size:24px;"></i>
                 View on GitHub
             </a>
@@ -852,7 +851,7 @@
 <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="c1"># Install Sionna if package is not already installed</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna==0.19&quot;</span><span class="p">)</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">sionna</span>
 
 <span class="c1"># IPython &quot;magic function&quot; for inline plots</span>
@@ -861,7 +860,7 @@
 </pre></div>
 </div>
 </div>
-<p>Let us first create a <a class="reference external" href="https://nvlabs.github.io/sionna/api/utils.html?highlight=binarysource#binarysource">BinarySource</a> to generate a random batch of bit vectors that we can map to constellation symbols:</p>
+<p>Let us first create a <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/utils.html?highlight=binarysource#binarysource">BinarySource</a> to generate a random batch of bit vectors that we can map to constellation symbols:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -890,7 +889,7 @@ array([[0., 1., 0., 1.],
        [1., 0., 1., 1.]], dtype=float32)&gt;
 </pre></div></div>
 </div>
-<p>Next, let us create a <a class="reference external" href="https://nvlabs.github.io/sionna/api/mapping.html#sionna.mapping.Constellation">Constellation</a> and visualize it:</p>
+<p>Next, let us create a <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/mapping.html#sionna.mapping.Constellation">Constellation</a> and visualize it:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -907,7 +906,7 @@ array([[0., 1., 0., 1.],
 <img alt="../_images/examples_Hello_World_6_0.png" src="../_images/examples_Hello_World_6_0.png" />
 </div>
 </div>
-<p>We now need a <a class="reference external" href="https://nvlabs.github.io/sionna/api/mapping.html#mapper">Mapper</a> that maps each row of b to the constellation symbols according to the bit labeling shown above.</p>
+<p>We now need a <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/mapping.html#mapper">Mapper</a> that maps each row of b to the constellation symbols according to the bit labeling shown above.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -937,7 +936,7 @@ array([[ 0.3162278-0.9486833j],
        [ 0.3162278+0.9486833j]], dtype=complex64)&gt;
 </pre></div></div>
 </div>
-<p>Let us now make things a bit more interesting a send our symbols over and <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#sionna.channel.AWGN">AWGN channel</a>:</p>
+<p>Let us now make things a bit more interesting a send our symbols over and <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#sionna.channel.AWGN">AWGN channel</a>:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>

@@ -7,7 +7,7 @@
    "source": [
     "# 5G NR PUSCH Tutorial\n",
     "\n",
-    "This notebook provides an introduction to Sionna's [5G New Radio (NR) module](https://nvlabs.github.io/sionna/api/nr.html) and, in particular, the [physical uplink shared channel (PUSCH)](https://nvlabs.github.io/sionna/api/nr.html#pusch). This module provides implementations of a small subset of the physical layer functionalities as described in the 3GPP specifications [38.211](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3213), [38.212](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3214) and [38.214](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3216). \n",
+    "This notebook provides an introduction to Sionna's [5G New Radio (NR) module](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html) and, in particular, the [physical uplink shared channel (PUSCH)](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html#pusch). This module provides implementations of a small subset of the physical layer functionalities as described in the 3GPP specifications [38.211](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3213), [38.212](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3214) and [38.214](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3216). \n",
     "\n",
     "\n",
     "You will\n",
@@ -66,7 +66,7 @@
     "except ImportError as e:\n",
     "    # Install Sionna if package is not already installed\n",
     "    import os\n",
-    "    os.system(\"pip install sionna\")\n",
+    "    os.system(\"pip install sionna==0.19\")\n",
     "    import sionna\n",
     "\n",
     "import tensorflow as tf\n",
@@ -395,7 +395,7 @@
    "id": "9e1803b5",
    "metadata": {},
    "source": [
-    "Please have a look at the API documentation of [PUSCHCarrierConfig](https://nvlabs.github.io/sionna/api/nr.html#sionna.nr.CarrierConfig) for more detail."
+    "Please have a look at the API documentation of [PUSCHCarrierConfig](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html#sionna.nr.CarrierConfig) for more detail."
    ]
   },
   {
@@ -1154,7 +1154,7 @@
    "metadata": {},
    "source": [
     "There are several other parameters that impact the pilot patterns. The full DMRS configuration can be displayed with the following command.\n",
-    "We refer to the [API documentation of the PUSCHDMRSConfig class](https://nvlabs.github.io/sionna/api/nr.html#puschdmrsconfig) for further details."
+    "We refer to the [API documentation of the PUSCHDMRSConfig class](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html#puschdmrsconfig) for further details."
    ]
   },
   {
@@ -1207,7 +1207,7 @@
    "source": [
     "## Transport Blocks and MCS\n",
     "\n",
-    "The modulation and coding scheme (MCS) is set in 5G NR via the MCS index and MCS table which are properties of transport block configuration [TBConfig](https://nvlabs.github.io/sionna/api/nr.html#sionna.nr.TBConfig). When you create an instance of ``PUSCHConfig``, a default instance of ``TBConfig`` is created. It can be accessed via the following command:"
+    "The modulation and coding scheme (MCS) is set in 5G NR via the MCS index and MCS table which are properties of transport block configuration [TBConfig](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html#sionna.nr.TBConfig). When you create an instance of ``PUSCHConfig``, a default instance of ``TBConfig`` is created. It can be accessed via the following command:"
    ]
   },
   {
@@ -1250,7 +1250,7 @@
    "id": "c0d2301c",
    "metadata": {},
    "source": [
-    "You can see that the current MCS Table is 1 and the MCS index is 14. Looking at the corresponding table in the API documentation of [TBConfig](https://nvlabs.github.io/sionna/api/nr.html#sionna.nr.TBConfig), you can see that we should have  a 16QAM modulation (i.e., 4 bits per symbol) and a target coderate of 553/1024=0.54 which matches the values above. The data scrambling ID $n_\\text{ID}$ is set to `None` which implies that the physical layer cell id $N^\\text{cell}_\\text{ID}$ will be used instead.\n",
+    "You can see that the current MCS Table is 1 and the MCS index is 14. Looking at the corresponding table in the API documentation of [TBConfig](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html#sionna.nr.TBConfig), you can see that we should have  a 16QAM modulation (i.e., 4 bits per symbol) and a target coderate of 553/1024=0.54 which matches the values above. The data scrambling ID $n_\\text{ID}$ is set to `None` which implies that the physical layer cell id $N^\\text{cell}_\\text{ID}$ will be used instead.\n",
     "\n",
     "We can change the MCS index and table as follows:"
    ]
@@ -1366,7 +1366,7 @@
    "id": "77a07cff",
    "metadata": {},
    "source": [
-    "For more details about how the transportblock encoding/decoding works, we refer to the API documentation of the [TBEncoder](https://nvlabs.github.io/sionna/api/nr.html#sionna.nr.TBEncoder)."
+    "For more details about how the transportblock encoding/decoding works, we refer to the API documentation of the [TBEncoder](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html#sionna.nr.TBEncoder)."
    ]
   },
   {
@@ -1399,9 +1399,9 @@
    "id": "bd633a17",
    "metadata": {},
    "source": [
-    "Information bits are either randomly generated or provided as input and then encoded into a transport block by the [TBEncoder](https://nvlabs.github.io/sionna/api/nr.html#sionna.nr.TBEncoder). The encoded bits are then mapped to QAM constellation symbols by the [Mapper](https://nvlabs.github.io/sionna/api/mapping.html#sionna.mapping.Mapper). The [LayerMapper](https://nvlabs.github.io/sionna/api/nr.html#sionna.nr.LayerMapper) splits the modulated symbols into different layers which are then mapped onto OFDM resource grids by the [ResourceGridMapper](https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.ResourceGridMapper). If precoding is enabled in the [PUSCHConfig](https://nvlabs.github.io/sionna/api/nr.html#sionna.nr.PUSCHConfig), the resource grids are further precoded by the [PUSCHPrecoder](https://nvlabs.github.io/sionna/api/nr.html#sionna.nr.PUSCHPrecoder) so that there is one for each transmitter and antenna port. If ``output_domain`` equals “freq”, these are the ouputs \n",
+    "Information bits are either randomly generated or provided as input and then encoded into a transport block by the [TBEncoder](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html#sionna.nr.TBEncoder). The encoded bits are then mapped to QAM constellation symbols by the [Mapper](https://jhoydis.github.io/sionna-0.19.2-doc/api/mapping.html#sionna.mapping.Mapper). The [LayerMapper](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html#sionna.nr.LayerMapper) splits the modulated symbols into different layers which are then mapped onto OFDM resource grids by the [ResourceGridMapper](https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.ResourceGridMapper). If precoding is enabled in the [PUSCHConfig](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html#sionna.nr.PUSCHConfig), the resource grids are further precoded by the [PUSCHPrecoder](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html#sionna.nr.PUSCHPrecoder) so that there is one for each transmitter and antenna port. If ``output_domain`` equals “freq”, these are the ouputs \n",
     "x\n",
-    ". If ``output_domain`` is chosen to be “time”, the resource grids are transformed into time-domain signals by the [OFDMModulator](https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.OFDMModulator)."
+    ". If ``output_domain`` is chosen to be “time”, the resource grids are transformed into time-domain signals by the [OFDMModulator](https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.OFDMModulator)."
    ]
   },
   {
@@ -1566,7 +1566,7 @@
    "source": [
     "## Components of the PUSCHReceiver\n",
     "\n",
-    "The [PUSCHReceiver](https://nvlabs.github.io/sionna/api/nr.html#sionna.nr.PUSCHReceiver) is the counter-part to the [PUSCHTransmitter](https://nvlabs.github.io/sionna/api/nr.html#sionna.nr.PUSCHTransmitter) as it *simply* recovers the transmitted information bits from received waveform. It combines multiple processing blocks in a single layer as shown in the following figure:"
+    "The [PUSCHReceiver](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html#sionna.nr.PUSCHReceiver) is the counter-part to the [PUSCHTransmitter](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html#sionna.nr.PUSCHTransmitter) as it *simply* recovers the transmitted information bits from received waveform. It combines multiple processing blocks in a single layer as shown in the following figure:"
    ]
   },
   {
@@ -1589,9 +1589,9 @@
    "metadata": {},
    "source": [
     "If the ``input_domain`` equals “time”, the inputs $\\mathbf{y}$\n",
-    " are first transformed to resource grids with the [OFDMDemodulator](https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.OFDMModulator). Then channel estimation is performed, e.g., with the help of the [PUSCHLSChannelEstimator](https://nvlabs.github.io/sionna/api/nr.html#sionna.nr.PUSCHLSChannelEstimator). If ``channel_estimator`` is chosen to be “perfect”, this step is skipped and the input $\\mathbf{h}$ is used instead. Next, MIMO detection is carried out with an arbitrary [OFDMDetector](https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.OFDMDetector). The resulting LLRs for each layer are then combined to transport blocks with the help of the [LayerDemapper](https://nvlabs.github.io/sionna/api/nr.html#sionna.nr.LayerDemapper). Finally, the transport blocks are decoded with the [TBDecoder](https://nvlabs.github.io/sionna/api/nr.html#sionna.nr.TBDecoder).\n",
+    " are first transformed to resource grids with the [OFDMDemodulator](https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.OFDMModulator). Then channel estimation is performed, e.g., with the help of the [PUSCHLSChannelEstimator](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html#sionna.nr.PUSCHLSChannelEstimator). If ``channel_estimator`` is chosen to be “perfect”, this step is skipped and the input $\\mathbf{h}$ is used instead. Next, MIMO detection is carried out with an arbitrary [OFDMDetector](https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.OFDMDetector). The resulting LLRs for each layer are then combined to transport blocks with the help of the [LayerDemapper](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html#sionna.nr.LayerDemapper). Finally, the transport blocks are decoded with the [TBDecoder](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html#sionna.nr.TBDecoder).\n",
     " \n",
-    "If we instantiate a ``PUSCHReceiver`` as done in the next cell, default implementations of all blocks as described in the [API documentation](https://nvlabs.github.io/sionna/api/nr.html#sionna.nr.PUSCHReceiver) are used.  \n"
+    "If we instantiate a ``PUSCHReceiver`` as done in the next cell, default implementations of all blocks as described in the [API documentation](https://jhoydis.github.io/sionna-0.19.2-doc/api/nr.html#sionna.nr.PUSCHReceiver) are used.  \n"
    ]
   },
   {
@@ -1629,7 +1629,7 @@
    "metadata": {},
    "source": [
     "We can also provide custom implementations for each block by providing them as keyword arguments during initialization.\n",
-    "In the folllwing code snippet, we first create an instance of the [KBestDetector](https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.KBestDetector), which is then used as MIMO detector in the ``PUSCHReceiver``."
+    "In the folllwing code snippet, we first create an instance of the [KBestDetector](https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.KBestDetector), which is then used as MIMO detector in the ``PUSCHReceiver``."
    ]
   },
   {
@@ -1760,7 +1760,7 @@
    "source": [
     "# We need to enable sionna.config.xla_compat before we can use\n",
     "# tf.function with jit_compile=True.\n",
-    "# See https://nvlabs.github.io/sionna/api/config.html#sionna.Config.xla_compat\n",
+    "# See https://jhoydis.github.io/sionna-0.19.2-doc/api/config.html#sionna.Config.xla_compat\n",
     "sionna.config.xla_compat=True\n",
     "\n",
     "class Model(tf.keras.Model):\n",
@@ -2176,7 +2176,7 @@
    "source": [
     "Hopefully you have enjoyed this tutorial on Sionna's 5G NR PUSCH module!\n",
     "\n",
-    "Please have a look at the [API documentation](https://nvlabs.github.io/sionna/api/sionna.html) of the various components or the other available [tutorials](https://nvlabs.github.io/sionna/tutorials.html) to learn more."
+    "Please have a look at the [API documentation](https://jhoydis.github.io/sionna-0.19.2-doc/api/sionna.html) of the various components or the other available [tutorials](https://jhoydis.github.io/sionna-0.19.2-doc/tutorials.html) to learn more."
    ]
   }
  ],

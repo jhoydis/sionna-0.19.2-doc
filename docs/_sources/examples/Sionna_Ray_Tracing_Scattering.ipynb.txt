@@ -75,7 +75,7 @@
     "except ImportError as e:\n",
     "    # Install Sionna if package is not already installed\n",
     "    import os\n",
-    "    os.system(\"pip install sionna\")\n",
+    "    os.system(\"pip install sionna==0.19\")\n",
     "    import sionna\n",
     "\n",
     "# Configure the notebook to use only a single GPU and allocate only as much memory as needed\n",
@@ -550,7 +550,7 @@
    "id": "9ef402aa",
    "metadata": {},
    "source": [
-    "In our example scene, each ray hitting the surfaces spawns exactly one new ray which connects to the receiver. Each ray has a random phase and energy that is determined by the scattering pattern and the so-called scattering coefficient $S\\in[0,1]$. The squared scattering coefficient $S^2$ determines which portion of the totally reflected energy (specular and diffuse combined) is diffusely reflected. For details on the precise modeling of the scattered field, we refer to the [EM Primer](https://nvlabs.github.io/sionna/em_primer.html#scattering).\n",
+    "In our example scene, each ray hitting the surfaces spawns exactly one new ray which connects to the receiver. Each ray has a random phase and energy that is determined by the scattering pattern and the so-called scattering coefficient $S\\in[0,1]$. The squared scattering coefficient $S^2$ determines which portion of the totally reflected energy (specular and diffuse combined) is diffusely reflected. For details on the precise modeling of the scattered field, we refer to the [EM Primer](https://jhoydis.github.io/sionna-0.19.2-doc/em_primer.html#scattering).\n",
     "\n",
     "By default, all materials in Sionna have a scattering coefficient equal to zero. For this reason, we would expect that all of the scattered paths carry zero energy. Let's verify that this is indeed the case:"
    ]
@@ -630,7 +630,7 @@
    "id": "603f5feb",
    "metadata": {},
    "source": [
-    "In order to study the impact of the scattering pattern, let's replace the perfectly diffuse Lambertian pattern (which all radio materials have by default) by the [DirectivePattern](https://nvlabs.github.io/sionna/api/rt.html#sionna.rt.DirectivePattern). The larger the integer parameter $\\alpha_r$, the more the scattered field is focused around the direction of the specular reflection."
+    "In order to study the impact of the scattering pattern, let's replace the perfectly diffuse Lambertian pattern (which all radio materials have by default) by the [DirectivePattern](https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#sionna.rt.DirectivePattern). The larger the integer parameter $\\alpha_r$, the more the scattered field is focused around the direction of the specular reflection."
    ]
   },
   {
@@ -737,7 +737,7 @@
    "id": "acfc4b4d",
    "metadata": {},
    "source": [
-    "If the scattering surface is small compared to the distance from its center to the transmitter and receiver, respectively, it can be approximated by a single scattering source that reradiates parts of the energy it has captured by the entire surface $A$. In other words, the scattered field is well approximated by a single ray originating from the barycenter of the surface [2]. The reason for this behavior is that the scattering angle is almost constant for any point on the surface. As described in the [EM Primer](https://nvlabs.github.io/sionna/em_primer.html#scattering), the received power of the scattered path can be computed as\n",
+    "If the scattering surface is small compared to the distance from its center to the transmitter and receiver, respectively, it can be approximated by a single scattering source that reradiates parts of the energy it has captured by the entire surface $A$. In other words, the scattered field is well approximated by a single ray originating from the barycenter of the surface [2]. The reason for this behavior is that the scattering angle is almost constant for any point on the surface. As described in the [EM Primer](https://jhoydis.github.io/sionna-0.19.2-doc/em_primer.html#scattering), the received power of the scattered path can be computed as\n",
     "\n",
     "$$ \n",
     "P_r = \\left(\\frac{\\lambda S \\Gamma}{4\\pi r_i r_s}\\right)^2 f_\\text{s}(\\hat{\\mathbf{k}}_\\text{i}, \\hat{\\mathbf{k}}_\\text{s}) \\cos(\\theta_i) A\n",
@@ -843,7 +843,7 @@
    "source": [
     "By now, you have a gained a solid understanding of scattering from a single surface. Let us now make things a bit more interesting by looking at a complex scene with many scattering surfaces. This can be nicely observed with the help of coverage maps. \n",
     "\n",
-    "A coverage map describes the average received power from a specific transmitter at every point on a plane. The effects of fast fading, i.e., constructive/destructive interference between different paths, are averaged out by summing the squared amplitudes of all paths. As we cannot compute coverage maps with infinitely fine resolution, they are approximated by small rectangular tiles for which average values are computed. For a detailed explanation, have a look at the [API Documentation](https://nvlabs.github.io/sionna/api/rt.html#coverage-map).\n",
+    "A coverage map describes the average received power from a specific transmitter at every point on a plane. The effects of fast fading, i.e., constructive/destructive interference between different paths, are averaged out by summing the squared amplitudes of all paths. As we cannot compute coverage maps with infinitely fine resolution, they are approximated by small rectangular tiles for which average values are computed. For a detailed explanation, have a look at the [API Documentation](https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#coverage-map).\n",
     "\n",
     "Let us now load a slightly more interesting scene containing a couple of rectangular buildings and add a transmitter. Note that we do not need to add any receivers to compute a coverage map (we will add one though as we need it later)."
    ]
@@ -995,7 +995,7 @@
     "tags": []
    },
    "source": [
-    "As a last experiment in our tutorial on scattering, let us have a look at the discrete baseband-equivalent channel impulse responses we obtain with and without scattering. To this end, we will compute the channel impulse response of the  single receiver we have configured for the current scene, and then transform it into the complex baseband representation using the convenience function [cir_to_time_channel](https://nvlabs.github.io/sionna/api/channel.wireless.html#cir-to-time-channel)."
+    "As a last experiment in our tutorial on scattering, let us have a look at the discrete baseband-equivalent channel impulse responses we obtain with and without scattering. To this end, we will compute the channel impulse response of the  single receiver we have configured for the current scene, and then transform it into the complex baseband representation using the convenience function [cir_to_time_channel](https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.wireless.html#cir-to-time-channel)."
    ]
   },
   {
@@ -1075,7 +1075,7 @@
    "source": [
     "In conclusion, scattering plays an important role for radio propagation modelling. In particular, the higher the carrier frequency, the rougher most surfaces appear compared to the wavelength. Thus, at THz-frequencies diffuse reflections might become the dominating form of radio wave propgation (apart from LoS).\n",
     "\n",
-    "We hope you enjoyed our dive into scattering with this Sionna RT tutorial. Please try out some experiments yourself and improve your grasp of ray tracing. There's more to discover, so so don't forget to check out our other [tutorials](https://nvlabs.github.io/sionna/tutorials.html), too."
+    "We hope you enjoyed our dive into scattering with this Sionna RT tutorial. Please try out some experiments yourself and improve your grasp of ray tracing. There's more to discover, so so don't forget to check out our other [tutorials](https://jhoydis.github.io/sionna-0.19.2-doc/tutorials.html), too."
    ]
   },
   {

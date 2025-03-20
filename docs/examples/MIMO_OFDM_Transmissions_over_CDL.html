@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MIMO OFDM Transmissions over the CDL Channel Model &mdash; Sionna 0.19.2 documentation</title>
+  <title>MIMO OFDM Transmissions over the CDL Channel Model &mdash; Sionna 0.19.2 0.19.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -42,7 +42,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            Sionna
+            Sionna 0.19.2
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -333,7 +333,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../made_with_sionna.html">“Made with Sionna”</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../em_primer.html">Primer on Electromagnetics</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#coordinate-system-rotations-and-vector-fields">Coordinate system, rotations, and vector fields</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#planar-time-harmonic-waves">Planar Time-Harmonic Waves</a></li>
@@ -782,7 +781,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Sionna</a>
+          <a href="../index.html">Sionna 0.19.2</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -804,12 +803,12 @@
 <div style="margin-bottom:15px;">
     <table>
         <td style="padding: 0px 0px;">
-            <a href=" https://colab.research.google.com/github/NVlabs/sionna/blob/main/examples/MIMO_OFDM_Transmissions_over_CDL.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/MIMO_OFDM_Transmissions_over_CDL.ipynb" style="vertical-align:text-bottom">
                 <img alt="Colab logo" src="../_static/colab_logo.svg" style="width: 40px; min-width: 40px">
             </a>
         </td>
         <td style="padding: 4px 0px;">
-            <a href=" https://colab.research.google.com/github/nvlabs/sionna/blob/main/examples/MIMO_OFDM_Transmissions_over_CDL.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/MIMO_OFDM_Transmissions_over_CDL.ipynb" style="vertical-align:text-bottom">
                 Run in Google Colab
             </a>
         </td>
@@ -818,7 +817,7 @@
         </td>
 
         <td class="wy-breadcrumbs-aside" style="padding: 0 30px;">
-            <a href="https://github.com/nvlabs/sionna/blob/main/examples/MIMO_OFDM_Transmissions_over_CDL.ipynb" style="vertical-align:text-bottom">
+            <a href="https://github.com/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/MIMO_OFDM_Transmissions_over_CDL.ipynb" style="vertical-align:text-bottom">
                 <i class="fa fa-github" style="font-size:24px;"></i>
                 View on GitHub
             </a>
@@ -857,8 +856,8 @@
 <li><p>Inter-symbol interference due to insufficient cyclic prefix length</p></li>
 </ul>
 <p>We will first walk through the configuration of all components of the system model, before simulating some simple transmissions in the time and frequency domain. Then, we will build a general Keras model which will allow us to run efficiently simulations with different parameter settings.</p>
-<p>This is a notebook demonstrating a fairly advanced use of the Sionna library. It is recommended that you familiarize yourself with the API documentation of the <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html">Channel</a> module and understand the difference between time- and frequency-domain modeling. Some of the simulations take some time, especially when you have no GPU available. For this reason, we provide the simulation results within the cells generating the figures. If you want to
-visualize your own results, just comment the corresponding line.</p>
+<p>This is a notebook demonstrating a fairly advanced use of the Sionna library. It is recommended that you familiarize yourself with the API documentation of the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html">Channel</a> module and understand the difference between time- and frequency-domain modeling. Some of the simulations take some time, especially when you have no GPU available. For this reason, we provide the simulation results within the cells generating the figures. If you
+want to visualize your own results, just comment the corresponding line.</p>
 <section id="Table-of-Contents">
 <h2>Table of Contents<a class="headerlink" href="#Table-of-Contents" title="Link to this heading"></a></h2>
 <ul class="simple">
@@ -910,7 +909,7 @@ visualize your own results, just comment the corresponding line.</p>
 <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="c1"># Install Sionna if package is not already installed</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna==0.19&quot;</span><span class="p">)</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">sionna</span>
 
 <span class="c1"># Configure the notebook to use only a single GPU and allocate only as much memory as needed</span>
@@ -965,8 +964,8 @@ visualize your own results, just comment the corresponding line.</p>
 <p>We will now configure all components of the system model step-by-step.</p>
 <section id="Stream-Management">
 <h3>Stream Management<a class="headerlink" href="#Stream-Management" title="Link to this heading"></a></h3>
-<p>For any type of MIMO simulations, it is useful to setup a <a class="reference external" href="https://nvlabs.github.io/sionna/api/mimo.html#stream-management">StreamManagement</a> object. It determines which transmitters and receivers communicate data streams with each other. In our scenario, we will configure a single UT and BS with multiple antennas each. Whether the UT or BS is considered as a transmitter depends on the <code class="docutils literal notranslate"><span class="pre">direction</span></code>, which can be either uplink or downlink. The
-<a class="reference external" href="https://nvlabs.github.io/sionna/api/mimo.html#stream-management">StreamManagement</a> has many properties that are used by other components, such as precoding and equalization.</p>
+<p>For any type of MIMO simulations, it is useful to setup a <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/mimo.html#stream-management">StreamManagement</a> object. It determines which transmitters and receivers communicate data streams with each other. In our scenario, we will configure a single UT and BS with multiple antennas each. Whether the UT or BS is considered as a transmitter depends on the <code class="docutils literal notranslate"><span class="pre">direction</span></code>, which can be either uplink or downlink. The
+<a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/mimo.html#stream-management">StreamManagement</a> has many properties that are used by other components, such as precoding and equalization.</p>
 <p>We will configure the system here such that the number of streams per transmitter (in both uplink and donwlink) is equal to the number of UT antennas.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
@@ -1002,8 +1001,8 @@ visualize your own results, just comment the corresponding line.</p>
 </section>
 <section id="OFDM-Resource-Grid-&amp;-Pilot-Pattern">
 <h3>OFDM Resource Grid &amp; Pilot Pattern<a class="headerlink" href="#OFDM-Resource-Grid-&-Pilot-Pattern" title="Link to this heading"></a></h3>
-<p>Next, we configure an OFDM <a class="reference external" href="https://nvlabs.github.io/sionna/api/ofdm.html#resource-grid">ResourceGrid</a> spanning multiple OFDM symbols. The resource grid contains data symbols and pilots and is equivalent to a <em>slot</em> in 4G/5G terminology. Although it is not relevant for our simulation, we null the DC subcarrier and a few guard carriers to the left and right of the spectrum. Also a cyclic prefix is added.</p>
-<p>During the creation of the <a class="reference external" href="https://nvlabs.github.io/sionna/api/ofdm.html#resource-grid">ResourceGrid</a>, a <a class="reference external" href="https://nvlabs.github.io/sionna/api/ofdm.html#pilot-pattern">PilotPattern</a> is automatically generated. We could have alternatively created a <a class="reference external" href="https://nvlabs.github.io/sionna/api/ofdm.html#pilot-pattern">PilotPattern</a> first and then provided it as initialization parameter.</p>
+<p>Next, we configure an OFDM <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#resource-grid">ResourceGrid</a> spanning multiple OFDM symbols. The resource grid contains data symbols and pilots and is equivalent to a <em>slot</em> in 4G/5G terminology. Although it is not relevant for our simulation, we null the DC subcarrier and a few guard carriers to the left and right of the spectrum. Also a cyclic prefix is added.</p>
+<p>During the creation of the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#resource-grid">ResourceGrid</a>, a <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#pilot-pattern">PilotPattern</a> is automatically generated. We could have alternatively created a <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#pilot-pattern">PilotPattern</a> first and then provided it as initialization parameter.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -1068,8 +1067,8 @@ visualize your own results, just comment the corresponding line.</p>
 </div>
 </div>
 <p>The pilot patterns are defined over the resource grid of <em>effective subcarriers</em> from which the nulled DC and guard carriers have been removed. This leaves us in our case with 76 - 1 (DC) - 5 (left guards) - 6 (right guards) = 64 effective subcarriers.</p>
-<p>While the resource grid only knows which resource elements are reserved for pilots, it is the pilot pattern that defines what is actually transmitted on them. In our scenario, we have four transmit streams and configured the <a class="reference external" href="https://nvlabs.github.io/sionna/api/ofdm.html#kroneckerpilotpattern">KroneckerPilotPattern</a>. All streams use orthogonal pilot sequences, i.e., one pilot on every fourth subcarrier. You have full freedom to configure your own
-<a class="reference external" href="https://nvlabs.github.io/sionna/api/ofdm.html#pilotpattern">PilotPattern</a>.</p>
+<p>While the resource grid only knows which resource elements are reserved for pilots, it is the pilot pattern that defines what is actually transmitted on them. In our scenario, we have four transmit streams and configured the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#kroneckerpilotpattern">KroneckerPilotPattern</a>. All streams use orthogonal pilot sequences, i.e., one pilot on every fourth subcarrier. You have full freedom to configure your own
+<a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#pilotpattern">PilotPattern</a>.</p>
 <p>Let us now have a look at the actual pilot sequences for all streams which consists of random QPSK symbols. By default, the pilot sequences are normalized, such that the average power per pilot symbol is equal to one. As only every fourth pilot symbol in the sequence is used, their amplitude is scaled by a factor of two.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
@@ -1104,10 +1103,11 @@ Average energy per pilot symbol: 1.00
 </section>
 <section id="Antenna-Arrays">
 <h3>Antenna Arrays<a class="headerlink" href="#Antenna-Arrays" title="Link to this heading"></a></h3>
-<p>Next, we need to configure the antenna arrays used by the UT and BS. This can be ignored for simple channel models, such as <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#awgn">AWGN</a>, <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#flat-fading-channel">flat-fading</a>, <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#rayleigh-block-fading">RayleighBlockFading</a>, or <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#tapped-delay-line-tdl">TDL</a> which do not account for antenna array
-geometries and antenna radiation patterns. However, other models, such as <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#clustered-delay-line-cdl">CDL</a>, <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#urban-microcell-umi">UMi</a>, <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#urban-macrocell-uma">UMa</a>, and <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#rural-macrocell-rma">RMa</a> from the 3GPP 38.901 specification, require it.</p>
+<p>Next, we need to configure the antenna arrays used by the UT and BS. This can be ignored for simple channel models, such as <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#awgn">AWGN</a>, <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#flat-fading-channel">flat-fading</a>, <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#rayleigh-block-fading">RayleighBlockFading</a>, or
+<a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#tapped-delay-line-tdl">TDL</a> which do not account for antenna array geometries and antenna radiation patterns. However, other models, such as <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#clustered-delay-line-cdl">CDL</a>, <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#urban-microcell-umi">UMi</a>, <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#urban-macrocell-uma">UMa</a>, and
+<a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#rural-macrocell-rma">RMa</a> from the 3GPP 38.901 specification, require it.</p>
 <p>We will assume here that UT and BS antenna arrays are composed of dual cross-polarized antenna elements with an antenna pattern defined in the 3GPP 38.901 specification. By default, the antenna elements are spaced half of a wavelength apart in both vertical and horizontal directions. You can define your own antenna geometries an radiation patterns if needed.</p>
-<p>An <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#antennaarray">AntennaArray</a> is always defined in the y-z plane. It’s final orientation will be determined by the orientation of the UT or BS. This parameter can be configured in the <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#channel-model-interface">ChannelModel</a> that we will create later.</p>
+<p>An <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#antennaarray">AntennaArray</a> is always defined in the y-z plane. It’s final orientation will be determined by the orientation of the UT or BS. This parameter can be configured in the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#channel-model-interface">ChannelModel</a> that we will create later.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
@@ -1203,8 +1203,8 @@ geometries and antenna radiation patterns. However, other models, such as <a cla
 </div>
 <section id="CIR-Sampling-Process">
 <h4>CIR Sampling Process<a class="headerlink" href="#CIR-Sampling-Process" title="Link to this heading"></a></h4>
-<p>The instance <code class="docutils literal notranslate"><span class="pre">cdl</span></code> of the <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#clustered-delay-line-cdl">CDL</a> <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#channel-model-interface">ChannelModel</a> can be used to generate batches of random realizations of continuous-time channel impulse responses, consisting of complex gains <code class="docutils literal notranslate"><span class="pre">a</span></code> and delays <code class="docutils literal notranslate"><span class="pre">tau</span></code> for each path. To account for time-varying channels, a channel impulse responses is sampled at the <code class="docutils literal notranslate"><span class="pre">sampling_frequency</span></code> for
-<code class="docutils literal notranslate"><span class="pre">num_time_samples</span></code> samples. For more details on this, please have a look at the <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html">API documentation</a> of the channel models.</p>
+<p>The instance <code class="docutils literal notranslate"><span class="pre">cdl</span></code> of the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#clustered-delay-line-cdl">CDL</a> <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#channel-model-interface">ChannelModel</a> can be used to generate batches of random realizations of continuous-time channel impulse responses, consisting of complex gains <code class="docutils literal notranslate"><span class="pre">a</span></code> and delays <code class="docutils literal notranslate"><span class="pre">tau</span></code> for each path. To account for time-varying channels, a channel impulse responses is sampled at the
+<code class="docutils literal notranslate"><span class="pre">sampling_frequency</span></code> for <code class="docutils literal notranslate"><span class="pre">num_time_samples</span></code> samples. For more details on this, please have a look at the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html">API documentation</a> of the channel models.</p>
 <p>In order to model the channel in the frequency domain, we need <code class="docutils literal notranslate"><span class="pre">num_ofdm_symbols</span></code> samples that are taken once per <code class="docutils literal notranslate"><span class="pre">ofdm_symbol_duration</span></code>, which corresponds to the length of an OFDM symbol plus the cyclic prefix.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
@@ -1279,7 +1279,7 @@ Shape of the delays: (32, 1, 1, 23)
 <section id="Generate-the-Channel-Frequency-Response">
 <h4>Generate the Channel Frequency Response<a class="headerlink" href="#Generate-the-Channel-Frequency-Response" title="Link to this heading"></a></h4>
 <p>If we want to use the continuous-time channel impulse response to simulate OFDM transmissions under ideal conditions, i.e., no inter-symbol interference, inter-carrier interference, etc., we need to convert it to the frequency domain.</p>
-<p>This can be done with the function <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#cir-to-ofdm-channel">cir_to_ofdm_channel</a> that computes the Fourier transform of the continuous-time channel impulse response at a set of <code class="docutils literal notranslate"><span class="pre">frequencies</span></code>, corresponding to the different subcarriers. The frequencies can be obtained with the help of the convenience function <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#subcarrier-frequencies">subcarrier_frequencies</a>.</p>
+<p>This can be done with the function <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#cir-to-ofdm-channel">cir_to_ofdm_channel</a> that computes the Fourier transform of the continuous-time channel impulse response at a set of <code class="docutils literal notranslate"><span class="pre">frequencies</span></code>, corresponding to the different subcarriers. The frequencies can be obtained with the help of the convenience function <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#subcarrier-frequencies">subcarrier_frequencies</a>.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
@@ -1311,7 +1311,7 @@ Shape of the delays: (32, 1, 1, 23)
 <img alt="../_images/examples_MIMO_OFDM_Transmissions_over_CDL_32_0.png" src="../_images/examples_MIMO_OFDM_Transmissions_over_CDL_32_0.png" />
 </div>
 </div>
-<p>We can apply the channel frequency response to a given input with the <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#applyofdmchannel">ApplyOFDMChannel</a> layer. This layer can also add additive white Gaussian noise (AWGN) to the channel output.</p>
+<p>We can apply the channel frequency response to a given input with the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#applyofdmchannel">ApplyOFDMChannel</a> layer. This layer can also add additive white Gaussian noise (AWGN) to the channel output.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
@@ -1326,8 +1326,8 @@ Shape of the delays: (32, 1, 1, 23)
 <h4>Generate the Discrete-Time Channel Impulse Response<a class="headerlink" href="#Generate-the-Discrete-Time-Channel-Impulse-Response" title="Link to this heading"></a></h4>
 <p>In the same way as we have created the frequency channel impulse response from the continuous-time response, we can use the latter to compute a discrete-time impulse response. This can then be used to model the channel in the time-domain through discrete convolution with an input signal. Time-domain channel modeling is necessary whenever we want to deviate from the perfect OFDM scenario, e.g., OFDM without cyclic prefix, inter-subcarrier interference due to carrier-frequency offsets, phase
 noise, or very high Doppler spread scenarios, as well as other single or multicarrier waveforms (OTFS, FBMC, UFMC, etc).</p>
-<p>A discrete-time impulse response can be obtained with the help of the function <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#cir-to-time-channel">cir_to_time_channel</a> that requires a <code class="docutils literal notranslate"><span class="pre">bandwidth</span></code> parameter. This function first applies a perfect low-pass filter of the provided <code class="docutils literal notranslate"><span class="pre">bandwith</span></code> to the continuous-time channel impulse response and then samples the filtered response at the Nyquist rate. The resulting discrete-time impulse response is then truncated to finite length, depending on
-the delay spread. <code class="docutils literal notranslate"><span class="pre">l_min</span></code> and <code class="docutils literal notranslate"><span class="pre">l_max</span></code> denote truncation boundaries and the resulting channel has <code class="docutils literal notranslate"><span class="pre">l_tot=l_max-l_min+1</span></code> filter taps. A detailed mathematical description of this process is provided in the API documentation of the channel models. You can freely chose both parameters if you do not want to rely on the default values.</p>
+<p>A discrete-time impulse response can be obtained with the help of the function <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#cir-to-time-channel">cir_to_time_channel</a> that requires a <code class="docutils literal notranslate"><span class="pre">bandwidth</span></code> parameter. This function first applies a perfect low-pass filter of the provided <code class="docutils literal notranslate"><span class="pre">bandwith</span></code> to the continuous-time channel impulse response and then samples the filtered response at the Nyquist rate. The resulting discrete-time impulse response is then truncated to finite length,
+depending on the delay spread. <code class="docutils literal notranslate"><span class="pre">l_min</span></code> and <code class="docutils literal notranslate"><span class="pre">l_max</span></code> denote truncation boundaries and the resulting channel has <code class="docutils literal notranslate"><span class="pre">l_tot=l_max-l_min+1</span></code> filter taps. A detailed mathematical description of this process is provided in the API documentation of the channel models. You can freely chose both parameters if you do not want to rely on the default values.</p>
 <p>In order to model the channel in the domain, the continuous-time channel impulse response must be sampled at the Nyquist rate. We also need now <code class="docutils literal notranslate"><span class="pre">num_ofdm_symbols</span> <span class="pre">x</span> <span class="pre">(fft_size</span> <span class="pre">+</span> <span class="pre">cyclic_prefix_length)</span> <span class="pre">+</span> <span class="pre">l_tot-1</span></code> samples in contrast to <code class="docutils literal notranslate"><span class="pre">num_ofdm_symbols</span></code> samples for modeling in the frequency domain. This implies that the memory requirements of time-domain channel modeling is significantly higher. We therefore recommend to only use this feature if it is really necessary. Simulations with many
 transmitters, receivers, and/or large antenna arrays become otherwise quickly prohibitively complex.</p>
 <div class="nbinput nblast docutils container">
@@ -1370,7 +1370,7 @@ transmitters, receivers, and/or large antenna arrays become otherwise quickly pr
 <img alt="../_images/examples_MIMO_OFDM_Transmissions_over_CDL_38_0.png" src="../_images/examples_MIMO_OFDM_Transmissions_over_CDL_38_0.png" />
 </div>
 </div>
-<p>We can apply the discrete-time impulse response to a given input with the <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#applytimechannel">ApplyTimeChannel</a> layer. This layer can also add additive white Gaussian noise (AWGN) to the channel output.</p>
+<p>We can apply the discrete-time impulse response to a given input with the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#applytimechannel">ApplyTimeChannel</a> layer. This layer can also add additive white Gaussian noise (AWGN) to the channel output.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
@@ -1489,7 +1489,7 @@ transmitters, receivers, and/or large antenna arrays become otherwise quickly pr
 BER: 0.0
 </pre></div></div>
 </div>
-<p>An alternative approach to simulations in the frequency domain is to use the convenience function <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#ofdmchannel">OFDMChannel</a> that jointly generates and applies the channel frequency response. Using this function, we could have used the following code:</p>
+<p>An alternative approach to simulations in the frequency domain is to use the convenience function <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#ofdmchannel">OFDMChannel</a> that jointly generates and applies the channel frequency response. Using this function, we could have used the following code:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
@@ -1576,7 +1576,7 @@ BER: 0.0
 BER: 0.0
 </pre></div></div>
 </div>
-<p>An alternative approach to simulations in the time domain is to use the convenience function <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#timechannel">TimeChannel</a> that jointly generates and applies the discrete-time channel impulse response. Using this function, we could have used the following code:</p>
+<p>An alternative approach to simulations in the time domain is to use the convenience function <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#timechannel">TimeChannel</a> that jointly generates and applies the discrete-time channel impulse response. Using this function, we could have used the following code:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
@@ -2432,7 +2432,7 @@ Simulation duration: 0.05 [h]
 <section id="Evaluate-the-Impact-of-Insufficient-Cyclic-Prefix-Length">
 <h3>Evaluate the Impact of Insufficient Cyclic Prefix Length<a class="headerlink" href="#Evaluate-the-Impact-of-Insufficient-Cyclic-Prefix-Length" title="Link to this heading"></a></h3>
 <p>As a final example, let us have a look at how to simulate OFDM with an insufficiently long cyclic prefix.</p>
-<p>It is important to notice, that ISI cannot be simulated in the frequency domain as the <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#channel-with-ofdm-waveform">OFDMChannel</a> implicitly assumes perfectly synchronized and ISI-free transmissions. Having no cyclic prefix translates simply into an improved Eb/No as no energy for its transmission is used.</p>
+<p>It is important to notice, that ISI cannot be simulated in the frequency domain as the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#channel-with-ofdm-waveform">OFDMChannel</a> implicitly assumes perfectly synchronized and ISI-free transmissions. Having no cyclic prefix translates simply into an improved Eb/No as no energy for its transmission is used.</p>
 <p>Simulating a channel in the time domain requires significantly more memory and compute which might limit the scenarios for which it can be used.</p>
 <p>If you do not want to run the simulation your self, you skip the next cell and simply look at the result in the next cell.If you do not want to run the simulation your self, you skip the next cell and visualize the result in the next cell.</p>
 <div class="nbinput docutils container">

@@ -13,7 +13,7 @@
    "id": "285f6c7c",
    "metadata": {},
    "source": [
-    "This notebook explains different ways in which the effects of mobility can be simulated with Sionna's [ray tracing (RT) module](https://nvlabs.github.io/sionna/api/rt.html). In particular, you will\n",
+    "This notebook explains different ways in which the effects of mobility can be simulated with Sionna's [ray tracing (RT) module](https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html). In particular, you will\n",
     "\n",
     "- Use the `position` and `orientation` properties to move scene objects\n",
     "- Understand the `velocity` property of scene objects and their impact on the Doppler shift\n",
@@ -44,7 +44,7 @@
     "\n",
     "There are two ways in which we can simulate the impact of movement of scene objects on the channel impulse response. The first consists in moving the desired objects in small steps along a trajectory and recomputing the propagation paths for each step. While this approach is the most accurate, it comes at the cost of high computational complexity. As we will see later in this notebook, this approach is fortunately not necessary when the lengths of the considered trajectories are small, i.e., not more than a few wavelengths. In this case, we can compute the time evolution of the channel impulse response using the second approach which is based on the experienced Doppler shifts of all propagation paths. It is very fast and leads to very accurate predictions in many cases.\n",
     "\n",
-    "In order to compute the Doppler shift for a specific path as shown in the figure below, Sionna RT relies on the [velocity vectors](https://nvlabs.github.io/sionna/api/rt.html#sionna.rt.SceneObject.velocity) of the scene objects. "
+    "In order to compute the Doppler shift for a specific path as shown in the figure below, Sionna RT relies on the [velocity vectors](https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#sionna.rt.SceneObject.velocity) of the scene objects. "
    ]
   },
   {
@@ -62,7 +62,7 @@
    "source": [
     "While traveling from the transmitter to the receiver, the path undergoes $n$ scattering processes, such as reflection, diffuse scattering, or diffraction. The object on which lies the $i$th scattering point has the velocity vector $\\mathbf{v}_i$ and the outgoing ray direction at this point is denoted $\\hat{\\mathbf{k}}_i$. The first and last point correspond to the transmitter and receiver, respectively. \n",
     "\n",
-    "The Doppler shift $f_\\Delta$ for this path can be computed as (see the [documentation](https://nvlabs.github.io/sionna/api/rt.html#sionna.rt.Paths.apply_doppler) of `Paths.apply_doppler()`)\n",
+    "The Doppler shift $f_\\Delta$ for this path can be computed as (see the [documentation](https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#sionna.rt.Paths.apply_doppler) of `Paths.apply_doppler()`)\n",
     "\n",
     "\\begin{align}\n",
     "f_\\Delta = \\frac{1}{\\lambda}\\left[\\mathbf{v}_{0}^\\mathsf{T}\\hat{\\mathbf{k}}_0 - \\mathbf{v}_{n+1}^\\mathsf{T}\\hat{\\mathbf{k}}_n + \\sum_{i=1}^n \\mathbf{v}_{i}^\\mathsf{T}\\left(\\hat{\\mathbf{k}}_i-\\hat{\\mathbf{k}}_{i-1} \\right) \\right] \\qquad \\text{[Hz]}\n",
@@ -110,7 +110,7 @@
     "except ImportError as e:\n",
     "    # Install Sionna if package is not already installed\n",
     "    import os\n",
-    "    os.system(\"pip install sionna\")\n",
+    "    os.system(\"pip install sionna==0.19\")\n",
     "    import sionna\n",
     "\n",
     "# Configure the notebook to use only a single GPU and allocate only as much memory as needed\n",
@@ -1056,7 +1056,7 @@
     "\n",
     "Both approaches can be combined to simulate mobility over longer periods of time.\n",
     "\n",
-    "We hope you enjoyed our dive into the simulation of mobility with Sionna RT. You may also want to explore our other [tutorials](https://nvlabs.github.io/sionna/tutorials.html#ray-tracing)."
+    "We hope you enjoyed our dive into the simulation of mobility with Sionna RT. You may also want to explore our other [tutorials](https://jhoydis.github.io/sionna-0.19.2-doc/tutorials.html#ray-tracing)."
    ]
   }
  ],

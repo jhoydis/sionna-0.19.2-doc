@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OFDM MIMO Channel Estimation and Detection &mdash; Sionna 0.19.2 documentation</title>
+  <title>OFDM MIMO Channel Estimation and Detection &mdash; Sionna 0.19.2 0.19.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -42,7 +42,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            Sionna
+            Sionna 0.19.2
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -333,7 +333,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../made_with_sionna.html">“Made with Sionna”</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../em_primer.html">Primer on Electromagnetics</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#coordinate-system-rotations-and-vector-fields">Coordinate system, rotations, and vector fields</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#planar-time-harmonic-waves">Planar Time-Harmonic Waves</a></li>
@@ -782,7 +781,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Sionna</a>
+          <a href="../index.html">Sionna 0.19.2</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -804,12 +803,12 @@
 <div style="margin-bottom:15px;">
     <table>
         <td style="padding: 0px 0px;">
-            <a href=" https://colab.research.google.com/github/NVlabs/sionna/blob/main/examples/OFDM_MIMO_Detection.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/OFDM_MIMO_Detection.ipynb" style="vertical-align:text-bottom">
                 <img alt="Colab logo" src="../_static/colab_logo.svg" style="width: 40px; min-width: 40px">
             </a>
         </td>
         <td style="padding: 4px 0px;">
-            <a href=" https://colab.research.google.com/github/nvlabs/sionna/blob/main/examples/OFDM_MIMO_Detection.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/OFDM_MIMO_Detection.ipynb" style="vertical-align:text-bottom">
                 Run in Google Colab
             </a>
         </td>
@@ -818,7 +817,7 @@
         </td>
 
         <td class="wy-breadcrumbs-aside" style="padding: 0 30px;">
-            <a href="https://github.com/nvlabs/sionna/blob/main/examples/OFDM_MIMO_Detection.ipynb" style="vertical-align:text-bottom">
+            <a href="https://github.com/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/OFDM_MIMO_Detection.ipynb" style="vertical-align:text-bottom">
                 <i class="fa fa-github" style="font-size:24px;"></i>
                 View on GitHub
             </a>
@@ -876,7 +875,7 @@
 <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="c1"># Install Sionna if package is not already installed</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna==0.19&quot;</span><span class="p">)</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">sionna</span>
 
 <span class="c1"># Configure the notebook to use only a single GPU and allocate only as much memory as needed</span>
@@ -921,7 +920,7 @@
 <section id="Simulation-parameters">
 <h2>Simulation parameters<a class="headerlink" href="#Simulation-parameters" title="Link to this heading"></a></h2>
 <p>The next cell defines the simulation parameters used throughout this notebook.</p>
-<p>This includes the OFDM waveform parameters, <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.wireless.html#sionna.channel.tr38901.PanelArray">antennas geometries and patterns</a>, and the <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.wireless.html#sionna.channel.tr38901.UMi">3GPP UMi channel model</a>.</p>
+<p>This includes the OFDM waveform parameters, <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.wireless.html#sionna.channel.tr38901.PanelArray">antennas geometries and patterns</a>, and the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.wireless.html#sionna.channel.tr38901.UMi">3GPP UMi channel model</a>.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -974,7 +973,7 @@
 \end{equation}</span></p>
 <p>where we assume that the frequency-domain channel response has zero mean.</p>
 <p>The following cells implement this process for all three dimensions (frequency, time, and space).</p>
-<p>The next cell defines a <a class="reference external" href="https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.ResourceGrid">resource grid</a> and an <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.wireless.html#sionna.channel.GenerateOFDMChannel">OFDM channel generator</a> for sampling the channel in the frequency domain.</p>
+<p>The next cell defines a <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.ResourceGrid">resource grid</a> and an <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.wireless.html#sionna.channel.GenerateOFDMChannel">OFDM channel generator</a> for sampling the channel in the frequency domain.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -986,7 +985,7 @@
 </pre></div>
 </div>
 </div>
-<p>Then, a function that samples the channel is defined. It randomly samples a network topology for every batch and for every batch example using the <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.wireless.html#sionna.channel.gen_single_sector_topology">appropriate utility function</a>.</p>
+<p>Then, a function that samples the channel is defined. It randomly samples a network topology for every batch and for every batch example using the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.wireless.html#sionna.channel.gen_single_sector_topology">appropriate utility function</a>.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
@@ -1166,15 +1165,15 @@ I0000 00:00:1727264741.860667   75100 device_compiler.h:186] Compiled cluster us
 <p>This section focuses on comparing the available OFDM channel estimators in Sionna for the considered setup.</p>
 <p>OFDM channel estimation consists of two steps:</p>
 <ol class="arabic simple">
-<li><p>Channel estimation at pilot-carrying resource elements using <a class="reference external" href="https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.LSChannelEstimator">least-squares (LS)</a>.</p></li>
+<li><p>Channel estimation at pilot-carrying resource elements using <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.LSChannelEstimator">least-squares (LS)</a>.</p></li>
 <li><p>Interpolation for data-carrying resource elements, for which three methods are available in Sionna:</p></li>
 </ol>
 <ul class="simple">
-<li><p><a class="reference external" href="https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.NearestNeighborInterpolator">Nearest-neighbor</a>, which uses the channel estimate of the nearest pilot</p></li>
-<li><p><a class="reference external" href="https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.LinearInterpolator">Linear</a>, with optional averaging over the OFDM symbols (time dimension) for low mobility scenarios</p></li>
-<li><p><a class="reference external" href="https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.LMMSEInterpolator">LMMSE</a>, which requires knowledge of the time and frequency covariance matrices</p></li>
+<li><p><a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.NearestNeighborInterpolator">Nearest-neighbor</a>, which uses the channel estimate of the nearest pilot</p></li>
+<li><p><a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.LinearInterpolator">Linear</a>, with optional averaging over the OFDM symbols (time dimension) for low mobility scenarios</p></li>
+<li><p><a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.LMMSEInterpolator">LMMSE</a>, which requires knowledge of the time and frequency covariance matrices</p></li>
 </ul>
-<p>The LMMSE interpolator also features optional spatial smoothin, which requires the spatial covarance matrix. The <a class="reference external" href="https://nvlabs.github.io/sionna/api/ofdm.html#sionna.ofdm.LMMSEInterpolator">API documentation</a> explains in more detail how this interpolator operates.</p>
+<p>The LMMSE interpolator also features optional spatial smoothin, which requires the spatial covarance matrix. The <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/ofdm.html#sionna.ofdm.LMMSEInterpolator">API documentation</a> explains in more detail how this interpolator operates.</p>
 <section id="End-to-end-model">
 <h3>End-to-end model<a class="headerlink" href="#End-to-end-model" title="Link to this heading"></a></h3>
 <p>In the next cell, we will create a Keras model which uses the interpolation method specified at initialization.</p>
@@ -1390,10 +1389,10 @@ I0000 00:00:1727264741.860667   75100 device_compiler.h:186] Compiled cluster us
 <p>While the previous section focused on OFDM channel estimation, this section focuses now on MIMO detection.</p>
 <p>The following MIMO detection algorithms, all available out-of-the-box in Sionna, are considered:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://nvlabs.github.io/sionna/api/mimo.html#sionna.mimo.LinearDetector">LMMSE equalization followed by APP demapping</a></p></li>
-<li><p><a class="reference external" href="https://nvlabs.github.io/sionna/api/mimo.html#sionna.mimo.KBestDetector">K-Best detection</a></p></li>
-<li><p><a class="reference external" href="https://nvlabs.github.io/sionna/api/mimo.html#sionna.mimo.EPDetector">EP detection</a></p></li>
-<li><p><a class="reference external" href="https://nvlabs.github.io/sionna/api/mimo.html#sionna.mimo.MMSEPICDetector">MMSE-PIC detection</a></p></li>
+<li><p><a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/mimo.html#sionna.mimo.LinearDetector">LMMSE equalization followed by APP demapping</a></p></li>
+<li><p><a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/mimo.html#sionna.mimo.KBestDetector">K-Best detection</a></p></li>
+<li><p><a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/mimo.html#sionna.mimo.EPDetector">EP detection</a></p></li>
+<li><p><a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/mimo.html#sionna.mimo.MMSEPICDetector">MMSE-PIC detection</a></p></li>
 </ul>
 <p>Both perfect and imperfect channel state information is considered in the simulations. LS estimation combined with LMMSE interpolation is used, with time-frequency-space smoothing (in this order, i.e., <code class="docutils literal notranslate"><span class="pre">order='t-f-s'</span></code>).</p>
 <section id="id1">
@@ -1951,7 +1950,7 @@ EbNo [dB] |        BER |       BLER |  bit errors |    num bits | block errors |
 <p>However, one should keep in mind that:</p>
 <ul class="simple">
 <li><p>EP is prone to numerical imprecision and could therefore achieve better BER/SER with double precision (<code class="docutils literal notranslate"><span class="pre">dtype=tf.complex128</span></code>). The number of iterations <code class="docutils literal notranslate"><span class="pre">l</span></code> as well as the update smoothing parameter <code class="docutils literal notranslate"><span class="pre">beta</span></code> impact performance.</p></li>
-<li><p>For K-Best, there is not a unique way to compute soft information and better performance could be achieved with improved methods for computing soft information from a list of candidates (see <a class="reference external" href="https://nvlabs.github.io/sionna/api/mimo.html#list2llr">list2llr</a>). Increasing the list size <code class="docutils literal notranslate"><span class="pre">k</span></code> results in improved accuracy at the cost of higher complexity.</p></li>
+<li><p>For K-Best, there is not a unique way to compute soft information and better performance could be achieved with improved methods for computing soft information from a list of candidates (see <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/mimo.html#list2llr">list2llr</a>). Increasing the list size <code class="docutils literal notranslate"><span class="pre">k</span></code> results in improved accuracy at the cost of higher complexity.</p></li>
 <li><p>MMSE-PIC can be easily combined with a decoder to implement iterative detection and decoding, as it takes as input soft prior information on the bits/symbols.</p></li>
 </ul>
 <script type="application/vnd.jupyter.widget-state+json">

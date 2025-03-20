@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Discover Sionna &mdash; Sionna 0.19.2 documentation</title>
+  <title>Discover Sionna &mdash; Sionna 0.19.2 0.19.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -42,7 +42,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            Sionna
+            Sionna 0.19.2
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -333,7 +333,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../made_with_sionna.html">“Made with Sionna”</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../em_primer.html">Primer on Electromagnetics</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#coordinate-system-rotations-and-vector-fields">Coordinate system, rotations, and vector fields</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#planar-time-harmonic-waves">Planar Time-Harmonic Waves</a></li>
@@ -782,7 +781,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Sionna</a>
+          <a href="../index.html">Sionna 0.19.2</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -803,12 +802,12 @@
 <div style="margin-bottom:15px;">
     <table>
         <td style="padding: 0px 0px;">
-            <a href=" https://colab.research.google.com/github/NVlabs/sionna/blob/main/examples/Discover_Sionna.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Discover_Sionna.ipynb" style="vertical-align:text-bottom">
                 <img alt="Colab logo" src="../_static/colab_logo.svg" style="width: 40px; min-width: 40px">
             </a>
         </td>
         <td style="padding: 4px 0px;">
-            <a href=" https://colab.research.google.com/github/nvlabs/sionna/blob/main/examples/Discover_Sionna.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Discover_Sionna.ipynb" style="vertical-align:text-bottom">
                 Run in Google Colab
             </a>
         </td>
@@ -817,7 +816,7 @@
         </td>
 
         <td class="wy-breadcrumbs-aside" style="padding: 0 30px;">
-            <a href="https://github.com/nvlabs/sionna/blob/main/examples/Discover_Sionna.ipynb" style="vertical-align:text-bottom">
+            <a href="https://github.com/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Discover_Sionna.ipynb" style="vertical-align:text-bottom">
                 <i class="fa fa-github" style="font-size:24px;"></i>
                 View on GitHub
             </a>
@@ -854,7 +853,7 @@
 <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="c1"># Install Sionna if package is not already installed</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna==0.19&quot;</span><span class="p">)</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">sionna</span>
 
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -952,7 +951,7 @@ This allows simpler re-use of components (e.g., the same scrambling layer can be
 <li><p>Models can be developed in <em>eager mode</em> allowing simple (and fast) modification of system parameters.</p></li>
 <li><p>Number crunching simulations can be executed in the faster <em>graph mode</em> or even <em>XLA</em> acceleration is available for most components.</p></li>
 <li><p>Whenever possible, components are automatically differentiable via <a class="reference external" href="https://www.tensorflow.org/guide/autodiff">auto-grad</a> to simplify the deep learning design-flow.</p></li>
-<li><p>Code is structured into sub-packages for different tasks such as channel coding, mapping,… (see <a class="reference external" href="https://nvlabs.github.io/sionna/api/sionna.html">API documentation</a> for details).</p></li>
+<li><p>Code is structured into sub-packages for different tasks such as channel coding, mapping,… (see <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/sionna.html">API documentation</a> for details).</p></li>
 </ul>
 <p>The division into individual blocks simplifies deployment and all layers and functions comes with unittests to ensure their correct behavior.</p>
 <p>These paradigms simplify the re-useability and reliability of our components for a wide range of communications related applications.</p>
@@ -998,7 +997,7 @@ tf.Tensor([2], shape=(1,), dtype=int32)
 <section id="Let's-Get-Started---The-First-Layers-(Eager-Mode)">
 <h2>Let’s Get Started - The First Layers (<em>Eager Mode</em>)<a class="headerlink" href="#Let's-Get-Started---The-First-Layers-(Eager-Mode)" title="Link to this heading"></a></h2>
 <p>Every layer needs to be initialized once before it can be used.</p>
-<p><strong>Tip</strong>: use the <a class="reference external" href="https://nvlabs.github.io/sionna/api/sionna.html">API documentation</a> to find an overview of all existing components.</p>
+<p><strong>Tip</strong>: use the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/sionna.html">API documentation</a> to find an overview of all existing components.</p>
 <p>We now want to transmit some symbols over an AWGN channel. First, we need to initialize the corresponding layer.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
@@ -1011,7 +1010,7 @@ tf.Tensor([2], shape=(1,), dtype=int32)
 <p>In this first example, we want to add Gaussian noise to some given values of <code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
 <p>Remember - the first dimension is the <em>batch-dimension</em>.</p>
 <p>We simulate 2 message frames each containing 4 symbols.</p>
-<p><em>Remark</em>: the <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.html#awgn">AWGN channel</a> is defined to be complex-valued.</p>
+<p><em>Remark</em>: the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.html#awgn">AWGN channel</a> is defined to be complex-valued.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
@@ -1169,7 +1168,7 @@ Processed bits:  16768000
 <h2>First Link-level Simulation<a class="headerlink" href="#First-Link-level-Simulation" title="Link to this heading"></a></h2>
 <p>We can already build powerful code with a few simple commands.</p>
 <p>As mentioned earlier, Sionna aims at hiding system complexity into Keras layers. However, we still want to provide as much flexibility as possible. Thus, most layers have several choices of init parameters, but often the default choice is a good start.</p>
-<p><strong>Tip</strong>: the <a class="reference external" href="https://nvlabs.github.io/sionna/api/sionna.html">API documentation</a> provides many helpful references and implementation details.</p>
+<p><strong>Tip</strong>: the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/sionna.html">API documentation</a> provides many helpful references and implementation details.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
@@ -1508,7 +1507,7 @@ BER: 0.001245 at Eb/No of 10 dB and 1228800 simulated bits
 <section id="Run-some-Throughput-Tests-(Graph-Mode)">
 <h2>Run some Throughput Tests (Graph Mode)<a class="headerlink" href="#Run-some-Throughput-Tests-(Graph-Mode)" title="Link to this heading"></a></h2>
 <p>Sionna is not just an easy-to-use library, but also incredibly fast. Let us measure the throughput of the model defined above.</p>
-<p>We compare <em>eager</em> and <em>graph</em> execution modes (see <a class="reference external" href="https://www.tensorflow.org/guide/intro_to_graphs">Tensorflow Doc</a> for details), as well as <em>eager with XLA</em> (see <a class="reference external" href="https://www.tensorflow.org/xla#enable_xla_for_tensorflow_models">https://www.tensorflow.org/xla#enable_xla_for_tensorflow_models</a>). Note that we need to activate the <a class="reference external" href="https://nvlabs.github.io/sionna/api/config.html#sionna.Config.xla_compat">sionna.config.xla_compat</a> feature for XLA to work.</p>
+<p>We compare <em>eager</em> and <em>graph</em> execution modes (see <a class="reference external" href="https://www.tensorflow.org/guide/intro_to_graphs">Tensorflow Doc</a> for details), as well as <em>eager with XLA</em> (see <a class="reference external" href="https://www.tensorflow.org/xla#enable_xla_for_tensorflow_models">https://www.tensorflow.org/xla#enable_xla_for_tensorflow_models</a>). Note that we need to activate the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/config.html#sionna.Config.xla_compat">sionna.config.xla_compat</a> feature for XLA to work.</p>
 <p><strong>Tip</strong>: change the <code class="docutils literal notranslate"><span class="pre">batch_size</span></code> to see how the batch parallelism enhances the throughput. Depending on your machine, the <code class="docutils literal notranslate"><span class="pre">batch_size</span></code> may be too large.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
@@ -1690,7 +1689,7 @@ EbNo [dB] |        BER |       BLER |  bit errors |    num bits | block errors |
 <ul class="simple">
 <li><p>TensorBoard debugging available</p></li>
 <li><p>Scaling to multi-GPU simulation is simple</p></li>
-<li><p>See the <a class="reference external" href="https://nvlabs.github.io/sionna/tutorials.html">available tutorials</a> for more advanced examples.</p></li>
+<li><p>See the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/tutorials.html">available tutorials</a> for more advanced examples.</p></li>
 </ul>
 <p>And if something is still missing - the project is <a class="reference external" href="https://github.com/nvlabs/sionna/">open-source</a>: you can modify, add, and extend any component at any time.</p>
 </section>

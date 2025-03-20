@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tutorial on Scattering &mdash; Sionna 0.19.2 documentation</title>
+  <title>Tutorial on Scattering &mdash; Sionna 0.19.2 0.19.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -42,7 +42,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            Sionna
+            Sionna 0.19.2
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -333,7 +333,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../made_with_sionna.html">“Made with Sionna”</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../em_primer.html">Primer on Electromagnetics</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#coordinate-system-rotations-and-vector-fields">Coordinate system, rotations, and vector fields</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#planar-time-harmonic-waves">Planar Time-Harmonic Waves</a></li>
@@ -782,7 +781,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Sionna</a>
+          <a href="../index.html">Sionna 0.19.2</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -804,12 +803,12 @@
 <div style="margin-bottom:15px;">
     <table>
         <td style="padding: 0px 0px;">
-            <a href=" https://colab.research.google.com/github/NVlabs/sionna/blob/main/examples/Sionna_Ray_Tracing_Scattering.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Sionna_Ray_Tracing_Scattering.ipynb" style="vertical-align:text-bottom">
                 <img alt="Colab logo" src="../_static/colab_logo.svg" style="width: 40px; min-width: 40px">
             </a>
         </td>
         <td style="padding: 4px 0px;">
-            <a href=" https://colab.research.google.com/github/nvlabs/sionna/blob/main/examples/Sionna_Ray_Tracing_Scattering.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Sionna_Ray_Tracing_Scattering.ipynb" style="vertical-align:text-bottom">
                 Run in Google Colab
             </a>
         </td>
@@ -818,7 +817,7 @@
         </td>
 
         <td class="wy-breadcrumbs-aside" style="padding: 0 30px;">
-            <a href="https://github.com/nvlabs/sionna/blob/main/examples/Sionna_Ray_Tracing_Scattering.ipynb" style="vertical-align:text-bottom">
+            <a href="https://github.com/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Sionna_Ray_Tracing_Scattering.ipynb" style="vertical-align:text-bottom">
                 <i class="fa fa-github" style="font-size:24px;"></i>
                 View on GitHub
             </a>
@@ -872,7 +871,7 @@
 <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="c1"># Install Sionna if package is not already installed</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna==0.19&quot;</span><span class="p">)</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">sionna</span>
 
 <span class="c1"># Configure the notebook to use only a single GPU and allocate only as much memory as needed</span>
@@ -1144,7 +1143,7 @@ There are 22563 scattered paths.
 There are 20 scattered paths.
 </pre></div></div>
 </div>
-<p>In our example scene, each ray hitting the surfaces spawns exactly one new ray which connects to the receiver. Each ray has a random phase and energy that is determined by the scattering pattern and the so-called scattering coefficient <span class="math notranslate nohighlight">\(S\in[0,1]\)</span>. The squared scattering coefficient <span class="math notranslate nohighlight">\(S^2\)</span> determines which portion of the totally reflected energy (specular and diffuse combined) is diffusely reflected. For details on the precise modeling of the scattered field, we refer to the <a class="reference external" href="https://nvlabs.github.io/sionna/em_primer.html#scattering">EM
+<p>In our example scene, each ray hitting the surfaces spawns exactly one new ray which connects to the receiver. Each ray has a random phase and energy that is determined by the scattering pattern and the so-called scattering coefficient <span class="math notranslate nohighlight">\(S\in[0,1]\)</span>. The squared scattering coefficient <span class="math notranslate nohighlight">\(S^2\)</span> determines which portion of the totally reflected energy (specular and diffuse combined) is diffusely reflected. For details on the precise modeling of the scattered field, we refer to the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/em_primer.html#scattering">EM
 Primer</a>.</p>
 <p>By default, all materials in Sionna have a scattering coefficient equal to zero. For this reason, we would expect that all of the scattered paths carry zero energy. Let’s verify that this is indeed the case:</p>
 <div class="nbinput docutils container">
@@ -1185,7 +1184,7 @@ All scattered paths have positive energy: True
 </section>
 <section id="Scattering-Patterns">
 <h2>Scattering Patterns<a class="headerlink" href="#Scattering-Patterns" title="Link to this heading"></a></h2>
-<p>In order to study the impact of the scattering pattern, let’s replace the perfectly diffuse Lambertian pattern (which all radio materials have by default) by the <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#sionna.rt.DirectivePattern">DirectivePattern</a>. The larger the integer parameter <span class="math notranslate nohighlight">\(\alpha_r\)</span>, the more the scattered field is focused around the direction of the specular reflection.</p>
+<p>In order to study the impact of the scattering pattern, let’s replace the perfectly diffuse Lambertian pattern (which all radio materials have by default) by the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#sionna.rt.DirectivePattern">DirectivePattern</a>. The larger the integer parameter <span class="math notranslate nohighlight">\(\alpha_r\)</span>, the more the scattered field is focused around the direction of the specular reflection.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
@@ -1246,7 +1245,7 @@ All scattered paths have positive energy: True
 <section id="Validation-Against-the-%22Far%22-Wall-Approximation">
 <h2>Validation Against the “Far”-Wall Approximation<a class="headerlink" href="#Validation-Against-the-%22Far%22-Wall-Approximation" title="Link to this heading"></a></h2>
 <p>If the scattering surface is small compared to the distance from its center to the transmitter and receiver, respectively, it can be approximated by a single scattering source that reradiates parts of the energy it has captured by the entire surface <span class="math notranslate nohighlight">\(A\)</span>. In other words, the scattered field is well approximated by a single ray originating from the barycenter of the surface [2]. The reason for this behavior is that the scattering angle is almost constant for any point on the surface. As
-described in the <a class="reference external" href="https://nvlabs.github.io/sionna/em_primer.html#scattering">EM Primer</a>, the received power of the scattered path can be computed as</p>
+described in the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/em_primer.html#scattering">EM Primer</a>, the received power of the scattered path can be computed as</p>
 <div class="math notranslate nohighlight">
 \[P_r = \left(\frac{\lambda S \Gamma}{4\pi r_i r_s}\right)^2 f_\text{s}(\hat{\mathbf{k}}_\text{i}, \hat{\mathbf{k}}_\text{s}) \cos(\theta_i) A\]</div>
 <p>which simplifies for a perfect reflector (<span class="math notranslate nohighlight">\(\Gamma=1\)</span>) with Lambertian scattering pattern and unit surface area to</p>
@@ -1307,7 +1306,7 @@ described in the <a class="reference external" href="https://nvlabs.github.io/si
 <section id="Coverage-Maps-With-Scattering">
 <h2>Coverage Maps With Scattering<a class="headerlink" href="#Coverage-Maps-With-Scattering" title="Link to this heading"></a></h2>
 <p>By now, you have a gained a solid understanding of scattering from a single surface. Let us now make things a bit more interesting by looking at a complex scene with many scattering surfaces. This can be nicely observed with the help of coverage maps.</p>
-<p>A coverage map describes the average received power from a specific transmitter at every point on a plane. The effects of fast fading, i.e., constructive/destructive interference between different paths, are averaged out by summing the squared amplitudes of all paths. As we cannot compute coverage maps with infinitely fine resolution, they are approximated by small rectangular tiles for which average values are computed. For a detailed explanation, have a look at the <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#coverage-map">API
+<p>A coverage map describes the average received power from a specific transmitter at every point on a plane. The effects of fast fading, i.e., constructive/destructive interference between different paths, are averaged out by summing the squared amplitudes of all paths. As we cannot compute coverage maps with infinitely fine resolution, they are approximated by small rectangular tiles for which average values are computed. For a detailed explanation, have a look at the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#coverage-map">API
 Documentation</a>.</p>
 <p>Let us now load a slightly more interesting scene containing a couple of rectangular buildings and add a transmitter. Note that we do not need to add any receivers to compute a coverage map (we will add one though as we need it later).</p>
 <div class="nbinput nblast docutils container">
@@ -1385,7 +1384,8 @@ Documentation</a>.</p>
 </section>
 <section id="Impact-on-Channel-Impulse-Response">
 <h2>Impact on Channel Impulse Response<a class="headerlink" href="#Impact-on-Channel-Impulse-Response" title="Link to this heading"></a></h2>
-<p>As a last experiment in our tutorial on scattering, let us have a look at the discrete baseband-equivalent channel impulse responses we obtain with and without scattering. To this end, we will compute the channel impulse response of the single receiver we have configured for the current scene, and then transform it into the complex baseband representation using the convenience function <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.wireless.html#cir-to-time-channel">cir_to_time_channel</a>.</p>
+<p>As a last experiment in our tutorial on scattering, let us have a look at the discrete baseband-equivalent channel impulse responses we obtain with and without scattering. To this end, we will compute the channel impulse response of the single receiver we have configured for the current scene, and then transform it into the complex baseband representation using the convenience function
+<a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.wireless.html#cir-to-time-channel">cir_to_time_channel</a>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
@@ -1429,7 +1429,7 @@ Documentation</a>.</p>
 <section id="Summary">
 <h2>Summary<a class="headerlink" href="#Summary" title="Link to this heading"></a></h2>
 <p>In conclusion, scattering plays an important role for radio propagation modelling. In particular, the higher the carrier frequency, the rougher most surfaces appear compared to the wavelength. Thus, at THz-frequencies diffuse reflections might become the dominating form of radio wave propgation (apart from LoS).</p>
-<p>We hope you enjoyed our dive into scattering with this Sionna RT tutorial. Please try out some experiments yourself and improve your grasp of ray tracing. There’s more to discover, so so don’t forget to check out our other <a class="reference external" href="https://nvlabs.github.io/sionna/tutorials.html">tutorials</a>, too.</p>
+<p>We hope you enjoyed our dive into scattering with this Sionna RT tutorial. Please try out some experiments yourself and improve your grasp of ray tracing. There’s more to discover, so so don’t forget to check out our other <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/tutorials.html">tutorials</a>, too.</p>
 </section>
 <section id="References">
 <h2>References<a class="headerlink" href="#References" title="Link to this heading"></a></h2>

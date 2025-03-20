@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tutorial on Diffraction &mdash; Sionna 0.19.2 documentation</title>
+  <title>Tutorial on Diffraction &mdash; Sionna 0.19.2 0.19.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -42,7 +42,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            Sionna
+            Sionna 0.19.2
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -333,7 +333,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../made_with_sionna.html">“Made with Sionna”</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../em_primer.html">Primer on Electromagnetics</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#coordinate-system-rotations-and-vector-fields">Coordinate system, rotations, and vector fields</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#planar-time-harmonic-waves">Planar Time-Harmonic Waves</a></li>
@@ -782,7 +781,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Sionna</a>
+          <a href="../index.html">Sionna 0.19.2</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -804,12 +803,12 @@
 <div style="margin-bottom:15px;">
     <table>
         <td style="padding: 0px 0px;">
-            <a href=" https://colab.research.google.com/github/NVlabs/sionna/blob/main/examples/Sionna_Ray_Tracing_Diffraction.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Sionna_Ray_Tracing_Diffraction.ipynb" style="vertical-align:text-bottom">
                 <img alt="Colab logo" src="../_static/colab_logo.svg" style="width: 40px; min-width: 40px">
             </a>
         </td>
         <td style="padding: 4px 0px;">
-            <a href=" https://colab.research.google.com/github/nvlabs/sionna/blob/main/examples/Sionna_Ray_Tracing_Diffraction.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Sionna_Ray_Tracing_Diffraction.ipynb" style="vertical-align:text-bottom">
                 Run in Google Colab
             </a>
         </td>
@@ -818,7 +817,7 @@
         </td>
 
         <td class="wy-breadcrumbs-aside" style="padding: 0 30px;">
-            <a href="https://github.com/nvlabs/sionna/blob/main/examples/Sionna_Ray_Tracing_Diffraction.ipynb" style="vertical-align:text-bottom">
+            <a href="https://github.com/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Sionna_Ray_Tracing_Diffraction.ipynb" style="vertical-align:text-bottom">
                 <i class="fa fa-github" style="font-size:24px;"></i>
                 View on GitHub
             </a>
@@ -871,7 +870,7 @@ and then rapidly decays to zero. Most importantly, without diffraction, there wo
 <h3>Wedge vs Edge<a class="headerlink" href="#Wedge-vs-Edge" title="Link to this heading"></a></h3>
 <p>First, it is important to know the difference between a <em>wedge</em> and an <em>edge</em>, and why we distinguish between them.</p>
 <p>Sionna defines a <em>wedge</em> as the line segment between two primitives, i.e., the common segment of two triangles. For example, a cubic building would have 12 wedges.</p>
-<p>For primitives that have one or more line segments that are not shared with another primitive, Sionna refers to such line segments as <em>edges</em>. See <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#sionna.rt.scene.floor_wall">sionna.rt.scene.floor_wall</a> for an example scene.</p>
+<p>For primitives that have one or more line segments that are not shared with another primitive, Sionna refers to such line segments as <em>edges</em>. See <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#sionna.rt.scene.floor_wall">sionna.rt.scene.floor_wall</a> for an example scene.</p>
 <p>By default, Sionna does not simulate diffraction on edges (<code class="docutils literal notranslate"><span class="pre">edge_diffraction=False</span></code>), to avoid problems such as diffraction on the exterior edges of the ground surface (modelled as a rectangular plane).</p>
 </section>
 </section>
@@ -893,7 +892,7 @@ and then rapidly decays to zero. Most importantly, without diffraction, there wo
 <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="c1"># Install Sionna if package is not already installed</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna==0.19&quot;</span><span class="p">)</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">sionna</span>
 
 <span class="c1"># Configure the notebook to use only a single GPU and allocate only as much memory as needed</span>
@@ -1260,7 +1259,7 @@ reflected field immediately drops to zero. A similar observation can be made clo
 <p>The first observation we can make is that the overall path gain has dropped by around <span class="math notranslate nohighlight">\(20\,\)</span>dB. This is expected as it is proportional to the square of the wavelength <span class="math notranslate nohighlight">\(\lambda\)</span>.</p>
 <p>The second noticeable difference is that the path gain fluctuates far more rapidly. This is simply due to the shorter wavelength.</p>
 <p>The third observation we can make is that the diffracted field decays far more radpily when moving away from the boundaries as compared to a frequency of <span class="math notranslate nohighlight">\(1\,\)</span>GHz. Thus, diffraction is less important at high frequencies.</p>
-<p>We can verify that the same trends continue by plotting the result for a frequency of <span class="math notranslate nohighlight">\(100\,\)</span>GHz, which is the upper limit for which the ITU Metal material is defined (see the <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#radio-materials">Sionna RT Documentation</a>).</p>
+<p>We can verify that the same trends continue by plotting the result for a frequency of <span class="math notranslate nohighlight">\(100\,\)</span>GHz, which is the upper limit for which the ITU Metal material is defined (see the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#radio-materials">Sionna RT Documentation</a>).</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
@@ -1330,7 +1329,7 @@ reflected field immediately drops to zero. A similar observation can be made clo
 <section id="Coverage-Maps-with-Diffraction">
 <h2>Coverage Maps with Diffraction<a class="headerlink" href="#Coverage-Maps-with-Diffraction" title="Link to this heading"></a></h2>
 <p>So far, we have obtained a solid microscopic understanding of the effect of scattering. Let us now turn to the macroscopic effects that can be nicely observed through coverage maps.</p>
-<p>A coverage map describes the average received power from a specific transmitter at every point on a plane. The effects of fast fading, i.e., constructive/destructive interference between different paths, are averaged out by summing the squared amplitudes of all paths. As we cannot compute coverage maps with infinitely fine resolution, they are approximated by small rectangular tiles for which average values are computed. For a detailed explanation, have a look at the <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#coverage-map">API
+<p>A coverage map describes the average received power from a specific transmitter at every point on a plane. The effects of fast fading, i.e., constructive/destructive interference between different paths, are averaged out by summing the squared amplitudes of all paths. As we cannot compute coverage maps with infinitely fine resolution, they are approximated by small rectangular tiles for which average values are computed. For a detailed explanation, have a look at the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#coverage-map">API
 Documentation</a>.</p>
 <p>Let us now load a slightly more interesting scene containing a couple of rectangular buildings and add a transmitter. Note that we do not need to add any receivers to compute a coverage map.</p>
 <div class="nbinput docutils container">
@@ -1471,7 +1470,7 @@ scene.preview()
 </div>
 <p>While the 1 GHz and 30 GHz carrier frequency coverage maps appear similar, key differences exist. The dynamic range for 30 GHz has grown by around 16dB due to the reduced diffracted field in deep shadow areas, such as behind buildings. The diffracted field at this frequency is considerably smaller compared to the incident field than it is at 1 GHz, leading to a significant increase in dynamic range.</p>
 <p>In conclusion, diffraction plays a vital role in maintaining the consistency of the electric field across both reflection and incident shadow boundaries. It generates diffracted rays that form a Keller cone around an edge. As we move away from these boundaries, the diffracted field diminishes rapidly. Importantly, the contributions of the diffracted field become less significant as the carrier frequency increases.</p>
-<p>We hope you enjoyed our dive into diffraction with this Sionna RT tutorial. We really encourage you to get hands-on, conduct your own experiments and deepen your understanding of ray tracing. There’s always more to learn, so do explore our other <a class="reference external" href="https://nvlabs.github.io/sionna/tutorials.html">tutorials</a> as well.</p>
+<p>We hope you enjoyed our dive into diffraction with this Sionna RT tutorial. We really encourage you to get hands-on, conduct your own experiments and deepen your understanding of ray tracing. There’s always more to learn, so do explore our other <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/tutorials.html">tutorials</a> as well.</p>
 </section>
 <section id="References">
 <h2>References<a class="headerlink" href="#References" title="Link to this heading"></a></h2>

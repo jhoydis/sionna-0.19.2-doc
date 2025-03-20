@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Introduction to Sionna RT &mdash; Sionna 0.19.2 documentation</title>
+  <title>Introduction to Sionna RT &mdash; Sionna 0.19.2 0.19.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -42,7 +42,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            Sionna
+            Sionna 0.19.2
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -333,7 +333,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../made_with_sionna.html">“Made with Sionna”</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../em_primer.html">Primer on Electromagnetics</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#coordinate-system-rotations-and-vector-fields">Coordinate system, rotations, and vector fields</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#planar-time-harmonic-waves">Planar Time-Harmonic Waves</a></li>
@@ -782,7 +781,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Sionna</a>
+          <a href="../index.html">Sionna 0.19.2</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -804,12 +803,12 @@
 <div style="margin-bottom:15px;">
     <table>
         <td style="padding: 0px 0px;">
-            <a href=" https://colab.research.google.com/github/NVlabs/sionna/blob/main/examples/Sionna_Ray_Tracing_Introduction.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Sionna_Ray_Tracing_Introduction.ipynb" style="vertical-align:text-bottom">
                 <img alt="Colab logo" src="../_static/colab_logo.svg" style="width: 40px; min-width: 40px">
             </a>
         </td>
         <td style="padding: 4px 0px;">
-            <a href=" https://colab.research.google.com/github/nvlabs/sionna/blob/main/examples/Sionna_Ray_Tracing_Introduction.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Sionna_Ray_Tracing_Introduction.ipynb" style="vertical-align:text-bottom">
                 Run in Google Colab
             </a>
         </td>
@@ -818,7 +817,7 @@
         </td>
 
         <td class="wy-breadcrumbs-aside" style="padding: 0 30px;">
-            <a href="https://github.com/nvlabs/sionna/blob/main/examples/Sionna_Ray_Tracing_Introduction.ipynb" style="vertical-align:text-bottom">
+            <a href="https://github.com/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/Sionna_Ray_Tracing_Introduction.ipynb" style="vertical-align:text-bottom">
                 <i class="fa fa-github" style="font-size:24px;"></i>
                 View on GitHub
             </a>
@@ -837,7 +836,7 @@
 <h1>Introduction to Sionna RT<a class="headerlink" href="#Introduction-to-Sionna-RT" title="Link to this heading"></a></h1>
 <p>In this notebook, you will</p>
 <ul class="simple">
-<li><p>Discover the basic functionalities of Sionna’s <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html">ray tracing (RT) module</a></p></li>
+<li><p>Discover the basic functionalities of Sionna’s <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html">ray tracing (RT) module</a></p></li>
 <li><p>Learn how to compute coverage maps</p></li>
 <li><p>Use ray-traced channels for link-level simulations instead of stochastic channel models</p></li>
 </ul>
@@ -858,12 +857,12 @@
 </section>
 <section id="Background-Information">
 <h2>Background Information<a class="headerlink" href="#Background-Information" title="Link to this heading"></a></h2>
-<p>Ray tracing is a technique to simulate environment-specific and physically accurate channel realizations for a given scene and user position. Please see the <a class="reference external" href="https://nvlabs.github.io/sionna/em_primer.html">EM Primer</a> for further details on the theoretical background of ray tracing of wireless channels.</p>
+<p>Ray tracing is a technique to simulate environment-specific and physically accurate channel realizations for a given scene and user position. Please see the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/em_primer.html">EM Primer</a> for further details on the theoretical background of ray tracing of wireless channels.</p>
 <p>Sionna RT is a ray tracing extension for radio propagation modeling which is built on top of <a class="reference external" href="https://www.mitsuba-renderer.org/">Mitsuba 3</a> and <a class="reference external" href="https://www.tensorflow.org/">TensorFlow</a>. Like all of Sionna’s components, it is differentiable.</p>
 <p>Mitsuba 3 is a rendering system for forward and inverse light-transport simulation that makes use of the differentiable just-in-time compiler <a class="reference external" href="https://drjit.readthedocs.io/en/latest/">Dr.Jit</a>. Sionna RT relies on Mitsuba 3 for the rendering and handling of scenes, e.g., its XML-file format, as well as the computation of ray intersections with scene primitives, i.e., triangles forming a mesh. The transformations of the polarized field components at each point of interaction between a ray and a
 scene object, e.g., reflection, are computed in TensorFlow, which is also used to combine the retained paths into (optionally) time-varying channel impulse responses. Thanks to TensorFlow’s automatic gradient computation, channel impulse responses and functions thereof are differentiable with respect to most parameters of the ray tracing process, including material properties (conductivity, permittivity), antenna patterns, orientations, and positions.</p>
 <p>Scene files for Mitsuba 3 can be created, edited, and exported with the popular open-source 3D creation suite <a class="reference external" href="https://www.blender.org/">Blender</a> and the <a class="reference external" href="https://github.com/mitsuba-renderer/mitsuba-blender">Mitsuba-Blender add-on</a>. One can rapdily create scenes from almost any place in the world using <a class="reference external" href="https://www.openstreetmap.org/">OpenStreetMap</a> and the <a class="reference external" href="https://prochitecture.gumroad.com/l/blender-osm">Blender-OSM add-on</a>. In Sionna, scenes and radio propagation paths can be
-either rendered through the lens of configurable cameras via ray tracing or displayed with an integrated 3D viewer. For more detail on scene creation and rendering, we refer to <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html">Sionna’s API documentation</a> and the available <a class="reference external" href="https://youtu.be/7xHLDxUaQ7c">video tutorial</a>.</p>
+either rendered through the lens of configurable cameras via ray tracing or displayed with an integrated 3D viewer. For more detail on scene creation and rendering, we refer to <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html">Sionna’s API documentation</a> and the available <a class="reference external" href="https://youtu.be/7xHLDxUaQ7c">video tutorial</a>.</p>
 </section>
 <section id="GPU-Configuration-and-Imports">
 <h2>GPU Configuration and Imports<a class="headerlink" href="#GPU-Configuration-and-Imports" title="Link to this heading"></a></h2>
@@ -883,7 +882,7 @@ either rendered through the lens of configurable cameras via ray tracing or disp
 <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="c1"># Install Sionna if package is not already installed</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna==0.19&quot;</span><span class="p">)</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">sionna</span>
 
 <span class="c1"># Configure the notebook to use only a single GPU and allocate only as much memory as needed</span>
@@ -952,7 +951,7 @@ either rendered through the lens of configurable cameras via ray tracing or disp
 </section>
 <section id="Loading-Scenes">
 <h2>Loading Scenes<a class="headerlink" href="#Loading-Scenes" title="Link to this heading"></a></h2>
-<p>The Sionna RT module can either load external scene files (in Mitsuba’s XML file format) or it can load one of the <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#example-scenes">integrated scenes</a>.</p>
+<p>The Sionna RT module can either load external scene files (in Mitsuba’s XML file format) or it can load one of the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#example-scenes">integrated scenes</a>.</p>
 <p>In this example, we load an example scene containing the area around the Frauenkirche in Munich, Germany.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
@@ -1055,7 +1054,7 @@ Function not available in Colab mode.
 <img alt="../_images/examples_Sionna_Ray_Tracing_Introduction_17_0.png" src="../_images/examples_Sionna_Ray_Tracing_Introduction_17_0.png" />
 </div>
 </div>
-<p>Note that each <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#scene-objects">SceneObject</a> (camera, transmitter,…) needs a unique name. Thus, running the cells above multiple times will lead to an error if the object name is not changed or the object is not removed from the scene.</p>
+<p>Note that each <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#scene-objects">SceneObject</a> (camera, transmitter,…) needs a unique name. Thus, running the cells above multiple times will lead to an error if the object name is not changed or the object is not removed from the scene.</p>
 </section>
 <section id="Ray-Tracing-for-Radio-Propagation">
 <h2>Ray Tracing for Radio Propagation<a class="headerlink" href="#Ray-Tracing-for-Radio-Propagation" title="Link to this heading"></a></h2>
@@ -1100,7 +1099,7 @@ to have unique names, a position, and orientation which is defined by yaw, pitch
 </pre></div>
 </div>
 </div>
-<p>Each <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#scene-objects">SceneObject</a> has an assigned <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#radio-materials">RadioMaterial</a> that describes the electromagnetic properties of the object whenever it interacts with a ray. This behavior can be frequency-dependent and the ray tracing is done for a specific frequency.</p>
+<p>Each <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#scene-objects">SceneObject</a> has an assigned <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#radio-materials">RadioMaterial</a> that describes the electromagnetic properties of the object whenever it interacts with a ray. This behavior can be frequency-dependent and the ray tracing is done for a specific frequency.</p>
 <p>We now set the carrier frequency of the scene and implicitly update all RadioMaterials.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
@@ -1191,8 +1190,8 @@ scene.preview(paths, show_devices=True, show_paths=True) # Use the mouse to focu
 </div>
 </div>
 <p><em>Remark</em>: only one preview instance can be opened at the same time. Please check the previous preview if no output appears.</p>
-<p>The <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#paths">Paths</a> object contains all paths that have been found between transmitters and receivers. In principle, the existence of each path is determininistic for a given position and environment. Please note that due to the stochastic nature of the <em>shoot-and-bounce</em> algorithm, different runs of the <code class="docutils literal notranslate"><span class="pre">compute_paths</span></code> function can lead to different paths that are found. Most importantly, diffusely reflected or scattered paths are obtained through
-random sampling of directions after each interaction with a scene object. You can seet TensorFlow’s random seed to a specific value before executing <code class="docutils literal notranslate"><span class="pre">compute_paths</span></code> to ensure reproducibility.</p>
+<p>The <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#paths">Paths</a> object contains all paths that have been found between transmitters and receivers. In principle, the existence of each path is determininistic for a given position and environment. Please note that due to the stochastic nature of the <em>shoot-and-bounce</em> algorithm, different runs of the <code class="docutils literal notranslate"><span class="pre">compute_paths</span></code> function can lead to different paths that are found. Most importantly, diffusely reflected or scattered paths are
+obtained through random sampling of directions after each interaction with a scene object. You can seet TensorFlow’s random seed to a specific value before executing <code class="docutils literal notranslate"><span class="pre">compute_paths</span></code> to ensure reproducibility.</p>
 <p>The Paths object contains detailed information about every found path and allows us to generated channel impulse responses and apply Doppler shifts for the simulation of time evolution.</p>
 <p>Let us now inspect some of the available properties:</p>
 <div class="nbinput docutils container">
@@ -1268,8 +1267,8 @@ Azimuth angle of arrival: 0.5368 rad
 </section>
 <section id="From-Paths-to-Channel-Impulse-Responses">
 <h2>From Paths to Channel Impulse Responses<a class="headerlink" href="#From-Paths-to-Channel-Impulse-Responses" title="Link to this heading"></a></h2>
-<p>Once paths are computed, they can be transformed into channel impulse responses (CIRs). The class method <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#Paths.apply_doppler">apply_doppler</a> can simulate time evolution of the CIR based on arbitrary velocity vectors of all transmitters and receivers for a desired sampling frequency and number of time steps. The class method <a class="reference external" href="https://nvlabs.github.io/sionna/api/rt.html#Paths.cir">cir</a> generates the channel impulse responses which can be used by
-other components for link-level simulations in either time or frequency domains. The method also allows you to only consider certain types of paths, e.g., line-of-sight, reflections, etc.</p>
+<p>Once paths are computed, they can be transformed into channel impulse responses (CIRs). The class method <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#Paths.apply_doppler">apply_doppler</a> can simulate time evolution of the CIR based on arbitrary velocity vectors of all transmitters and receivers for a desired sampling frequency and number of time steps. The class method <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/rt.html#Paths.cir">cir</a> generates the channel impulse
+responses which can be used by other components for link-level simulations in either time or frequency domains. The method also allows you to only consider certain types of paths, e.g., line-of-sight, reflections, etc.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
@@ -1370,7 +1369,7 @@ Delay of first path without normalization:  2.739189e-07
 Delay of first path with normalization:  0.0
 </pre></div></div>
 </div>
-<p>The CIRs can now be loaded either in the time-domain or frequency-domain channel models, respectively. Please see <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.wireless.html#sionna.channel.cir_to_ofdm_channel">cir_to_ofdm_channel</a> and <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.wireless.html#sionna.channel.cir_to_time_channel">cir_to_time_channel</a> for further details.</p>
+<p>The CIRs can now be loaded either in the time-domain or frequency-domain channel models, respectively. Please see <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.wireless.html#sionna.channel.cir_to_ofdm_channel">cir_to_ofdm_channel</a> and <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.wireless.html#sionna.channel.cir_to_time_channel">cir_to_time_channel</a> for further details.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
@@ -1401,7 +1400,7 @@ Shape of h_freq:  (1, 1, 2, 1, 1, 14, 48)
 Average power h_freq:  1.0
 </pre></div></div>
 </div>
-<p>The frequency responses <code class="docutils literal notranslate"><span class="pre">h_freq</span></code> are now ready to be processed by the <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.wireless.html#sionna.channel.ApplyOFDMChannel">ApplyOFDMChannel</a> Layer.</p>
+<p>The frequency responses <code class="docutils literal notranslate"><span class="pre">h_freq</span></code> are now ready to be processed by the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.wireless.html#sionna.channel.ApplyOFDMChannel">ApplyOFDMChannel</a> Layer.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
@@ -1434,7 +1433,7 @@ Average power h_freq:  1.0
 </section>
 <section id="BER-Evaluation">
 <h2>BER Evaluation<a class="headerlink" href="#BER-Evaluation" title="Link to this heading"></a></h2>
-<p>We now initialize a transmitter and receiver from the <a class="reference external" href="https://nvlabs.github.io/sionna/examples/5G_NR_PUSCH.html">5G NR PUSCH Tutorial</a> notebook. These components could be replaced by your own transceiver implementations. Then we simulate PUSCH transmissions over the ray-traced CIRs that we generated in the previous cells.</p>
+<p>We now initialize a transmitter and receiver from the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/examples/5G_NR_PUSCH.html">5G NR PUSCH Tutorial</a> notebook. These components could be replaced by your own transceiver implementations. Then we simulate PUSCH transmissions over the ray-traced CIRs that we generated in the previous cells.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
@@ -1556,7 +1555,7 @@ Time with diffraction: 4.306113243103027
 Time with scattering: 3.667450189590454
 </pre></div></div>
 </div>
-<p>Although we have simulated scattering in the last example above, the scattered paths do not carry any energy as none of the materials in the scene has a positive scattering coefficient. You can learn more about scattering and diffraction in the dedicated <a class="reference external" href="https://nvlabs.github.io/sionna/tutorials.html#ray-tracing">tutorial notebooks</a>.</p>
+<p>Although we have simulated scattering in the last example above, the scattered paths do not carry any energy as none of the materials in the scene has a positive scattering coefficient. You can learn more about scattering and diffraction in the dedicated <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/tutorials.html#ray-tracing">tutorial notebooks</a>.</p>
 </section>
 <section id="Coverage-Map">
 <h2>Coverage Map<a class="headerlink" href="#Coverage-Map" title="Link to this heading"></a></h2>
@@ -1677,7 +1676,8 @@ scene.preview(coverage_map=cm)
 <section id="Site-specifc-Link-Level-Simulations">
 <h2>Site-specifc Link-Level Simulations<a class="headerlink" href="#Site-specifc-Link-Level-Simulations" title="Link to this heading"></a></h2>
 <p>We will now use Sionna RT for site-specific link-level simulations. For this, we evaluate the BER performance for a MU-MIMO 5G NR system in the uplink direction based on ray traced CIRs for random user positions.</p>
-<p>We use the 5G NR PUSCH transmitter and receiver from the <a class="reference external" href="https://nvlabs.github.io/sionna/examples/5G_NR_PUSCH.html">5G NR PUSCH Tutorial</a> notebook. Note that also the systems from the <a class="reference external" href="https://nvlabs.github.io/sionna/examples/MIMO_OFDM_Transmissions_over_CDL.html">MIMO OFDM Transmissions over the CDL Channel Model</a> or the <a class="reference external" href="https://nvlabs.github.io/sionna/examples/Neural_Receiver.html">Neural Receiver for OFDM SIMO Systems</a> tutorials could be used instead.</p>
+<p>We use the 5G NR PUSCH transmitter and receiver from the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/examples/5G_NR_PUSCH.html">5G NR PUSCH Tutorial</a> notebook. Note that also the systems from the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/examples/MIMO_OFDM_Transmissions_over_CDL.html">MIMO OFDM Transmissions over the CDL Channel Model</a> or the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/examples/Neural_Receiver.html">Neural Receiver for OFDM SIMO Systems</a> tutorials could be used
+instead.</p>
 <p>There are different ways to implement uplink scenarios in Sionna RT. In this example, we configure the basestation as transmitter and the user equipments (UEs) as receivers which simplifies the ray tracing. Due to channel reciprocity, one can <em>reverse</em> the direction of the ray traced channels afterwards. For the ray tracer itself, the direction (uplink/downlink) does not change the simulated paths.</p>
 <p><em>Note</em>: Running the cells below can take several hours of compute time.</p>
 <div class="nbinput nblast docutils container">
@@ -1981,7 +1981,7 @@ Shape of tau:  (4814, 1, 1, 75)
 </pre></div>
 </div>
 </div>
-<p>We use Sionna’s built-in <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.wireless.html#sionna.channel.CIRDataset">CIRDataset</a> to initialize a channel model that can be directly used in Sionna’s <a class="reference external" href="https://nvlabs.github.io/sionna/api/channel.wireless.html#sionna.channel.OFDMChannel">OFDMChannel</a> layer.</p>
+<p>We use Sionna’s built-in <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.wireless.html#sionna.channel.CIRDataset">CIRDataset</a> to initialize a channel model that can be directly used in Sionna’s <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/channel.wireless.html#sionna.channel.OFDMChannel">OFDMChannel</a> layer.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
@@ -2013,7 +2013,7 @@ Shape of tau:  (4814, 1, 1, 75)
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We need to enable sionna.config.xla_compat before we can use</span>
 <span class="c1"># tf.function with jit_compile=True.</span>
-<span class="c1"># See https://nvlabs.github.io/sionna/api/config.html#sionna.Config.xla_compat</span>
+<span class="c1"># See https://jhoydis.github.io/sionna-0.19.2-doc/api/config.html#sionna.Config.xla_compat</span>
 <span class="n">sionna</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">xla_compat</span><span class="o">=</span><span class="kc">False</span> <span class="c1"># not supported in CIRDataset</span>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">Model</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
@@ -2308,7 +2308,7 @@ EbNo [dB] |        BER |       BLER |  bit errors |    num bits | block errors |
 <p>There is one key feature of Sionna RT that was not discussed in this notebook: Automatic gradient computation. Like most components of Sionna, the ray tracer is differentiable with respect to most system parameters, such as radio materials, transmitter and receiver orientations, array geometries, positions, etc. This enables a whole new line of research which is discussed in the <a class="reference external" href="https://nvlabs.github.io/sionna/made_with_sionna.html#sionna-rt-differentiable-ray-tracing-for-radio-propagation-modeling">Sionna RT paper and the related
 notebooks</a>.</p>
 <p>Hopefully you have enjoyed this tutorial on Sionna’s RT module!</p>
-<p>Please have a look at the <a class="reference external" href="https://nvlabs.github.io/sionna/api/sionna.html">API documentation</a> of the various components or the other available <a class="reference external" href="https://nvlabs.github.io/sionna/tutorials.html">tutorials</a> to learn more.</p>
+<p>Please have a look at the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/sionna.html">API documentation</a> of the various components or the other available <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/tutorials.html">tutorials</a> to learn more.</p>
 </section>
 </section>
 

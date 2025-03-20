@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>“Hello, Sionna!” &mdash; Sionna 0.19.2 documentation</title>
+  <title>“Hello, Sionna!” &mdash; Sionna 0.19.2 0.19.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -40,7 +40,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            Sionna
+            Sionna 0.19.2
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -331,7 +331,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../made_with_sionna.html">“Made with Sionna”</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../em_primer.html">Primer on Electromagnetics</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#coordinate-system-rotations-and-vector-fields">Coordinate system, rotations, and vector fields</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../em_primer.html#planar-time-harmonic-waves">Planar Time-Harmonic Waves</a></li>
@@ -780,7 +779,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Sionna</a>
+          <a href="../index.html">Sionna 0.19.2</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -801,12 +800,12 @@
 <div style="margin-bottom:15px;">
     <table>
         <td style="padding: 0px 0px;">
-            <a href=" https://colab.research.google.com/github/NVlabs/sionna/blob/main/examples/dev_blog_example.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/dev_blog_example.ipynb" style="vertical-align:text-bottom">
                 <img alt="Colab logo" src="../_static/colab_logo.svg" style="width: 40px; min-width: 40px">
             </a>
         </td>
         <td style="padding: 4px 0px;">
-            <a href=" https://colab.research.google.com/github/nvlabs/sionna/blob/main/examples/dev_blog_example.ipynb" style="vertical-align:text-bottom">
+            <a href=" https://colab.research.google.com/github/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/dev_blog_example.ipynb" style="vertical-align:text-bottom">
                 Run in Google Colab
             </a>
         </td>
@@ -815,7 +814,7 @@
         </td>
 
         <td class="wy-breadcrumbs-aside" style="padding: 0 30px;">
-            <a href="https://github.com/nvlabs/sionna/blob/main/examples/dev_blog_example.ipynb" style="vertical-align:text-bottom">
+            <a href="https://github.com/jhoydis/sionna-0.19.2-doc/blob/main/docs/examples/dev_blog_example.ipynb" style="vertical-align:text-bottom">
                 <i class="fa fa-github" style="font-size:24px;"></i>
                 View on GitHub
             </a>
@@ -834,7 +833,7 @@
 <h1>“Hello, Sionna!”<a class="headerlink" href="#“Hello,-Sionna!%22" title="Link to this heading"></a></h1>
 <p>The following notebook implements the “Hello, Sionna!” example from the <a class="reference external" href="https://arxiv.org/pdf/2203.11854.pdf">Sionna whitepaper</a> and the <a class="reference external" href="https://developer.nvidia.com/blog/jumpstarting-link-level-simulations-with-sionna/">NVIDIA blog post</a>. The transmission of a batch of LDPC codewords over an AWGN channel using 16QAM modulation is simulated. This example shows how Sionna layers are instantiated and applied to a previously defined tensor. The coding style follows the <a class="reference external" href="https://www.tensorflow.org/guide/keras/functional">functional
 API</a> of Keras.</p>
-<p>The <a class="reference external" href="https://nvlabs.github.io/sionna">official documentation</a> provides key material on how to use Sionna and how its components are implemented. Many more <a class="reference external" href="https://nvlabs.github.io/sionna/tutorials.html">tutorials</a> are available online.</p>
+<p>The <a class="reference external" href="https://nvlabs.github.io/sionna">official documentation</a> provides key material on how to use Sionna and how its components are implemented. Many more <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/tutorials.html">tutorials</a> are available online.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -851,7 +850,7 @@ API</a> of Keras.</p>
 <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="c1"># Install Sionna if package is not already installed</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&quot;pip install sionna==0.19&quot;</span><span class="p">)</span>
     <span class="kn">import</span><span class="w"> </span><span class="nn">sionna</span>
 
 <span class="c1"># IPython &quot;magic function&quot; for inline plots</span>
@@ -913,7 +912,7 @@ Coded BER = 0.000
 </div>
 <section id="Automatic-Gradient-Computation">
 <h2>Automatic Gradient Computation<a class="headerlink" href="#Automatic-Gradient-Computation" title="Link to this heading"></a></h2>
-<p>One of the key advantages of Sionna is that components can be made trainable or replaced by neural networks. In the following example, we have made the <a class="reference external" href="https://nvlabs.github.io/sionna/api/mapping.html#constellation">Constellation</a> trainable and replaced <a class="reference external" href="https://nvlabs.github.io/sionna/api/mapping.html#demapping">Demapper</a> with a NeuralDemapper, which is just a neural network defined through <a class="reference external" href="https://keras.io">Keras</a>.</p>
+<p>One of the key advantages of Sionna is that components can be made trainable or replaced by neural networks. In the following example, we have made the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/mapping.html#constellation">Constellation</a> trainable and replaced <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/api/mapping.html#demapping">Demapper</a> with a NeuralDemapper, which is just a neural network defined through <a class="reference external" href="https://keras.io">Keras</a>.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -981,7 +980,7 @@ Gradients of the Constellation object:  tf.Tensor(
    0.00393356 -0.00667848  0.00480597 -0.00085825]], shape=(2, 16), dtype=float32)
 </pre></div></div>
 </div>
-<p>We could now use these gradients to write a custom training loop to jointly update the Constellation and the NeuralDemapper. For further details, we refer to the <a class="reference external" href="https://nvlabs.github.io/sionna/examples/Sionna_tutorial_part2.html">Sionna Tutorial Part 2</a> Jupyter notebook.</p>
+<p>We could now use these gradients to write a custom training loop to jointly update the Constellation and the NeuralDemapper. For further details, we refer to the <a class="reference external" href="https://jhoydis.github.io/sionna-0.19.2-doc/examples/Sionna_tutorial_part2.html">Sionna Tutorial Part 2</a> Jupyter notebook.</p>
 <script type="application/vnd.jupyter.widget-state+json">
 {"state": {}, "version_major": 2, "version_minor": 0}
 </script></section>

@@ -75,7 +75,7 @@
     "except ImportError as e:\n",
     "    # Install Sionna if package is not already installed\n",
     "    import os\n",
-    "    os.system(\"pip install sionna\")\n",
+    "    os.system(\"pip install sionna==0.19\")\n",
     "    import sionna as sn\n",
     "\n",
     "# Configure the notebook to use only a single GPU and allocate only as much memory as needed\n",
@@ -266,7 +266,7 @@
    "source": [
     "**Task:** You can try different pilot patterns, FFT size, number of OFDM symbols, and visualize how it affects the resource grid.\n",
     "\n",
-    "See the notebook [MIMO_OFDM_Transmissions_over_CDL](https://nvlabs.github.io/sionna/examples/MIMO_OFDM_Transmissions_over_CDL.html) for more advanced examples."
+    "See the notebook [MIMO_OFDM_Transmissions_over_CDL](https://jhoydis.github.io/sionna-0.19.2-doc/examples/MIMO_OFDM_Transmissions_over_CDL.html) for more advanced examples."
    ]
   },
   {
@@ -569,7 +569,7 @@
    "id": "ff16a2b5-9464-4dd0-b892-1bf36cdc56df",
    "metadata": {},
    "source": [
-    "See the notebook [Realistic_Multiuser_MIMO_Simulations](https://nvlabs.github.io/sionna/examples/Realistic_Multiuser_MIMO_Simulations.html) for more advanced examples."
+    "See the notebook [Realistic_Multiuser_MIMO_Simulations](https://jhoydis.github.io/sionna-0.19.2-doc/examples/Realistic_Multiuser_MIMO_Simulations.html) for more advanced examples."
    ]
   },
   {
